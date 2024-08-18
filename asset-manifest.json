@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Bachynckyi/aurum/static/css/main.7acaea2f.css",
-    "main.js": "/Bachynckyi/aurum/static/js/main.850ff2aa.js",
-    "index.html": "/Bachynckyi/aurum/index.html",
-    "main.7acaea2f.css.map": "/Bachynckyi/aurum/static/css/main.7acaea2f.css.map",
-    "main.850ff2aa.js.map": "/Bachynckyi/aurum/static/js/main.850ff2aa.js.map"
+    "main.css": "/aurum/static/css/main.7acaea2f.css",
+    "main.js": "/aurum/static/js/main.850ff2aa.js",
+    "index.html": "/aurum/index.html",
+    "main.7acaea2f.css.map": "/aurum/static/css/main.7acaea2f.css.map",
+    "main.850ff2aa.js.map": "/aurum/static/js/main.850ff2aa.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
