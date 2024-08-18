@@ -1,15 +1,30 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.7acaea2f.css",
-    "main.js": "/aurum/static/js/main.b2deca24.js",
-    "static/js/680.ffbb83ae.chunk.js": "/aurum/static/js/680.ffbb83ae.chunk.js",
+    "main.css": "/aurum/static/css/main.0cc2b1ed.css",
+    "main.js": "/aurum/static/js/main.3eac0985.js",
+    "static/css/412.62cbbc0c.chunk.css": "/aurum/static/css/412.62cbbc0c.chunk.css",
+    "static/js/412.43f31f82.chunk.js": "/aurum/static/js/412.43f31f82.chunk.js",
+    "static/js/824.40a9c89f.chunk.js": "/aurum/static/js/824.40a9c89f.chunk.js",
+    "static/media/team_photo.png": "/aurum/static/media/team_photo.6ac13cf0f054bde6f162.png",
+    "static/media/logo_parzival-zentrum.png": "/aurum/static/media/logo_parzival-zentrum.a63b53c3843990539f01.png",
+    "static/media/background_home.png": "/aurum/static/media/background_home.98904b124c4243392c12.png",
+    "static/media/Aurum_logo.svg": "/aurum/static/media/Aurum_logo.6a48c69ce7b4ebfac52bb1ab6040de1c.svg",
+    "static/media/parzival-zentrum.svg": "/aurum/static/media/parzival-zentrum.a8194acfb9abc4550ce695a1ead9c5a8.svg",
+    "static/media/Exo2__Bold.woff2": "/aurum/static/media/Exo2__Bold.8b5944aa2ac311395e9e.woff2",
+    "static/media/Exo2__Light.woff2": "/aurum/static/media/Exo2__Light.dfb521076bc66e20fd06.woff2",
+    "static/media/Exo2__Regular.woff2": "/aurum/static/media/Exo2__Regular.ecd6d367fb6432598f03.woff2",
+    "static/media/handshake.svg": "/aurum/static/media/handshake.77e96eeb3d431300b8b5c82b357e02f9.svg",
     "index.html": "/aurum/index.html",
-    "main.7acaea2f.css.map": "/aurum/static/css/main.7acaea2f.css.map",
-    "main.b2deca24.js.map": "/aurum/static/js/main.b2deca24.js.map",
-    "680.ffbb83ae.chunk.js.map": "/aurum/static/js/680.ffbb83ae.chunk.js.map"
+    "static/media/polygon.svg": "/aurum/static/media/polygon.dc649bc71f8302544294cb899634e947.svg",
+    "static/media/line.svg": "/aurum/static/media/line.3f550d335621d6f96900cf1fdecb0da4.svg",
+    "main.0cc2b1ed.css.map": "/aurum/static/css/main.0cc2b1ed.css.map",
+    "main.3eac0985.js.map": "/aurum/static/js/main.3eac0985.js.map",
+    "412.62cbbc0c.chunk.css.map": "/aurum/static/css/412.62cbbc0c.chunk.css.map",
+    "412.43f31f82.chunk.js.map": "/aurum/static/js/412.43f31f82.chunk.js.map",
+    "824.40a9c89f.chunk.js.map": "/aurum/static/js/824.40a9c89f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.b2deca24.js"
+    "static/css/main.0cc2b1ed.css",
+    "static/js/main.3eac0985.js"
   ]
 }
