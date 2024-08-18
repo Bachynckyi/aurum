@@ -1,0 +1,56 @@
+.header_container {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+};
+
+.lang_switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 82px;
+    height: 59px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.50);
+    outline: none;
+    border: none;
+    font-family: "Exo2-Bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+};
+
+.polygon {
+    margin-top: 2px;
+};
+
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 59px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.50);
+    outline: none;
+    border: none;
+};
+
+.menu_icon {
+    color: #181818;
+    width: 24px;
+    height: 35px;
+}
