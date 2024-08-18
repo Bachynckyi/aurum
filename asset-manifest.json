@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bachynckyi/aurum/static/css/main.7acaea2f.css",
+    "main.js": "/Bachynckyi/aurum/static/js/main.07d3183d.js",
+    "index.html": "/Bachynckyi/aurum/index.html",
+    "main.7acaea2f.css.map": "/Bachynckyi/aurum/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/Bachynckyi/aurum/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
