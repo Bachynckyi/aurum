@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={scss.header_container}>
         <button className={scss.lang_switcher}>
-          <span>UK</span>
+          <span className={scss.lang}>UK</span>
           <Polygon className={scss.polygon}/>
         </button>
         <button className={scss.menu}><IoMdMenu className={scss.menu_icon}/></button>

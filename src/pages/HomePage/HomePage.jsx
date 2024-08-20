@@ -18,6 +18,9 @@ import Partner3 from '../../images/partners/partner3.png';
 import Partner4 from '../../images/partners/partner4.png';
 import Partner10 from '../../images/partners/partner10.png';
 import Footer from 'components/Footer/Footer';
+import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
+import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
+import { ReactComponent as UserIcon} from "../../images/icon_user.svg";
 
 const HomePage = () => {
 
@@ -38,8 +41,9 @@ const HomePage = () => {
                     <img src={parzivalLogo} alt='logo_parzival' className={scss.parzival_logo}/>
                 </div>
                 <Link className={scss.supported_link}>Міжнародний проект Parzival Zentrum</Link>
-                <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ 🇺🇦</p>
-                <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ PARZIVAL-ZENTRUM 🇩🇪</p>
+                <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
+                <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</p>
+                <p className={scss.supported_text}>PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
             </div>
             <div className={scss.buttons_container}>
             <Link className={scss.button_support}>
@@ -118,6 +122,21 @@ const HomePage = () => {
                     </li>
                 </ul>
             </div>
+            <div className={scss.review_container}>
+                <div>
+                    <span className={scss.container_title1}>Відгуки </span>
+                    <span className={scss.container_title2}>пацієнтів</span>
+                </div>
+
+                <div className={scss.slider_review_card}>
+                    <div className={scss.slider_review_user}>
+                        <UserIcon/>
+                        <span className={scss.slider_review_name}>Максим</span>
+                    </div>
+                    <span className={scss.slider_review_test}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+                </div>
+
+            </div>  
         </div>
         <Footer/>
     </div>
@@ -126,3 +145,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

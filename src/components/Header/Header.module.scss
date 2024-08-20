@@ -29,12 +29,19 @@
     line-height: normal;
 };
 
+.lang {
+    color: #181818;
+    text-align: center;
+    font-family: "Exo2-Bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+};
+
 .polygon {
     margin-top: 2px;
 };
-
-
-
 
 .menu {
     display: flex;
@@ -53,4 +60,4 @@
     color: #181818;
     width: 24px;
     height: 35px;
-}
+};

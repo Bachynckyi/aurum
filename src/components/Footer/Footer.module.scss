@@ -4,4 +4,129 @@
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
+    background:lightgray;
+};
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+};
+
+.contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+};
+
+.contacts_title {
+    margin: 0px 0px 5px 0px;
+    color: #00A3FF;
+    font-family: "Exo2-Bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+};
+
+.contacts_info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 13px;
+};
+
+.contacts_text {
+    color: #181818;
+    font-family: "Exo2-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    @media screen and (min-width: 350px) { 
+        font-size: 14px;
+    };
+};
+
+.logo {
+    margin-top: 21px;
+};
+
+.services {
+    margin: 35px 0px;
+};
+
+.services_title {
+    margin: 0px 0px 20px 0px;
+    color: #00A3FF;
+    font-family: "Exo2-Bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+};
+
+.services_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+};
+
+.services_item {
+    color: #181818;
+    font-family: "Exo2-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+};
+
+.politics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+};
+
+.license {
+    margin: 0px;
+    color: rgba(24, 24, 24, 0.40);
+    font-family: "Exo2-Regular";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: 340px) { 
+        font-size: 10px;
+    };
+
+    @media screen and (min-width: 390px) { 
+        font-size: 12px;
+    };
+    
+};
+
+.politics_services{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+};
+
+.politics_service {
+    width: 48px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #FFF;
 };
