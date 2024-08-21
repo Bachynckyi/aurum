@@ -20,7 +20,7 @@ import Partner10 from '../../images/partners/partner10.png';
 import Footer from 'components/Footer/Footer';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
-import { ReactComponent as UserIcon} from "../../images/icon_user.svg";
+import ReviewSlider from 'components/ReviewSlider/ReviewSlider';
 
 const HomePage = () => {
 
@@ -127,15 +127,7 @@ const HomePage = () => {
                     <span className={scss.container_title1}>Відгуки </span>
                     <span className={scss.container_title2}>пацієнтів</span>
                 </div>
-
-                <div className={scss.slider_review_card}>
-                    <div className={scss.slider_review_user}>
-                        <UserIcon/>
-                        <span className={scss.slider_review_name}>Максим</span>
-                    </div>
-                    <span className={scss.slider_review_test}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
-                </div>
-
+                <ReviewSlider/>
             </div>  
         </div>
         <Footer/>

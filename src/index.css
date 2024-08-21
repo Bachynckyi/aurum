@@ -26,5 +26,33 @@ code {
   src: url(./fonts/Exo2__Bold.woff2) format('woff2');
 }
 
+.slick-slide div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slick-dots li button:before {
+  background: url('/src/images/review_slider_dot.svg');
+  content: "" !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  background: url('/src/images/review_slider_dot_active.svg');
+  content: "" !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li button:hover, &:focus {
+    &:before {
+      background: url('/src/images/review_slider_dot_active.svg');
+      color: transparent !important;
+    }
+}
+
+
 
 
