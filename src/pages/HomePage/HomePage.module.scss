@@ -23,18 +23,27 @@
 };
 
 .background_wrapper2 {
-    width: 575px;
-    height: 630px;
     position: absolute;
-    top: 3054px;
-    background: url("../../images/background_2.png") lightgray 50% / cover no-repeat;
-    filter: blur(15px);
+    top: 3200px;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, rgba(244, 244, 244, 0.00) 0%, #F4F4F4 100%);
     z-index: 1;
+
+    @media screen and (min-width: 390px) {
+        width: 575px;
+        height: 630px;
+        position: absolute;
+        top: 3054px;
+        background: url("../../images/background_2.png") lightgray 50% / cover no-repeat;
+        filter: blur(15px);
+        z-index: 1;
+    };
 };
 
 .background_wrapper3 {
     position: absolute;
-    top: 4007px;
+    bottom: 0px;
     width: 572px;
     height: 1375px;
     background: url("../../images/background_3.jfif") lightgray -804.937px 0px / 381.447% 100% no-repeat;
@@ -58,7 +67,7 @@
     width: 100%;
     height: 314px;
     position: absolute;
-    top: 3054px;
+    top: 3000px;
     background: linear-gradient(0deg, rgba(244, 244, 244, 0.00) 0%, #F4F4F4 100%);
     object-fit: cover;
     background-repeat: no-repeat;
@@ -431,7 +440,6 @@
 
 .team_container {
     width: 100%;
-    height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
