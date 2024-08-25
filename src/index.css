@@ -26,7 +26,46 @@ code {
   src: url(./fonts/Exo2__Bold.woff2) format('woff2');
 }
 
-.slick-slide div {
+
+.servicesSlider2 .slick-slide div {
+  margin: 0px 20px;
+}
+
+.servicesSlider2 .slick-dots li button:before {
+  margin-top: 54px;
+  background: url('/src/images/services_slider_dot.svg');
+  content: "" !important;
+  opacity: 1 !important;
+  background-repeat: no-repeat;
+}
+
+.servicesSlider2 .slick-dots li.slick-active button:before {
+  margin-top: 54px;
+  background: url('/src/images/services_slider_dot_active.svg');
+  content: "" !important;
+  opacity: 1 !important;
+  background-repeat: no-repeat;
+}
+
+.servicesSlider2 .slick-dots li button:hover, &:focus {
+    &:before {
+      margin-top: 54px;
+      background: url('/src/images/services_slider_dot_active.svg');
+      color: transparent !important;
+      background-repeat: no-repeat;
+    }
+}
+
+.newsSlider .slick-slide div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.reviewsSlider .slick-slide div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,19 +73,19 @@ code {
   margin-right: 20px;
 }
 
-.slick-dots li button:before {
+.reviewsSlider .slick-dots li button:before {
   background: url('/src/images/review_slider_dot.svg');
   content: "" !important;
   opacity: 1 !important;
 }
 
-.slick-dots li.slick-active button:before {
+.reviewsSlider .slick-dots li.slick-active button:before {
   background: url('/src/images/review_slider_dot_active.svg');
   content: "" !important;
   opacity: 1 !important;
 }
 
-.slick-dots li button:hover, &:focus {
+.reviewsSlider .slick-dots li button:hover, &:focus {
     &:before {
       background: url('/src/images/review_slider_dot_active.svg');
       color: transparent !important;

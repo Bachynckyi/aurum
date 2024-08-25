@@ -20,12 +20,21 @@ import Partner10 from '../../images/partners/partner10.png';
 import Footer from 'components/Footer/Footer';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
-import ReviewSlider from 'components/ReviewSlider/ReviewSlider';
+import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
+import ReviewsSlider from 'components/ReviewsSlider/ReviewsSlider';
+import NewsSlider from 'components/NewsSlider/NewsSlider';
+import ServicesSlider from 'components/ServicesSlider/ServicesSlider';
 
 const HomePage = () => {
 
   return (
     <div className={scss.container}>
+        <div className={scss.background_wrapper1}></div>
+        <div className={scss.background_wrapper2}></div>
+        <div className={scss.background_wrapper3}></div>
+        <div className={scss.background_wrapper4}></div>
+        <div className={scss.gradient_wrapper1}></div>
+        <div className={scss.gradient_wrapper2}></div>
         <Header/>
         <div className={scss.content_container}>
             <div className={scss.logo_container}>
@@ -44,6 +53,7 @@ const HomePage = () => {
                 <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
                 <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</p>
                 <p className={scss.supported_text}>PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
+                <ButtonMore className={scss.button_more}/>
             </div>
             <div className={scss.buttons_container}>
             <Link className={scss.button_support}>
@@ -52,11 +62,20 @@ const HomePage = () => {
             </Link>
             <Link className={scss.button_read}>Дізнатись більше</Link>
             </div>
+            <div className={scss.services_container}>
+                <div>
+                    <span className={scss.container_title1}>Наші </span>
+                    <span className={scss.container_title2}>послуги</span>
+                </div>
+                <ServicesSlider/>
+            </div>
             <div className={scss.about_container}>
                 <span className={scss.about_title}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
-                <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto1}/>
-                <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto2}/>
-                <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto3}/>
+                <div className={scss.about_image_container}>
+                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto1}/>
+                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto2}/>
+                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto3}/>
+                </div>
                 <span className={scss.about_text}>Внаслідок бойових дій на території України потреба в реабілітації серед військових та цивільних проявлена вкрай гостро. З 2014 року проблема посттравматичного синдрому є однією з найбільших. Активна участь у комплексному вирішенні цієї проблематики у командній роботі з фахівцями – є головним завданням центру.</span>
                 <Link className={scss.about_link}>Дізнатись більше</Link>
             </div>
@@ -122,13 +141,21 @@ const HomePage = () => {
                     </li>
                 </ul>
             </div>
-            <div className={scss.review_container}>
+            <div className={scss.news_container}>
+                <div>
+                    <span className={scss.container_title1}>Останні </span>
+                    <span className={scss.container_title2}>новини</span>
+                </div>
+                <NewsSlider/>
+                <Link className={scss.news_button}>Більше новин</Link>
+            </div>  
+            <div className={scss.reviews_container}>
                 <div>
                     <span className={scss.container_title1}>Відгуки </span>
                     <span className={scss.container_title2}>пацієнтів</span>
                 </div>
-                <ReviewSlider/>
-            </div>  
+                <ReviewsSlider/>
+            </div>
         </div>
         <Footer/>
     </div>

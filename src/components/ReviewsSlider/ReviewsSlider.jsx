@@ -1,10 +1,10 @@
-import scss from './ReviewSlider.module.scss';
+import scss from './ReviewsSlider.module.scss';
 import { ReactComponent as UserIcon} from "../../images/icon_user.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 
-const ReviewSlider = () => {
+const ReviewsSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,6 +12,7 @@ const ReviewSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    className: "reviewsSlider",
   };
 
   return (
@@ -85,4 +86,4 @@ const ReviewSlider = () => {
   )
 };
 
-export default ReviewSlider ;
+export default ReviewsSlider;
