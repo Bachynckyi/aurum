@@ -35,6 +35,7 @@ const HomePage = () => {
         <div className={scss.gradient_wrapper1}></div>
         <div className={scss.gradient_wrapper2}></div>
         <div className={scss.gradient_wrapper3}></div>
+        <div className={scss.gradient_wrapper4}></div>
         <Header/>
         <div className={scss.content_container}>
             <div className={scss.logo_container}>
