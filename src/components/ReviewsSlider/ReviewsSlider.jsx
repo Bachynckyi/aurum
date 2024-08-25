@@ -13,6 +13,7 @@ const ReviewsSlider = () => {
     slidesToScroll: 1,
     arrows: false,
     className: "reviewsSlider",
+    touchThreshold: 100,
   };
 
   return (
