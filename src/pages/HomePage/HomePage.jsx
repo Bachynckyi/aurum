@@ -32,9 +32,9 @@ const HomePage = () => {
         <div className={scss.background_wrapper1}></div>
         <div className={scss.background_wrapper2}></div>
         <div className={scss.background_wrapper3}></div>
-        <div className={scss.background_wrapper4}></div>
         <div className={scss.gradient_wrapper1}></div>
         <div className={scss.gradient_wrapper2}></div>
+        <div className={scss.gradient_wrapper3}></div>
         <Header/>
         <div className={scss.content_container}>
             <div className={scss.logo_container}>
