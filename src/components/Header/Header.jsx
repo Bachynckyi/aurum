@@ -36,6 +36,7 @@ const Header = () => {
     setActiveMenuLang(false);
   };
 
+  console.log(isActiveMenuLang)
 
   return (
     <header className={scss.header_container}>
