@@ -9,11 +9,52 @@ const ReviewsSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     className: "reviewsSlider",
     touchThreshold: 100,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            className: "reviewsSlider",
+            touchThreshold: 100,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            className: "reviewsSlider",
+            touchThreshold: 100,
+          }
+        },
+        // {
+        //     breakpoint: 320,
+        //     settings: {
+        //         dots: true,
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1,
+        //         arrows: false,
+        //         className: "reviewsSlider",
+        //         touchThreshold: 100,
+        //       }
+        //   }
+      ]
   };
 
   return (

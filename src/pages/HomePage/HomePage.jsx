@@ -29,39 +29,43 @@ const HomePage = () => {
 
   return (
     <div className={scss.container}>
-        <div className={scss.background_wrapper1}></div>
-        <div className={scss.background_wrapper2}></div>
-        <div className={scss.background_wrapper3}></div>
-        <div className={scss.gradient_wrapper1}></div>
-        <div className={scss.gradient_wrapper2}></div>
+        {/* <div className={scss.background_wrapper1}></div> */}
+        {/* <div className={scss.background_wrapper2}></div>
+        <div className={scss.background_wrapper3}></div> */}
+        {/* <div className={scss.gradient_wrapper1}></div> */}
+        {/* <div className={scss.gradient_wrapper2}></div>
         <div className={scss.gradient_wrapper3}></div>
-        <div className={scss.gradient_wrapper4}></div>
+        <div className={scss.gradient_wrapper4}></div> */}
         <Header/>
         <div className={scss.content_container}>
-            <div className={scss.logo_container}>
-                <Logo/>
-                <p className={scss.logo_text1}>Реабілітація та допомога</p>
-                <p className={scss.logo_text2}>військовим і цивільним</p>
-            </div>
-            <div className={scss.supported_container}>
-                <p className={scss.supported_text}>За підтримкою:</p>
-                <div className={scss.supported_logo}>
-                    <ParzivalZentrum/>
-                    <Line/>
-                    <img src={parzivalLogo} alt='logo_parzival' className={scss.parzival_logo}/>
+            <div className={scss.intro_container}>
+                <div className={scss.intro_wrapper}>
+                    <div className={scss.logo_container}>
+                        <Logo className={scss.logo}/>
+                        <p className={scss.logo_text1}>Реабілітація та допомога</p>
+                        <p className={scss.logo_text2}>військовим і цивільним</p>
+                    </div>
+                    <div className={scss.supported_container}>
+                        <p className={scss.supported_text}>За підтримкою:</p>
+                        <div className={scss.supported_logo}>
+                            <ParzivalZentrum className={scss.special_logo}/>
+                            <Line className={scss.line}/>
+                            <img src={parzivalLogo} alt='logo_parzival' className={scss.parzival_logo}/>
+                        </div>
+                        <Link className={scss.supported_link}>Міжнародний проект Parzival Zentrum</Link>
+                        <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
+                        <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ</p>
+                        <p className={scss.supported_text}>ТА РЕАБІЛІТАЦІЇ PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
+                        <ButtonMore className={scss.button_more}/>
+                    </div>
                 </div>
-                <Link className={scss.supported_link}>Міжнародний проект Parzival Zentrum</Link>
-                <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
-                <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</p>
-                <p className={scss.supported_text}>PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
-                <ButtonMore className={scss.button_more}/>
-            </div>
-            <div className={scss.buttons_container}>
-            <Link className={scss.button_support}>
-                <Handshake className={scss.handshake}/>
-                <span>Підтримати проєкт</span>
-            </Link>
-            <Link className={scss.button_read}>Дізнатись більше</Link>
+                <div className={scss.buttons_container}>
+                    <Link className={scss.button_support}>
+                        <Handshake className={scss.handshake}/>
+                        <span>Підтримати проєкт</span>
+                    </Link>
+                    <Link className={scss.button_read}>Дізнатись більше</Link>
+                </div>
             </div>
             <div className={scss.services_container}>
                 <div>
@@ -77,8 +81,11 @@ const HomePage = () => {
                     <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto2}/>
                     <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto3}/>
                 </div>
-                <span className={scss.about_text}>Внаслідок бойових дій на території України потреба в реабілітації серед військових та цивільних проявлена вкрай гостро. З 2014 року проблема посттравматичного синдрому є однією з найбільших. Активна участь у комплексному вирішенні цієї проблематики у командній роботі з фахівцями – є головним завданням центру.</span>
-                <Link className={scss.about_link}>Дізнатись більше</Link>
+                <div className={scss.about_text_wrapper}>
+                    <span className={scss.about_title_desktop}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
+                    <span className={scss.about_text}>Внаслідок бойових дій на території України потреба в реабілітації серед військових та цивільних проявлена вкрай гостро. З 2014 року проблема посттравматичного синдрому є однією з найбільших. Активна участь у комплексному вирішенні цієї проблематики у командній роботі з фахівцями – є головним завданням центру.</span>
+                    <Link className={scss.about_link}>Дізнатись більше</Link>
+                </div>
             </div>
             <div className={scss.partners_container}>
                 <div>
@@ -86,15 +93,15 @@ const HomePage = () => {
                     <span className={scss.container_title2}>партнери</span>
                 </div>
                 <ul className={scss.partners_list}>
-                    <li className={scss.partners_list_item}><Partner1/></li>
+                    <li className={scss.partners_list_item}><Partner1 className={scss.logo_partner}/></li>
                     <li className={scss.partners_list_item}><img src={Partner2} alt="logo" className={scss.partners_logo2}/></li>
                     <li className={scss.partners_list_item}><img src={Partner3} alt="logo" className={scss.partners_logo3}/></li>
                     <li className={scss.partners_list_item}><img src={Partner4} alt="logo" className={scss.partners_logo4}/></li>
-                    <li className={scss.partners_list_item}><Partner5/></li>
-                    <li className={scss.partners_list_item}><Partner6/></li>
-                    <li className={scss.partners_list_item}><Partner7/></li>
-                    <li className={scss.partners_list_item}><Partner8/></li>
-                    <li className={scss.partners_list_item}><Partner9/></li>
+                    <li className={scss.partners_list_item}><Partner5 className={scss.logo_partner}/></li>
+                    <li className={scss.partners_list_item}><Partner6 className={scss.logo_partner}/></li>
+                    <li className={scss.partners_list_item}><Partner7 className={scss.logo_partner}/></li>
+                    <li className={scss.partners_list_item}><Partner8 className={scss.logo_partner}/></li>
+                    <li className={scss.partners_list_item}><Partner9 className={scss.logo_partner}/></li>
                     <li className={scss.partners_list_item}><img src={Partner10} alt="logo" className={scss.partners_logo10}/></li>
                     <li className={scss.partners_list_item}></li>
                     <li className={scss.partners_list_item}></li>

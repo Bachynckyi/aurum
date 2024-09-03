@@ -8,15 +8,18 @@ import { ReactComponent as Mastercard } from '../../images/mastercard_icon.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+const todayDate = new Date();
+const currentYear = todayDate.getFullYear();
+  
 
   return (
     <footer className={scss.footer_container}>
-        <div className={scss.contacts}>
+        <div className={scss.main_wrapper}>
             <div className={scss.contacts_wrapper}>
                 <p className={scss.contacts_title}>Контакти</p>
                 <div className={scss.contacts_info}>
                     <MapIcon/>
-                    <address className={scss.contacts_text}>м. Київ, вул. Різницька, 11</address>
+                    <address className={scss.contacts_text_address}>м. Київ, вул. Різницька, 11</address>
                 </div>
                 <div className={scss.contacts_info}>
                     <PhoneIcon/>
@@ -26,44 +29,57 @@ const Footer = () => {
                     <EmailIcon/>
                     <a className={scss.contacts_text} href="mailto: info@clinic-aurum.com">info@clinic-aurum.com</a>
                 </div>
+                <div className={scss.contacts_services}>
+                    <div className={scss.contacts_service}>
+                        <Mastercard/>
+                    </div>
+                    <div className={scss.contacts_service}>
+                        <Visa className={scss.visa}/>
+                    </div>
+                </div>
             </div>
-            <AurumLogoSmall className={scss.logo}/>
-        </div>
-        <div className={scss.services}>
-            <p className={scss.services_title}>Реабілітаційна програма</p>
-            <ul className={scss.services_list}>
-                <li>
-                    <Link className={scss.services_item}>Консультативний огляд лікаря</Link>
-                </li>
-                <li>
-                    <Link className={scss.services_item}>Консультація психолога</Link>
-                </li>
-                <li>
-                    <Link className={scss.services_item}>Мануальна терапія</Link>
-                </li>
-                <li>
-                    <Link className={scss.services_item}>Масляно-дисперсійні ванни</Link>
-                </li>
-                <li>
-                    <Link className={scss.services_item}>Ритмічні втирання</Link>
-                </li>
-                <li>
-                    <Link className={scss.services_item}>Апаратна пресотерапія</Link>
-                </li>
-            </ul>
+            <div className={scss.services_container}>
+                <p className={scss.services_title}>Реабілітаційна програма</p>
+                <ul className={scss.services_list}>
+                    <li>
+                        <Link className={scss.services_item}>Консультативний огляд лікаря</Link>
+                    </li>
+                    <li>
+                        <Link className={scss.services_item}>Консультація психолога</Link>
+                    </li>
+                    <li>
+                        <Link className={scss.services_item}>Мануальна терапія</Link>
+                    </li>
+                    <li>
+                        <Link className={scss.services_item}>Масляно-дисперсійні ванни</Link>
+                    </li>
+                    <li>
+                        <Link className={scss.services_item}>Ритмічні втирання</Link>
+                    </li>
+                    <li>
+                        <Link className={scss.services_item}>Апаратна пресотерапія</Link>
+                    </li>
+                </ul>
+            </div>
+            <div className={scss.logo_container}>
+                <AurumLogoSmall className={scss.logo}/>
+                <div className={scss.politics_license_wrapper_desktop}>
+                    <p className={scss.license}>Ліц. МОЗ України №1603 від 11.09.2023</p>
+                    <p className={scss.license}>© Медичний центр Аурум {currentYear}</p>
+                </div>
+            </div>
         </div>
         <div className={scss.politics}>
             <div className={scss.politics_license_wrapper}>
                 <p className={scss.license}>Ліц. МОЗ України №1603 від 11.09.2023</p>
-                <p className={scss.license}>© Медичний центр Аурум 2023</p>
-
+                <p className={scss.license}>© Медичний центр Аурум {currentYear}</p>
             </div>
             <div className={scss.politics_services}>
                 <div className={scss.politics_service}>
                     <Mastercard/>
                 </div>
                 <div className={scss.politics_service}>
-                    <Visa/>
+                    <Visa className={scss.visa}/>
                 </div>
             </div>
         </div>

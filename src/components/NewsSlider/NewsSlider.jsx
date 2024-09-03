@@ -6,6 +6,7 @@ import newsImage from '../../images/news_image.png';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 
 const NewsSlider = () => {
+
   const settings = {
     dots: false,
     infinite: true,
@@ -13,41 +14,80 @@ const NewsSlider = () => {
     arrows: false,
     className: "newsSlider",
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     touchThreshold: 100,
+    centerMode: false,
+    centerPadding: '0',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToScroll: 1,
+          initialSlide: 0,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 938,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '22%',
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '12%',
+        }
+      },
+      {
+        breakpoint: 613,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '30%',
         }
       },
       {
-        breakpoint: 450,
+        breakpoint: 550,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '25%',
         }
       },
       {
-        breakpoint: 390,
+        breakpoint: 460,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '20%',
         }
-      }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true,
+          centerPadding: '12%',
+        }
+      },
     ]
   };
 

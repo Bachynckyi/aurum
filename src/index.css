@@ -1,14 +1,19 @@
 
 body {
   width: 100vw;
-  margin: 0;
+  margin: 0px;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
 @font-face {
@@ -26,6 +31,21 @@ code {
   src: url(./fonts/Exo2__Bold.woff2) format('woff2');
 }
 
+.center .slick-slide div {
+  display: flex;
+  justify-content: center;
+  /* margin: 10px 0px; */
+}
+
+/* .center .slick-slide .slick-active .slick-center .slick-current {
+  z-index: 45 !important;
+} */
+
+/* .center .slick-slide .slick-active {
+  width: 286px !important;
+  margin-top: -60px !important; 
+  z-index: 1!important;
+} */
 
 .servicesSlider2 .slick-slide div {
   margin: 0px 20px;
@@ -56,21 +76,40 @@ code {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 .newsSlider .slick-slide div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.newsSlider .slick-list {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  width: 100%;
+  padding-left: 0px !important;
 }
 
 .reviewsSlider .slick-slide div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.reviewsSlider .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  width: calc(100% + 20px);
 }
 
 .reviewsSlider .slick-dots li button:before {
