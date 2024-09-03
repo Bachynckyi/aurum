@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.7daf1c3b.css",
-    "main.js": "/aurum/static/js/main.59c5f94d.js",
-    "static/css/651.dd04f83d.chunk.css": "/aurum/static/css/651.dd04f83d.chunk.css",
-    "static/js/651.b59d2ace.chunk.js": "/aurum/static/js/651.b59d2ace.chunk.js",
+    "main.css": "/aurum/static/css/main.d09ae95b.css",
+    "main.js": "/aurum/static/js/main.8e13f29b.js",
+    "static/css/894.17fd4a76.chunk.css": "/aurum/static/css/894.17fd4a76.chunk.css",
+    "static/js/894.76080cb9.chunk.js": "/aurum/static/js/894.76080cb9.chunk.js",
     "static/js/541.560a1b2a.chunk.js": "/aurum/static/js/541.560a1b2a.chunk.js",
     "static/media/team_photo.png": "/aurum/static/media/team_photo.6ac13cf0f054bde6f162.png",
-    "static/media/background_3.jfif": "/aurum/static/media/background_3.bd86105b22881024fadc.jfif",
     "static/media/news_image.png": "/aurum/static/media/news_image.c4adcf6e84d4b7c149e6.png",
     "static/media/services_slider_1.png": "/aurum/static/media/services_slider_1.0d77b092d2fb7a2adf9b.png",
     "static/media/team_member_2.png": "/aurum/static/media/team_member_2.2c3417eacf3de3e1ad95.png",
@@ -16,9 +15,7 @@
     "static/media/services_slider_2.png": "/aurum/static/media/services_slider_2.eb6ebb911b187d90b1be.png",
     "static/media/team_member_1.png": "/aurum/static/media/team_member_1.be6b62172d15c9dafa21.png",
     "static/media/team_member_4.png": "/aurum/static/media/team_member_4.e273c0ca694d47611dcd.png",
-    "static/media/background_1.png": "/aurum/static/media/background_1.5fccf8dc6d83cc41f7df.png",
     "static/media/partner10.png": "/aurum/static/media/partner10.142090e4fad7ec57a99e.png",
-    "static/media/background_2.png": "/aurum/static/media/background_2.4916521257f071136da5.png",
     "static/media/Aurum_logo_small.svg": "/aurum/static/media/Aurum_logo_small.2c421abf306ec4b964479cb92e240e94.svg",
     "static/media/Aurum_logo.svg": "/aurum/static/media/Aurum_logo.6a48c69ce7b4ebfac52bb1ab6040de1c.svg",
     "static/media/parzival-zentrum.svg": "/aurum/static/media/parzival-zentrum.a8194acfb9abc4550ce695a1ead9c5a8.svg",
@@ -42,8 +39,8 @@
     "static/media/slick.svg": "/aurum/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/aurum/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/aurum/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/visa_icon.svg": "/aurum/static/media/visa_icon.a1355c1656b74895a8137630c5b2a892.svg",
     "static/media/slick.woff": "/aurum/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/visa_icon.svg": "/aurum/static/media/visa_icon.ed73c5f85afac8017f6c0f726ce23dcb.svg",
     "static/media/button_more.svg": "/aurum/static/media/button_more.6aa2a80dd8ff3003ae8fc0df8e955a7c.svg",
     "index.html": "/aurum/index.html",
     "static/media/phone_icon.svg": "/aurum/static/media/phone_icon.ce0952b65265ec18d0cb4dd117c64325.svg",
@@ -52,6 +49,7 @@
     "static/media/services_slider_arrow_left.svg": "/aurum/static/media/services_slider_arrow_left.cedd4f37acef3162292b8ab5d20d9685.svg",
     "static/media/ua_flag.svg": "/aurum/static/media/ua_flag.8b10243402f790a152577f706c6e9e0c.svg",
     "static/media/email_icon.svg": "/aurum/static/media/email_icon.707a1dc0930e3eba4fc56174e1af9ddb.svg",
+    "static/media/arrow_header.svg": "/aurum/static/media/arrow_header.63ed46292a1e2d8c1836f36a293bf830.svg",
     "static/media/review_slider_dot.svg": "/aurum/static/media/review_slider_dot.99fbe47d34cdac89cb88.svg",
     "static/media/review_slider_dot_active.svg": "/aurum/static/media/review_slider_dot_active.d5262ce31de5c2d1c971.svg",
     "static/media/map_icon.svg": "/aurum/static/media/map_icon.67af0b0e2d516ea3f92db7eec0341c94.svg",
@@ -59,14 +57,14 @@
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/line.svg": "/aurum/static/media/line.3f550d335621d6f96900cf1fdecb0da4.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
-    "main.7daf1c3b.css.map": "/aurum/static/css/main.7daf1c3b.css.map",
-    "main.59c5f94d.js.map": "/aurum/static/js/main.59c5f94d.js.map",
-    "651.dd04f83d.chunk.css.map": "/aurum/static/css/651.dd04f83d.chunk.css.map",
-    "651.b59d2ace.chunk.js.map": "/aurum/static/js/651.b59d2ace.chunk.js.map",
+    "main.d09ae95b.css.map": "/aurum/static/css/main.d09ae95b.css.map",
+    "main.8e13f29b.js.map": "/aurum/static/js/main.8e13f29b.js.map",
+    "894.17fd4a76.chunk.css.map": "/aurum/static/css/894.17fd4a76.chunk.css.map",
+    "894.76080cb9.chunk.js.map": "/aurum/static/js/894.76080cb9.chunk.js.map",
     "541.560a1b2a.chunk.js.map": "/aurum/static/js/541.560a1b2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7daf1c3b.css",
-    "static/js/main.59c5f94d.js"
+    "static/css/main.d09ae95b.css",
+    "static/js/main.8e13f29b.js"
   ]
 }
