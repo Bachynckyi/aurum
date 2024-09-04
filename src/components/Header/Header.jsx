@@ -17,17 +17,17 @@ const Header = () => {
   };
 
   const openMobileMenu = () => {
-    document.body.style.cssText = `overflow-y: hidden`;
+    // document.body.style.cssText = `overflow-y: hidden`;
+    setIsActiveMobileMenu(true);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
-    setIsActiveMobileMenu(true);
   };
 
   const closeMobileMenu = () => {
-    document.body.style.cssText = `overflow-y: auto`;
+    // document.body.style.cssText = `overflow-y: auto`;
+    setIsActiveMobileMenu(false);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
-    setIsActiveMobileMenu(false);
   };
 
   const toggleLangMenuMobile = () => {

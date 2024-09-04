@@ -266,12 +266,14 @@
 };
 
 .mobile_menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     width: 100vw;
-    height: 850px !important;
-    overflow: hidden;
+    height: 100%;
+    overflow-y: hidden;
     background: rgba(255, 255, 255, 0.95);
     z-index: 999;
     box-sizing: border-box;
@@ -286,11 +288,13 @@
 
 .mobile_menu_active {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     width: 100vw;
-    height: 850px !important;
-    overflow: hidden;
+    height: 100%;
+    overflow: auto !important;
     background: rgba(255, 255, 255, 0.95);
     z-index: 999;
     box-sizing: border-box;
@@ -327,7 +331,14 @@
         transition-duration: 100ms;
         transition-delay: 0ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    };
+
+    &:tap .close_menu_icon {
+        transform: rotate(180deg);
+        transition-duration: 100ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    };
 };
 
 .close_menu_icon {
