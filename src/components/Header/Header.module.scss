@@ -328,6 +328,7 @@
 
     &:focus .close_menu_icon {
         transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
         transition-duration: 100ms;
         transition-delay: 0ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
