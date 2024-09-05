@@ -9,6 +9,14 @@
         width: 350px;
     };
 
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+    };
+
     @media screen and (min-width: 1024px) {
         width: 984px;
         flex-direction: row;
@@ -67,6 +75,10 @@
     position: relative;
     margin: 84px 0px 0px 0px !important;
     max-width: 390px;
+
+    @media screen and (min-width: 768px) {
+        margin: 30px 0px 0px 0px !important;
+    };
 };
 
 .slider_card {
