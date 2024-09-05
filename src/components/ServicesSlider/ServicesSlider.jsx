@@ -44,7 +44,23 @@ const ServicesSlider = () => {
         touchMove: false,
         className: "servicesSlider2",
         nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>
+        prevArrow: <PrevArrow/>,
+        vertical: true,
+        verticalSwiping: true,
+        centerMode: true,
+        centerPadding: '-40px',
+        responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  initialSlide: 0,
+                  vertical: false,
+                  verticalSwiping: false,
+                }
+              },
+            ]
     };
 
   return (

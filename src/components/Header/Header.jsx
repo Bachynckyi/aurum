@@ -109,7 +109,8 @@ const Header = () => {
               <span className={scss.lang}>DE</span>
               </div>
             </div>
-            <button className={scss.close_menu} onClick={closeMobileMenu} type='button'><IoMdClose className={scss.close_menu_icon}/></button>
+            <button className={scss.close_menu} onClick={closeMobileMenu}>
+              <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon_active) : (scss.close_menu_icon)}/></button>
           </div>
           <nav className={scss.mobile_menu_nav}>
             <NavLink className={scss.current}>Головна</NavLink>

@@ -325,22 +325,29 @@
     background: linear-gradient(180deg, #FFC700 0%, rgba(255, 229, 0, 0.50) 100%);
     outline: none;
     border: none;
-
-    &:focus .close_menu_icon {
-        background: #00A3FF;
-        transition-property: transform;
-        transform: rotate(180deg);
-        transition-duration: 100ms;
-        transition-delay: 0ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    };
 };
 
 .close_menu_icon {
     color: #181818;
     width: 24px;
     height: 35px;
+    transition-property: transform;
+    transform: rotate(0deg);
+    transition-duration: 100ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 };
+
+.close_menu_icon_active {
+    color: #181818;
+    width: 24px;
+    height: 35px;
+    transition-property: transform;
+    transform: rotate(180deg);
+    transition-duration: 100ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}; 
 
 .mobile_lang_container {
     position: relative;

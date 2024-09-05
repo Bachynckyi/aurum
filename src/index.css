@@ -51,6 +51,12 @@ button {
   margin: 0px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .servicesSlider2 .slick-slide div {
+    margin: 0px 0px 20px 20px;
+  }  
+}
+
 .servicesSlider2 .slick-dots li button:before {
   margin-top: 54px;
   background: url('/src/images/services_slider_dot.svg');
@@ -74,6 +80,25 @@ button {
       color: transparent !important;
       background-repeat: no-repeat;
     }
+}
+
+@media screen and (min-width: 768px) {
+  .servicesSlider2 .slick-dots {
+    width: 20px;
+    height: 20px;
+    position: absolute !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    left: calc(100% + 20px);
+    top: 15%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .servicesSlider2 .slick-dots {
+    top: 20%;
+  }
 }
 
 
