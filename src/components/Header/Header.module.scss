@@ -327,6 +327,7 @@
     border: none;
 
     &:focus .close_menu_icon {
+        transition-property: transform;
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
