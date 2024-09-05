@@ -14,7 +14,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
     };
 
     @media screen and (min-width: 1024px) {
@@ -30,6 +29,10 @@
     overflow: hidden;
     max-width: 390px !important;
     height: 280px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 350px !important;
+    };
 };
 
 .slider_image1 {
@@ -75,9 +78,11 @@
     position: relative;
     margin: 84px 0px 0px 0px !important;
     max-width: 390px;
+    pointer-events: fill;;
 
     @media screen and (min-width: 768px) {
         margin: 30px 0px 0px 0px !important;
+        max-width: 320px;
     };
 };
 
