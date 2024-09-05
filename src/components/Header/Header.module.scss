@@ -327,6 +327,7 @@
     border: none;
 
     &:focus .close_menu_icon {
+        background: #00A3FF;
         transition-property: transform;
         transform: rotate(180deg);
         transition-duration: 100ms;
