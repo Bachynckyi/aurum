@@ -19,6 +19,9 @@ const NewsSlider = () => {
     touchThreshold: 100,
     centerMode: false,
     centerPadding: '0',
+    swipeToSlide: true,
+    swipe: true,
+    touchMove: true,
     responsive: [
       {
         breakpoint: 1440,

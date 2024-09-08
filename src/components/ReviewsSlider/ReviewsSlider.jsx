@@ -14,6 +14,9 @@ const ReviewsSlider = () => {
     arrows: false,
     className: "reviewsSlider",
     touchThreshold: 100,
+    swipeToSlide: true,
+    swipe: true,
+    touchMove: true,
     responsive: [
         {
           breakpoint: 1024,
