@@ -2,7 +2,7 @@ import scss from './NewsSlider.module.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
-import newsImage from '../../images/news_image.png';
+import newsImage from '../../images/news_image.jpg';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 
 const NewsSlider = () => {
