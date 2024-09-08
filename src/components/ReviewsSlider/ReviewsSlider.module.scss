@@ -1,5 +1,6 @@
 .review_slider {
     width: 280px;
+    z-index: 3;
 
     @media screen and (min-width: 390px) {
         width: 350px;

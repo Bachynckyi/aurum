@@ -17,14 +17,12 @@ const Header = () => {
   };
 
   const openMobileMenu = () => {
-    // document.body.style.cssText = `overflow-y: hidden`;
     setIsActiveMobileMenu(true);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
   };
 
   const closeMobileMenu = () => {
-    // document.body.style.cssText = `overflow-y: auto`;
     setIsActiveMobileMenu(false);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
@@ -34,11 +32,6 @@ const Header = () => {
     setIsActiveMenuMobileLang(!isActiveMenuMobileLang);
   };
 
-  // const toggleMobileMenu = () => {
-  //   setIsActiveMenuLang(false);
-  //   setIsActiveMenuMobileLang(false);
-  //   setIsActiveMobileMenu(!isActiveMobileMenu);
-  // };
 
   return (
     <header className={scss.header}>

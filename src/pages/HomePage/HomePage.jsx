@@ -21,6 +21,10 @@ import Footer from 'components/Footer/Footer';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
 import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
+import { ReactComponent as BackgroundLeft1} from "../../images/background_left1.svg";
+import { ReactComponent as BackgroundLeft2} from "../../images/background_left2.svg";
+import { ReactComponent as BackgroundRight1} from "../../images/background_right1.svg";
+import { ReactComponent as BackgroundRight2} from "../../images/background_right2.svg";
 import ReviewsSlider from 'components/ReviewsSlider/ReviewsSlider';
 import NewsSlider from 'components/NewsSlider/NewsSlider';
 import ServicesSlider from 'components/ServicesSlider/ServicesSlider';
@@ -29,13 +33,13 @@ const HomePage = () => {
 
   return (
     <div className={scss.container}>
-        {/* <div className={scss.background_wrapper1}></div> */}
-        {/* <div className={scss.background_wrapper2}></div>
-        <div className={scss.background_wrapper3}></div> */}
-        {/* <div className={scss.gradient_wrapper1}></div> */}
-        {/* <div className={scss.gradient_wrapper2}></div>
-        <div className={scss.gradient_wrapper3}></div>
-        <div className={scss.gradient_wrapper4}></div> */}
+        <div className={scss.background_wrapper1}></div>
+        <div className={scss.background_wrapper3}></div>
+        <div className={scss.gradient_wrapper1}></div>
+        <BackgroundLeft1 className={scss.background_left1}/>
+        <BackgroundLeft2 className={scss.background_left2}/>
+        <BackgroundRight1 className={scss.background_right1}/>
+        <BackgroundRight2 className={scss.background_right2}/>
         <Header/>
         <div className={scss.content_container}>
             <div className={scss.intro_container}>
@@ -68,7 +72,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className={scss.services_container}>
-                <div>
+                <div className={scss.container_title}>
                     <span className={scss.container_title1}>Наші </span>
                     <span className={scss.container_title2}>послуги</span>
                 </div>
@@ -88,7 +92,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className={scss.partners_container}>
-                <div>
+                <div className={scss.container_title}>
                     <span className={scss.container_title1}>Наші </span>
                     <span className={scss.container_title2}>партнери</span>
                 </div>
@@ -110,7 +114,10 @@ const HomePage = () => {
                 </ul>
             </div>
             <div className={scss.team_container}>
-                <div>
+                <div className={scss.background_wrapper2}></div>
+                <div className={scss.gradient_wrapper2}></div>
+                <div className={scss.gradient_wrapper3}></div>
+                <div className={scss.container_title}>
                     <span className={scss.container_title1}>Наша </span>
                     <span className={scss.container_title2}>команда</span>
                 </div>
@@ -150,7 +157,7 @@ const HomePage = () => {
                 </ul>
             </div>
             <div className={scss.news_container}>
-                <div>
+                <div className={scss.container_title}>
                     <span className={scss.container_title1}>Останні </span>
                     <span className={scss.container_title2}>новини</span>
                 </div>
@@ -158,7 +165,7 @@ const HomePage = () => {
                 <Link className={scss.news_button}>Більше новин</Link>
             </div>  
             <div className={scss.reviews_container}>
-                <div>
+                <div className={scss.container_title}>
                     <span className={scss.container_title1}>Відгуки </span>
                     <span className={scss.container_title2}>пацієнтів</span>
                 </div>

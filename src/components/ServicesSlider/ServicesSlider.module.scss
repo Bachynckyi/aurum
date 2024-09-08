@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 280px;
+    z-index: 5;
 
     @media screen and (min-width: 390px) {
         width: 350px;
@@ -103,10 +104,10 @@
 
 
 .services_slider2 {
-    width: 100%;
+    width: 100vw;
     position: relative;
     margin: 84px 0px 0px 0px !important;
-    max-width: 390px;
+    max-width: 350px;
 
     @media screen and (min-width: 768px) {
         margin: 30px 60px 0px 0px !important;
