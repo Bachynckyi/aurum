@@ -5,7 +5,7 @@ import { ReactComponent as Handshake} from "../../images/handshake.svg";
 import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.svg";
 import { ReactComponent as Line} from "../../images/line.svg";
 import { Link } from 'react-router-dom';
-import teamPhoto from '../../images/team_photo.png';
+import teamPhoto from '../../images/team_photo.jpg';
 import parzivalLogo from '../../images/logo_parzival-zentrum.png';
 import { ReactComponent as Partner1} from "../../images/partners/partner1.svg";
 import { ReactComponent as Partner5} from "../../images/partners/partner5.svg";
