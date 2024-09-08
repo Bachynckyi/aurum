@@ -1,12 +1,13 @@
 .container {
     width: 100vw;
     min-width: 320px;
+    margin: auto;
     display: flex;
     flex-direction: column;;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
-    background-color: #E6E6E6;
+    background-color: #F4F4F4;
 };
 
 .content_container {
@@ -18,6 +19,17 @@
     align-items: center;
 };
 
+.intro_container_wrapper {
+    width: 100vw;
+    z-index: 4;
+
+    @media screen and (min-width: 1440px) {
+        z-index: inherit;
+        background-color: #E6E6E6;
+    };
+    
+}
+
 .intro_container {
     width: 100%;
     box-sizing: border-box;
@@ -26,7 +38,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 4;
 
     @media screen and (min-width: 768px) {
         padding: 70px 20px 148px 20px;
@@ -38,8 +49,6 @@
 
     @media screen and (min-width: 1440px) {
         padding: 70px 163px 204px 163px;
-        z-index: inherit;
-        background-color: #E6E6E6;
     };
 };
 
@@ -358,22 +367,15 @@
     };
 };
 
-
-
-
-
 .background_wrapper1 {
     position: absolute;
     top: 0px;
-    margin: auto;
-    width: 100vw;
+    width: 100%;
     height: 1518px;
-    flex-shrink: 0;
     background: url("../../images/background_1.png");
     background-repeat: no-repeat;
     background-size: contain;
     filter: blur(25px);
-
     z-index: 2;
 
     @media screen and (min-width: 600px) {
@@ -381,7 +383,6 @@
     };
 
     @media screen and (min-width: 1024px) {
-        width: 100vw;
         height: 1503px;
         background: url("../../images/background_1.1.png");
         background-size: contain;
@@ -389,7 +390,20 @@
     };
 
     @media screen and (min-width: 1440px) {
+        width: 100vw;
+        height: 100%;
         z-index: 6;
+        left: 50%;
+        transform: translateX(-50%);
+    };
+
+    @media screen and (min-width: 1441px) {
+        width: 100vw;
+        height: 872px;
+        background-size: cover;
+        z-index: 6;
+        left: 50%;
+        transform: translateX(-50%);
     };
 };
 
@@ -415,6 +429,12 @@
         background-size: cover;
     };
 
+    @media screen and (min-width: 1440px) {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    };
+
 };
 
 .background_wrapper3 {
@@ -429,6 +449,12 @@
 
     @media screen and (min-width: 1024px) {
         background: url("../../images/background_3.1.png");
+    };
+
+    @media screen and (min-width: 1440px) {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
     };
 };
 
@@ -454,7 +480,7 @@
     };
 
     @media screen and (min-width: 1440px) {
-        top: 724px;
+        top: 722px;
         z-index: 6;
     };
     
@@ -474,6 +500,12 @@
         top: -40px;
         height: 365px;
     };
+
+    @media screen and (min-width: 1440px) {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    };
 };
 
 .gradient_wrapper3 {
@@ -492,6 +524,12 @@
     @media screen and (min-width: 1024px) {
         height: 257px;
         bottom: -160px;
+    };
+
+    @media screen and (min-width: 1440px) {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
     };
 
 };
