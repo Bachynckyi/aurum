@@ -51,7 +51,7 @@ const Header = () => {
             </li>
             <li className={scss.nav_item}>
               <NavLink className={scss.nav_link}>
-                Ребілітаційна програма
+                Реабілітаційна програма
               </NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
             </li>
@@ -108,7 +108,7 @@ const Header = () => {
           <nav className={scss.mobile_menu_nav}>
             <NavLink className={scss.current}>Головна</NavLink>
             <NavLink className={scss.nav}>Про нас</NavLink>
-            <NavLink className={scss.nav}>Ребілітаційна програма</NavLink>
+            <NavLink className={scss.nav}>Реабілітаційна програма</NavLink>
             <NavLink className={scss.nav}>Новини</NavLink>
             <NavLink className={scss.nav}>Відгуки</NavLink>
             <NavLink className={scss.nav}>Наші партнери</NavLink>
