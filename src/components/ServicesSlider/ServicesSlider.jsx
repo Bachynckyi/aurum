@@ -67,9 +67,9 @@ const ServicesSlider = () => {
     <div className={scss.services_slider_container}>
         <div className={scss.services_slider1}>
             <Slider {...settings1} asNavFor={nav2} ref={slider => (sliderRef1 = slider)} >
-                <span className={scss.slider_image1}>1</span>
-                <span className={scss.slider_image2}>2</span>
-                <span className={scss.slider_image3}>3</span>
+                <span className={scss.slider_image1}></span>
+                <span className={scss.slider_image2}></span>
+                <span className={scss.slider_image3}></span>
             </Slider>
         </div>
         <div className={scss.services_slider2}>

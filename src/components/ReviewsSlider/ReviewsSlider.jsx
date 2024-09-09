@@ -8,12 +8,12 @@ const ReviewsSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 750,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     className: "reviewsSlider",
-    touchThreshold: 1000,
+    touchThreshold: 50,
     swipeToSlide: true,
     swipe: true,
     touchMove: true,
@@ -44,19 +44,6 @@ const ReviewsSlider = () => {
             touchThreshold: 100,
           }
         },
-        // {
-        //     breakpoint: 320,
-        //     settings: {
-        //         dots: true,
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //         arrows: false,
-        //         className: "reviewsSlider",
-        //         touchThreshold: 100,
-        //       }
-        //   }
       ]
   };
 
