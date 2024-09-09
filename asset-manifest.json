@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.c4729d34.css",
-    "main.js": "/aurum/static/js/main.4cd04ee0.js",
-    "static/css/628.68f1fed6.chunk.css": "/aurum/static/css/628.68f1fed6.chunk.css",
-    "static/js/628.ec43fd5e.chunk.js": "/aurum/static/js/628.ec43fd5e.chunk.js",
+    "main.css": "/aurum/static/css/main.b3943ebe.css",
+    "main.js": "/aurum/static/js/main.3ac5c117.js",
+    "static/css/628.3246727a.chunk.css": "/aurum/static/css/628.3246727a.chunk.css",
+    "static/js/628.8352f681.chunk.js": "/aurum/static/js/628.8352f681.chunk.js",
     "static/js/541.560a1b2a.chunk.js": "/aurum/static/js/541.560a1b2a.chunk.js",
     "static/media/logo_parzival-zentrum.png": "/aurum/static/media/logo_parzival-zentrum.a63b53c3843990539f01.png",
     "static/media/team_photo.jpg": "/aurum/static/media/team_photo.b548de26080ccdbbddb3.jpg",
@@ -63,14 +63,14 @@
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/line.svg": "/aurum/static/media/line.3f550d335621d6f96900cf1fdecb0da4.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
-    "main.c4729d34.css.map": "/aurum/static/css/main.c4729d34.css.map",
-    "main.4cd04ee0.js.map": "/aurum/static/js/main.4cd04ee0.js.map",
-    "628.68f1fed6.chunk.css.map": "/aurum/static/css/628.68f1fed6.chunk.css.map",
-    "628.ec43fd5e.chunk.js.map": "/aurum/static/js/628.ec43fd5e.chunk.js.map",
+    "main.b3943ebe.css.map": "/aurum/static/css/main.b3943ebe.css.map",
+    "main.3ac5c117.js.map": "/aurum/static/js/main.3ac5c117.js.map",
+    "628.3246727a.chunk.css.map": "/aurum/static/css/628.3246727a.chunk.css.map",
+    "628.8352f681.chunk.js.map": "/aurum/static/js/628.8352f681.chunk.js.map",
     "541.560a1b2a.chunk.js.map": "/aurum/static/js/541.560a1b2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4729d34.css",
-    "static/js/main.4cd04ee0.js"
+    "static/css/main.b3943ebe.css",
+    "static/js/main.3ac5c117.js"
   ]
 }
