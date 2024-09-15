@@ -34,23 +34,16 @@ button {
 .center .slick-slide div {
   display: flex;
   justify-content: center;
-  /* margin: 10px 0px; */
+  margin: 10px 0px;
 }
 
-/* .center .slick-slide .slick-active .slick-center .slick-current {
-  z-index: 45 !important;
-} */
-
-/* .center .slick-slide .slick-active {
-  width: 286px !important;
-  margin-top: -60px !important; 
-  z-index: 1!important;
-} */
+.center .slick-list {
+  padding: 10px 0px;
+}
 
 .servicesSlider2 .slick-slide div {
-  width: 100vw;
+  width: calc(100vw - 40px);
   height: 100%;
-  /* margin: 0px 20px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -99,7 +92,7 @@ button {
 
 @media screen and (min-width: 1440px) {
   .servicesSlider2 .slick-dots {
-    top: 20%;
+    top: 10%;
   }
 }
 

@@ -1,12 +1,7 @@
 import scss from './HomePage.module.scss';
 import Header from 'components/Header/Header';
-import { ReactComponent as Logo} from "../../images/Aurum_logo.svg";
-import { ReactComponent as Handshake} from "../../images/handshake.svg";
-import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.svg";
-import { ReactComponent as Line} from "../../images/line.svg";
 import { Link } from 'react-router-dom';
 import teamPhoto from '../../images/team_photo.jpg';
-import parzivalLogo from '../../images/logo_parzival-zentrum.png';
 import { ReactComponent as Partner1} from "../../images/partners/partner1.svg";
 import { ReactComponent as Partner5} from "../../images/partners/partner5.svg";
 import { ReactComponent as Partner6} from "../../images/partners/partner6.svg";
@@ -18,9 +13,6 @@ import Partner3 from '../../images/partners/partner3.png';
 import Partner4 from '../../images/partners/partner4.png';
 import Partner10 from '../../images/partners/partner10.png';
 import Footer from 'components/Footer/Footer';
-import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
-import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
-import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
 import { ReactComponent as BackgroundLeft1} from "../../images/background_left1.svg";
 import { ReactComponent as BackgroundLeft2} from "../../images/background_left2.svg";
 import { ReactComponent as BackgroundRight1} from "../../images/background_right1.svg";
@@ -28,6 +20,7 @@ import { ReactComponent as BackgroundRight2} from "../../images/background_right
 import ReviewsSlider from 'components/ReviewsSlider/ReviewsSlider';
 import NewsSlider from 'components/NewsSlider/NewsSlider';
 import ServicesSlider from 'components/ServicesSlider/ServicesSlider';
+import Intro from 'components/Intro/Intro';
 
 const HomePage = () => {
 
@@ -42,37 +35,7 @@ const HomePage = () => {
         <BackgroundRight2 className={scss.background_right2}/>
         <Header/>
         <div className={scss.content_container}>
-            <div className={scss.intro_container_wrapper}>
-                <div className={scss.intro_container}>
-                    <div className={scss.intro_wrapper}>
-                        <div className={scss.logo_container}>
-                            <Logo className={scss.logo}/>
-                            <p className={scss.logo_text1}>Реабілітація та допомога</p>
-                            <p className={scss.logo_text2}>військовим і цивільним</p>
-                        </div>
-                        <div className={scss.supported_container}>
-                            <p className={scss.supported_text}>За підтримкою:</p>
-                            <div className={scss.supported_logo}>
-                                <ParzivalZentrum className={scss.special_logo}/>
-                                <Line className={scss.line}/>
-                                <img src={parzivalLogo} alt='logo_parzival' className={scss.parzival_logo}/>
-                            </div>
-                            <Link className={scss.supported_link}>Міжнародний проект Parzival Zentrum</Link>
-                            <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
-                            <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ</p>
-                            <p className={scss.supported_text}>ТА РЕАБІЛІТАЦІЇ PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
-                            <ButtonMore className={scss.button_more}/>
-                        </div>
-                    </div>
-                    <div className={scss.buttons_container}>
-                        <Link className={scss.button_support}>
-                            <Handshake className={scss.handshake}/>
-                            <span>Підтримати проєкт</span>
-                        </Link>
-                        <Link className={scss.button_read}>Дізнатись більше</Link>
-                    </div>
-                </div>
-            </div>
+            <Intro/>
             <div className={scss.services_container}>
                 <div className={scss.container_title}>
                     <span className={scss.container_title1}>Наші </span>

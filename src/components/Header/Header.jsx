@@ -39,14 +39,10 @@ const Header = () => {
         <nav>
           <ul className={scss.nav_list}>
             <li className={scss.nav_item}>
-              <Link className={scss.nav_link_current}>
-                Головна
-              </Link>
+              <NavLink className={scss.nav_link_current} to="/">Головна</NavLink>
             </li>
             <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link}>
-                Про нас
-              </NavLink>
+              <NavLink className={scss.nav_link}>Про нас</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
             </li>
             <li className={scss.nav_item}>
@@ -106,7 +102,7 @@ const Header = () => {
               <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon_active) : (scss.close_menu_icon)}/></button>
           </div>
           <nav className={scss.mobile_menu_nav}>
-            <NavLink className={scss.current}>Головна</NavLink>
+            <NavLink className={scss.current} to="/">Головна</NavLink>
             <NavLink className={scss.nav}>Про нас</NavLink>
             <NavLink className={scss.nav}>Реабілітаційна програма</NavLink>
             <NavLink className={scss.nav}>Новини</NavLink>
