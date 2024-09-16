@@ -49,13 +49,25 @@ const currentYear = todayDate.getFullYear();
                             <Link className={scss.services_item}>Консультація психолога</Link>
                         </li>
                         <li>
+                            <Link className={scss.services_item}>Постізометрична релаксація</Link>
+                        </li>
+                        <li>
+                            <Link className={scss.services_item}>Рефлексотерапія</Link>
+                        </li>
+                        <li>
                             <Link className={scss.services_item}>Мануальна терапія</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Масляно-дисперсійні ванни</Link>
+                            <Link className={scss.services_item}>Ритмічне втирання</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Ритмічні втирання</Link>
+                            <Link className={scss.services_item}>Кінезіотерапія</Link>
+                        </li>
+                        <li>
+                            <Link className={scss.services_item}>Гідрокінезіотерапія</Link>
+                        </li>
+                        <li>
+                            <Link className={scss.services_item}>Масляно-дисперсійні ванни</Link>
                         </li>
                         <li>
                             <Link className={scss.services_item}>Апаратна пресотерапія</Link>

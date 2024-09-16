@@ -61,9 +61,105 @@
     padding: 20px 0px 20px 0px;
 
     &:hover .nav_link {
-        transition: color 0.2s linear;
+        transition: color 0.1s linear;
         color: #FFC700;
     };
+};
+
+.nav_item_about {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0px 20px 0px;
+
+    &:hover .nav_link {
+        transition: color 0.1s linear;
+        color: #FFC700;
+    };
+
+    &:hover .about_submenu {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.7);
+    };
+
+    &:hover .arrow_icon {
+        transition-property: transform;
+        transform: rotate(180deg);
+        transition-duration: 400ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    };
+};
+
+.about_submenu {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+};
+
+.submenu_item {
+    text-decoration: none;
+    color: #005382;
+    font-family: "Exo2-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    &:hover {
+        transition: color 0.1s linear;
+        color: #FFC700;
+    };
+};
+
+.nav_item_services {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0px 20px 0px;
+
+    &:hover .nav_link {
+        transition: color 0.1s linear;
+        color: #FFC700;
+    };
+
+    &:hover .services_submenu {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.7);
+    };
+
+    &:hover .arrow_icon {
+        transition-property: transform;
+        transform: rotate(180deg);
+        transition-duration: 400ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    };
+};
+
+.services_submenu {
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 };
 
 .nav_link {
@@ -101,6 +197,11 @@
 .arrow_icon {
     cursor: pointer;
     margin: 0px 0px 2px 4px;
+    transition-property: transform;
+    transform: rotate(0deg);
+    transition-duration: 400ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 };
 
 .header_button {
@@ -187,7 +288,6 @@
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 };
 
 .polygon_reverse {

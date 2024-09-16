@@ -41,15 +41,30 @@ const Header = () => {
             <li className={scss.nav_item}>
               <NavLink className={scss.nav_link_current} to="/">Головна</NavLink>
             </li>
-            <li className={scss.nav_item}>
+            <li className={scss.nav_item_about}>
               <NavLink className={scss.nav_link}>Про нас</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
+              <div className={scss.about_submenu}>
+                  <NavLink to="/about-video" className={scss.submenu_item}>Відео про нас</NavLink>
+                  <NavLink to="/about-honors" className={scss.submenu_item}>Наші відзнаки</NavLink>
+                  <NavLink to="/about-presentation" className={scss.submenu_item}>Презентація</NavLink>
+              </div>
             </li>
-            <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link}>
-                Реабілітаційна програма
-              </NavLink>
+            <li className={scss.nav_item_services}>
+              <NavLink className={scss.nav_link}>Реабілітаційна програма</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
+              <div className={scss.services_submenu}>
+                  <NavLink className={scss.submenu_item}>Консультативний огляд лікаря</NavLink>
+                  <NavLink className={scss.submenu_item}>Консультація психолога</NavLink>
+                  <NavLink className={scss.submenu_item}>Постізометрична релаксація</NavLink>
+                  <NavLink className={scss.submenu_item}>Рефлексотерапія</NavLink>
+                  <NavLink className={scss.submenu_item}>Мануальна терапія</NavLink>
+                  <NavLink className={scss.submenu_item}>Ритмічне втирання</NavLink>
+                  <NavLink className={scss.submenu_item}>Кінезіотерапія</NavLink>
+                  <NavLink className={scss.submenu_item}>Гідрокінезіотерапія</NavLink>
+                  <NavLink className={scss.submenu_item}>Масляно-дисперсійні ванни</NavLink>
+                  <NavLink className={scss.submenu_item}>Апаратна пресотерапія</NavLink>
+              </div>
             </li>
             <li className={scss.nav_item}>
               <NavLink className={scss.nav_link}>

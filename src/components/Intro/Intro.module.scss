@@ -154,21 +154,6 @@
     };
 };
 
-.line {
-    height: 46px;
-};
-
-.parzival_logo {
-    display: block;
-    width: 37px;
-    height: 42px;
-
-    @media screen and (min-width: 1024px) {
-        width: 46px;
-        height: 52px;
-    };
-};
-
 .supported_link {
     width: 197px;
     color: #00A3FF;
