@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/199.2de7a073.chunk.js","mappings":"2JAUA,UARiB,WAEf,OACEA,EAAAA,EAAAA,KAAAC,EAAAA,SAAA,GAGJ,C","sources":["pages/NewsPage/NewsPage.jsx"],"sourcesContent":["\n\nconst NewsPage = () => {\n\n  return (\n    <>\n    </>\n  )\n};\n\nexport default NewsPage;\n"],"names":["_jsx","_Fragment"],"sourceRoot":""}
