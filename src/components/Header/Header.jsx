@@ -32,6 +32,10 @@ const Header = () => {
     setIsActiveMenuMobileLang(!isActiveMenuMobileLang);
   };
 
+  const disableNavLink = (e) => {
+    e.preventDefault()
+  };
+
   return (
     <header className={scss.header}>
       <div className={scss.menu_container}>
@@ -41,7 +45,7 @@ const Header = () => {
               <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/">Головна</NavLink>
             </li>
             <li className={scss.nav_item_about}>
-              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about">Про нас</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about" onClick={disableNavLink} >Про нас</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
               <div className={scss.about_submenu}>
                   <NavLink to="/about/video" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Відео про нас</NavLink>
@@ -50,10 +54,10 @@ const Header = () => {
               </div>
             </li>
             <li className={scss.nav_item_services}>
-              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/services">Реабілітаційна програма</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/services" onClick={disableNavLink}>Реабілітаційна програма</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
               <div className={scss.services_submenu}>
-                  <NavLink className={scss.submenu_item}>Консультативний огляд лікаря</NavLink>
+                  <NavLink className={scss.submenu_item}>Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
                   <NavLink className={scss.submenu_item}>Консультація психолога</NavLink>
                   <NavLink className={scss.submenu_item}>Постізометрична релаксація</NavLink>
                   <NavLink className={scss.submenu_item}>Рефлексотерапія</NavLink>

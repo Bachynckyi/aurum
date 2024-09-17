@@ -1,4 +1,4 @@
-.header {
+.header{
     width: 100vw;
     min-width: 320px;
     box-sizing: border-box;
@@ -119,6 +119,7 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    max-width: 220px;
 
     &:hover {
         color: #FFC700;

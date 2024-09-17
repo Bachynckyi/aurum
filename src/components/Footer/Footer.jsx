@@ -48,7 +48,7 @@ const currentYear = todayDate.getFullYear();
                     <p className={scss.services_title}>Реабілітаційна програма</p>
                     <ul className={scss.services_list}>
                         <li>
-                            <Link className={scss.services_item}>Консультативний огляд лікаря</Link>
+                            <Link className={scss.services_item}>Консультація лікаря фізичної та реабілітаційної медицини</Link>
                         </li>
                         <li>
                             <Link className={scss.services_item}>Консультація психолога</Link>
