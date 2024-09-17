@@ -79,20 +79,6 @@
     };
 };
 
-.contacts_text_address {
-    color: #181818;
-    font-family: "Exo2-Regular";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-
-    @media screen and (min-width: 350px) { 
-        font-size: 14px;
-    };
-};
-
 .logo_container {
     position: absolute;
     right: 20px;

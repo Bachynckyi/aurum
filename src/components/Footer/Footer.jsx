@@ -20,7 +20,12 @@ const currentYear = todayDate.getFullYear();
                     <p className={scss.contacts_title}>Контакти</p>
                     <div className={scss.contacts_info}>
                         <MapIcon/>
-                        <address className={scss.contacts_text_address}>м. Київ, вул. Різницька, 11</address>
+                        <address>
+                            <Link className={scss.contacts_text} 
+                            to="https://www.google.com.ua/maps/place/Medychnyy+Tsentr+Aurum/@50.4352488,30.5421546,63m/data=!3m1!1e3!4m15!1m8!3m7!1s0x40d4cf08157edd2d:0xc35f243ceeae5712!2z0YPQuy4g0KDQtdC30L3QuNGG0LrQsNGPLCAxMSwg0JrQuNC10LIsIDAyMDAw!3b1!8m2!3d50.4352612!4d30.5424696!16s%2Fg%2F1tg6nn5q!3m5!1s0x40d4cf0b82de2b71:0x5046d5f64ce3f501!8m2!3d50.4353876!4d30.5422401!16s%2Fg%2F11vlt3dn94?hl=ru&entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+                            target='_blank'
+                            >м. Київ, вул. Різницька, 11</Link>
+                        </address>
                     </div>
                     <div className={scss.contacts_info}>
                         <PhoneIcon/>

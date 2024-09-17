@@ -32,26 +32,25 @@ const Header = () => {
     setIsActiveMenuMobileLang(!isActiveMenuMobileLang);
   };
 
-
   return (
     <header className={scss.header}>
       <div className={scss.menu_container}>
         <nav>
           <ul className={scss.nav_list}>
             <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link_current} to="/">Головна</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/">Головна</NavLink>
             </li>
             <li className={scss.nav_item_about}>
-              <NavLink className={scss.nav_link}>Про нас</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about">Про нас</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
               <div className={scss.about_submenu}>
-                  <NavLink to="/about-video" className={scss.submenu_item}>Відео про нас</NavLink>
-                  <NavLink to="/about-honors" className={scss.submenu_item}>Наші відзнаки</NavLink>
-                  <NavLink to="/about-presentation" className={scss.submenu_item}>Презентація</NavLink>
+                  <NavLink to="/about/video" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Відео про нас</NavLink>
+                  <NavLink to="/about/honors" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Наші відзнаки</NavLink>
+                  <NavLink to="/about/presentation" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Презентація</NavLink>
               </div>
             </li>
             <li className={scss.nav_item_services}>
-              <NavLink className={scss.nav_link}>Реабілітаційна програма</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/services">Реабілітаційна програма</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
               <div className={scss.services_submenu}>
                   <NavLink className={scss.submenu_item}>Консультативний огляд лікаря</NavLink>
@@ -67,17 +66,17 @@ const Header = () => {
               </div>
             </li>
             <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link}>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/news">
                 Новини
               </NavLink>
             </li>
             <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link}>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/feedback">
                 Відгуки
               </NavLink>
             </li>
             <li className={scss.nav_item}>
-              <NavLink className={scss.nav_link}>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/partners">
                 Наші партнери
               </NavLink>
             </li>

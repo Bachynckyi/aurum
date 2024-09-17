@@ -33,6 +33,10 @@
         justify-content: space-between;
         flex-wrap: nowrap;
         box-sizing: border-box;
+        padding: 18px 20px;
+    };
+
+    @media screen and (min-width: 1280px) {
         padding: 18px 50px;
     };
 
@@ -78,7 +82,7 @@
 
     &:hover .about_submenu {
         opacity: 1;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.9);
     };
 
     &:hover .arrow_icon {
@@ -117,9 +121,19 @@
     text-decoration: none;
 
     &:hover {
-        transition: color 0.1s linear;
         color: #FFC700;
     };
+};
+
+.submenu_item_active {
+    text-decoration: none;
+    color: #FFC700;
+    font-family: "Exo2-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 };
 
 .nav_item_services {
@@ -128,13 +142,13 @@
     padding: 20px 0px 20px 0px;
 
     &:hover .nav_link {
-        transition: color 0.1s linear;
         color: #FFC700;
+        transition: color 0.1s linear;
     };
 
     &:hover .services_submenu {
         opacity: 1;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.9);
     };
 
     &:hover .arrow_icon {
