@@ -6,6 +6,9 @@ import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from 'react-router-dom';
 import { ReactComponent as ArrowHeader  } from '../../images/arrow_header.svg'
+// import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
+// import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
+
 
 const Header = () => {
   const [isActiveMenuLang, setIsActiveMenuLang] = useState(false);
@@ -86,6 +89,10 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        {/* <div className={scss.socials}>
+            <FacebookIcon className={scss.socials_icon_facebook}/>
+            <TelegramIcon className={scss.socials_icon_telegram}/>
+          </div> */}
         <div className={scss.header_wrapper}>
           <Link className={scss.header_button}>
             <HandshakeWhite/>

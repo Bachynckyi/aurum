@@ -1,7 +1,9 @@
 import scss from './HomePage.module.scss';
 import Header from 'components/Header/Header';
 import { Link } from 'react-router-dom';
-import teamPhoto from '../../images/team_photo.jpg';
+import teamPhoto1 from '../../images/team_photo1.jpg';
+import teamPhoto2 from '../../images/team_photo2.jpg';
+import teamPhoto3 from '../../images/team_photo3.jpg';
 import { ReactComponent as Partner1} from "../../images/partners/partner1.svg";
 import { ReactComponent as Partner5} from "../../images/partners/partner5.svg";
 import { ReactComponent as Partner6} from "../../images/partners/partner6.svg";
@@ -46,9 +48,9 @@ const HomePage = () => {
             <div className={scss.about_container}>
                 <span className={scss.about_title}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
                 <div className={scss.about_image_container}>
-                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto1}/>
-                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto2}/>
-                    <img src={teamPhoto} alt='team_photo' className={scss.about_teamPhoto3}/>
+                    <img src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
+                    <img src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
+                    <img src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
                 </div>
                 <div className={scss.about_text_wrapper}>
                     <span className={scss.about_title_desktop}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>

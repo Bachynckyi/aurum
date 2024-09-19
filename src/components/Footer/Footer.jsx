@@ -3,14 +3,13 @@ import { ReactComponent as MapIcon } from '../../images/map_icon.svg';
 import { ReactComponent as PhoneIcon } from '../../images/phone_icon.svg';
 import { ReactComponent as EmailIcon } from '../../images/email_icon.svg';
 import { ReactComponent as AurumLogoSmall } from '../../images/Aurum_logo_small.svg';
-import { ReactComponent as Visa } from '../../images/visa_icon.svg';
-import { ReactComponent as Mastercard } from '../../images/mastercard_icon.svg';
+import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
+import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
 const todayDate = new Date();
 const currentYear = todayDate.getFullYear();
-  
 
   return (
     <footer className={scss.footer_container}>
@@ -36,12 +35,8 @@ const currentYear = todayDate.getFullYear();
                         <a className={scss.contacts_text} href="mailto: info@clinic-aurum.com">info@clinic-aurum.com</a>
                     </div>
                     <div className={scss.contacts_services}>
-                        <div className={scss.contacts_service}>
-                            <Mastercard/>
-                        </div>
-                        <div className={scss.contacts_service}>
-                            <Visa className={scss.visa}/>
-                        </div>
+                        <FacebookIcon className={scss.contacts_icon_facebook}/>
+                        <TelegramIcon className={scss.contacts_icon_telegram}/>
                     </div>
                 </div>
                 <div className={scss.services_container}>
@@ -88,18 +83,8 @@ const currentYear = todayDate.getFullYear();
                 </div>
             </div>
             <div className={scss.politics}>
-                <div className={scss.politics_license_wrapper}>
-                    <p className={scss.license}>Ліц. МОЗ України №1603 від 11.09.2023</p>
-                    <p className={scss.license}>© Медичний центр Аурум {currentYear}</p>
-                </div>
-                <div className={scss.politics_services}>
-                    <div className={scss.politics_service}>
-                        <Mastercard/>
-                    </div>
-                    <div className={scss.politics_service}>
-                        <Visa className={scss.visa}/>
-                    </div>
-                </div>
+                <p className={scss.license}>Ліц. МОЗ України №1603 від 11.09.2023</p>
+                <p className={scss.license}>© Медичний центр Аурум {currentYear}</p>
             </div>  
         </div>
     </footer>

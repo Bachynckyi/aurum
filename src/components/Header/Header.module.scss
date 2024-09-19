@@ -585,6 +585,45 @@
     line-height: normal;
 };
 
+.socials {
+    display: none;
+    
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    };
+};
+
+.socials_icon_facebook {
+    margin-top: -2px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1;
+
+    &:hover {
+        transition: 0.2s;
+        scale: 1.2;
+    }
+};
+
+.socials_icon_telegram {
+    padding-top: 2px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1;
+
+    &:hover {
+        transition: 0.2s;
+        scale: 1.2;
+    }
+};
+
 
 
 

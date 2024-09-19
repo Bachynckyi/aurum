@@ -146,8 +146,9 @@
 .politics {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 
     @media screen and (min-width: 768px) {
@@ -174,12 +175,6 @@
     
 };
 
-.politics_license_wrapper {
-    max-width: 237px;
-    display: flex;
-    flex-direction: column;
-};
-
 .politics_license_wrapper_desktop {
     display: none;
 
@@ -191,49 +186,41 @@
     };
 };
 
-.politics_services {
+.contacts_services {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 16px;
 };
 
-.politics_service {
-    display: flex;
-    width: 48px;
-    height: 27px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background: #FFF;
+.contacts_icon_facebook {
+    margin-top: -2px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1;
+
+    &:hover {
+        transition: 0.2s;
+        scale: 1.2;
+    }
 };
 
-.contacts_services {
-    display: none;
+.contacts_icon_telegram {
+    padding-top: 2px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        margin-top: 16px;
-    };
-
+    &:hover {
+        transition: 0.2s;
+        scale: 1.2;
+    }
 };
 
-.contacts_service {
-    display: flex;
-    width: 48px;
-    height: 27px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background: #FFF;
-};
 
-.visa {
-    width: 85%;
-    height: 100%;
-};
 
 
