@@ -5,9 +5,9 @@ import { ReactComponent as HandshakeWhite} from "../../images/handshake_white.sv
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as ArrowHeader  } from '../../images/arrow_header.svg'
-// import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
-// import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
+import { ReactComponent as ArrowHeader } from '../../images/arrow_header.svg'
+import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
+import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
 
 
 const Header = () => {
@@ -89,10 +89,6 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        {/* <div className={scss.socials}>
-            <FacebookIcon className={scss.socials_icon_facebook}/>
-            <TelegramIcon className={scss.socials_icon_telegram}/>
-          </div> */}
         <div className={scss.header_wrapper}>
           <Link className={scss.header_button}>
             <HandshakeWhite/>
@@ -109,6 +105,10 @@ const Header = () => {
             </div>
           </div>
           <button className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
+          <div className={scss.socials}>
+            <FacebookIcon className={scss.socials_icon_facebook}/>
+            <TelegramIcon className={scss.socials_icon_telegram}/>
+          </div>
         </div>
       </div>
       <div className={isActiveMobileMenu ? (scss.mobile_menu_active) : (scss.mobile_menu)}>
@@ -128,8 +128,8 @@ const Header = () => {
           </div>
           <nav className={scss.mobile_menu_nav}>
             <NavLink className={scss.current} to="/">Головна</NavLink>
-            <NavLink className={scss.nav}>Про нас</NavLink>
-            <NavLink className={scss.nav}>Реабілітаційна програма</NavLink>
+            <NavLink className={scss.nav}>Про нас<ArrowHeader className={scss.mobile_arrow}/></NavLink>
+            <NavLink className={scss.nav}>Реабілітаційна програма<ArrowHeader className={scss.mobile_arrow}/></NavLink>
             <NavLink className={scss.nav}>Новини</NavLink>
             <NavLink className={scss.nav}>Відгуки</NavLink>
             <NavLink className={scss.nav}>Наші партнери</NavLink>
