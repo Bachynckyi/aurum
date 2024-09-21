@@ -538,16 +538,6 @@
     opacity: 0;
 };
 
-.mobile_menu_nav {
-    height: 524px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-sizing: border-box;
-    margin-top: 35px;
-};
-
 .current {
     font-family: "Exo2-Bold";
     font-size: 36px;
@@ -582,7 +572,7 @@
     width: 100%;
     max-width: 350px;
     height: 60px;
-    margin-top: 30px;
+    margin: 30px auto 0px auto;
     border-radius: 16px;
     color: #fff;
     background: #00A3FF;
@@ -638,10 +628,84 @@
 .mobile_arrow {
     width: 25px;
     height: 25px;
-    margin-top: 13px;
-    margin-left: 8px;
+    margin: 13px 0px 0px 8px;
+    transition-property: transform;
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 };
 
+.mobile_arrow_reverse {
+    width: 25px;
+    height: 25px;
+    margin: 13px 0px 0px 8px;
+    transition-property: transform;
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+};
+
+.mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 35px 0px 0px 0px;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+};
+
+.about_mobile_submenu {
+    margin: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 0px;
+    visibility: hidden;
+    margin-top: 0px;
+    opacity: 0;
+    transition: height 300ms 0ms, opacity 500ms 0ms;
+};
+
+.about_mobile_submenu_active {
+    height: 134px;
+    margin: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: height 500ms 0ms, opacity 500ms 0ms;
+};
+
+.about_mobile_item {
+    color: #00A3FF;
+    font-family: "Exo2-Bold";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+};
+
+.services_mobile_submenu {
+    height: 0px;
+    visibility: hidden;
+    margin: 0px;
+    opacity: 0;
+    transition: height 300ms 0ms, opacity 500ms 0ms;
+};
+
+.services_mobile_submenu_active {
+    height: 525px;
+    margin: 30px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: height 500ms 0ms, opacity 500ms 0ms;
+};
 
 
 
