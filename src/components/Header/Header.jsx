@@ -154,7 +154,7 @@ const Header = () => {
                   <NavLink className={scss.about_mobile_item} to="/about/presentation">Презентація</NavLink>
                 </div>
               </li>
-              <li className={scss.item_services1}>
+              <li>
                 <NavLink className={scss.nav} onClick={toggleServicesSubmenuMobile}>
                   <span>Реабілітаційна програма</span>
                   <ArrowHeader className={servicesSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
