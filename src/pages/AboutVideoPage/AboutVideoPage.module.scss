@@ -32,24 +32,9 @@
         height: 1503px;
         background: url("../../images/background_1.1.jpg");
         background-repeat: no-repeat;
-        opacity: 0.7;
-    };
-
-    @media screen and (min-width: 1440px) {
-        width: 100vw;
-        height: 100%;
-        z-index: 6;
-        left: 50%;
-        transform: translateX(-50%);
-    };
-
-    @media screen and (min-width: 1441px) {
-        width: 100vw;
-        height: 877px;
         background-size: cover;
-        z-index: 6;
-        left: 50%;
-        transform: translateX(-50%);
+        opacity: 0.7;
+        z-index: 3;
     };
 };
 
@@ -101,7 +86,7 @@
 };
 
 .title {
-    margin: 0px 0px 30px 0px;
+    margin: 0px;
     text-align: center;
     color: #00A3FF;
     font-family: "Exo2-Bold";
@@ -120,6 +105,7 @@
     width: 100%;
     position: relative;
     padding-top: 56.25%;
+    margin-top: 50px;
     
     @media screen and (min-width: 1024px) {
         max-width: 1008px;
