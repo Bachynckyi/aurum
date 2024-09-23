@@ -542,7 +542,7 @@
 
 .current {
     font-family: "Exo2-Bold";
-    font-size: 36px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -552,24 +552,28 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    };
 };
 
 .nav {
     color: #00A3FF;
     font-family: "Exo2-Bold";
-    font-size: 36px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    display: block;
-    width: 300px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    @media screen and (min-width: 520px ){
-        display: inline;
-        width: 100%;
-    }
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    };
 };
 
 .button_support {
@@ -637,25 +641,37 @@
 };
 
 .mobile_arrow {
-    width: 25px;
-    height: 25px;
-    margin: 13px 0px 0px 8px;
+    width: 15px;
+    height: 15px;
+    margin: 4px 0px 0px 8px;
     transition-property: transform;
     transform: rotate(0deg);
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        margin: 8px 0px 0px 8px;
+        width: 25px;
+        height: 25px;
+    };
 };
 
 .mobile_arrow_reverse {
-    width: 25px;
-    height: 25px;
-    margin: 13px 0px 0px 8px;
+    width: 15px;
+    height: 15px;
+    margin: 4px 0px 0px 8px;
     transition-property: transform;
     transform: rotate(180deg);
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        margin: 8px 0px 0px 8px;
+        width: 25px;
+        height: 25px;
+    };
 };
 
 .mobile_nav_list {
@@ -689,22 +705,48 @@
 };
 
 .about_mobile_submenu_active {
-    height: 134px;
+    height: 104px;
     margin: 30px 0px 0px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     transition: height 300ms 0ms, opacity 500ms 0ms;
+
+    @media screen and (min-width: 768px) {
+        height: 142px;
+    };
 };
 
-.about_mobile_item {
+.submenu_mobile_item {
     color: #00A3FF;
     font-family: "Exo2-Bold";
-    font-size: 26px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+ 
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    };
+};
+
+.submenu_mobile_item_active {
+    font-family: "Exo2-Bold";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    background: linear-gradient(180deg, #FFC700 0%, rgba(255, 229, 0, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+ 
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    };
 };
 
 .services_mobile_submenu {
@@ -716,39 +758,31 @@
 };
 
 .services_mobile_submenu_active {
-    height: 700px;
+    height: 460px;
     margin: 30px 0px 0px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     transition: height 300ms 0ms, opacity 500ms 0ms;
 
-    @media screen and (min-width: 368px) {
-        height: 670px;
+    @media screen and (min-width: 325px) {
+        height: 435px;
     };
 
-    @media screen and (min-width: 377px) {
-        height: 640px;
+    @media screen and (min-width: 328px) {
+        height: 415px;
     };
 
-    @media screen and (min-width: 403px) {
-        height: 610px;
+    @media screen and (min-width: 586px) {
+        height: 395px;
     };
 
-    @media screen and (min-width: 427px) {
-        height: 580px;
+    @media screen and (min-width: 768px) {
+        height: 548px;
     };
 
-    @media screen and (min-width: 439px) {
-        height: 550px;
-    };
-
-    @media screen and (min-width: 443px) {
-        height: 520px;
-    };
-
-    @media screen and (min-width: 815px) {
-        height: 490px;
+    @media screen and (min-width: 873px) {
+        height: 516px;
     };
 };
 

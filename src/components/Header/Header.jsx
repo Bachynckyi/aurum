@@ -17,7 +17,8 @@ const Header = () => {
   const [aboutSubmenuMobile, setAboutSubmenuMobile] = useState(false);
   const [servicesSubmenuMobile, setServicesSubmenuMobile] = useState(false);
 
-  const toggleAboutSubmenuMobile = () => {
+  const toggleAboutSubmenuMobile = (e) => {
+    e.preventDefault()
     setAboutSubmenuMobile(!aboutSubmenuMobile);
   };
 
@@ -33,6 +34,7 @@ const Header = () => {
     setIsActiveMobileMenu(true);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
+    document.body.style.cssText = `overflow-y: hidden`;
   };
 
   const closeMobileMenu = () => {
@@ -41,6 +43,7 @@ const Header = () => {
     setIsActiveMenuMobileLang(false);
     setAboutSubmenuMobile(false);
     setServicesSubmenuMobile(false);
+    document.body.style.cssText = `overflow-y: auto`;
   };
 
   const toggleLangMenuMobile = () => {
@@ -60,7 +63,7 @@ const Header = () => {
               <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/">Головна</NavLink>
             </li>
             <li className={scss.nav_item_about}>
-              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about" onClick={disableNavLink} >Про нас</NavLink>
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about" onClick={disableNavLink}>Про нас</NavLink>
               <ArrowHeader className={scss.arrow_icon}/>
               <div className={scss.about_submenu}>
                   <NavLink to="/about/video" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Відео про нас</NavLink>
@@ -141,17 +144,17 @@ const Header = () => {
           <nav>
             <ul className={scss.mobile_nav_list}>
               <li>
-                <NavLink className={scss.current} to="/">Головна</NavLink>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/">Головна</NavLink>
               </li>
               <li>
-                <NavLink className={scss.nav} onClick={toggleAboutSubmenuMobile}>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} onClick={toggleAboutSubmenuMobile} to="/about">
                   <span>Про нас</span>
                   <ArrowHeader className={aboutSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
                 </NavLink>
                 <div className={aboutSubmenuMobile === true ? (scss.about_mobile_submenu_active) : (scss.about_mobile_submenu)}>
-                  <NavLink className={scss.about_mobile_item} to="/about/video">Відео про нас</NavLink>
-                  <NavLink className={scss.about_mobile_item} to="/about/honors">Наші відзнаки</NavLink>
-                  <NavLink className={scss.about_mobile_item} to="/about/presentation">Презентація</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/video">Відео про нас</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/honors">Наші відзнаки</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/presentation">Презентація</NavLink>
                 </div>
               </li>
               <li>
@@ -160,16 +163,16 @@ const Header = () => {
                   <ArrowHeader className={servicesSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
                 </NavLink>
                 <div className={servicesSubmenuMobile === true ? (scss.services_mobile_submenu_active) : (scss.services_mobile_submenu)}>
-                  <NavLink className={scss.about_mobile_item}>Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Консультація психолога</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Постізометрична релаксація</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Рефлексотерапія</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Мануальна терапія</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Ритмічне втирання</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Кінезіотерапія</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Гідрокінезіотерапія</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Масляно-дисперсійні ванни</NavLink>
-                  <NavLink className={scss.about_mobile_item}>Апаратна пресотерапія</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Консультація психолога</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Постізометрична релаксація</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Рефлексотерапія</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Мануальна терапія</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Ритмічне втирання</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Кінезіотерапія</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Гідрокінезіотерапія</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Масляно-дисперсійні ванни</NavLink>
+                  <NavLink className={scss.submenu_mobile_item}>Апаратна пресотерапія</NavLink>
                 </div>
               </li>
               <li>
