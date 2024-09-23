@@ -38,12 +38,12 @@ const Header = () => {
   };
 
   const closeMobileMenu = () => {
+    document.body.style.cssText = `overflow-y: auto`;
     setIsActiveMobileMenu(false);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
     setAboutSubmenuMobile(false);
     setServicesSubmenuMobile(false);
-    document.body.style.cssText = `overflow-y: auto`;
   };
 
   const toggleLangMenuMobile = () => {
