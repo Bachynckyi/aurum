@@ -31,10 +31,10 @@ const Header = () => {
   };
 
   const openMobileMenu = () => {
+    document.body.style.cssText = `overflow-y: hidden`;
     setIsActiveMobileMenu(true);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
-    document.body.style.cssText = `overflow-y: hidden`;
   };
 
   const closeMobileMenu = () => {
