@@ -31,14 +31,14 @@ const Header = () => {
   };
 
   const openMobileMenu = () => {
-    // document.body.style.cssText = `overflow-y: hidden`;
+    document.body.style.cssText = `overflow-y: hidden`;
     setIsActiveMobileMenu(true);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
   };
 
   const closeMobileMenu = () => {
-    // document.body.style.cssText = `overflow-y: auto`;
+    document.body.style.cssText = `overflow-y: auto`;
     setIsActiveMobileMenu(false);
     setIsActiveMenuLang(false);
     setIsActiveMenuMobileLang(false);
@@ -144,7 +144,7 @@ const Header = () => {
           <nav>
             <ul className={scss.mobile_nav_list}>
               <li>
-                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/">Головна</NavLink>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/" onClick={closeMobileMenu}>Головна</NavLink>
               </li>
               <li>
                 <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} onClick={toggleAboutSubmenuMobile} to="/about">
@@ -152,9 +152,9 @@ const Header = () => {
                   <ArrowHeader className={aboutSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
                 </NavLink>
                 <div className={aboutSubmenuMobile === true ? (scss.about_mobile_submenu_active) : (scss.about_mobile_submenu)}>
-                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/video">Відео про нас</NavLink>
-                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/honors">Наші відзнаки</NavLink>
-                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/presentation">Презентація</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/video" onClick={closeMobileMenu}>Відео про нас</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/honors" onClick={closeMobileMenu}>Наші відзнаки</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/presentation" onClick={closeMobileMenu}>Презентація</NavLink>
                 </div>
               </li>
               <li>

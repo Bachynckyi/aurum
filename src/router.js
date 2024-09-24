@@ -6,6 +6,7 @@ const AboutVideoPage = lazy(() => import('./pages/AboutVideoPage/AboutVideoPage'
 const AboutHonorsPage = lazy(() => import('./pages/AboutHonorsPage/AboutHonorsPage'));
 const AboutPresentationPage = lazy(() => import('./pages/AboutPresentationPage/AboutPresentationPage'));
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
+const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -19,6 +20,7 @@ const UserRoutes = () => {
             <Route path="/about/honors" element={<AboutHonorsPage/>}/>
             <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
             <Route path="/news" element={<NewsPage/>}/>
+            <Route path="/partners" element={<PartnersPage/>}/>
         </Routes>
       </Suspense>
     </>

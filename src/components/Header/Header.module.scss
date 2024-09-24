@@ -87,6 +87,7 @@
     &:hover .about_submenu {
         opacity: 1;
         background: rgba(255, 255, 255, 0.9);
+        pointer-events: auto;
     };
 
     &:hover .arrow_icon {
@@ -112,6 +113,7 @@
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
 };
 
 .submenu_item {
@@ -154,6 +156,7 @@
     &:hover .services_submenu {
         opacity: 1;
         background: rgba(255, 255, 255, 0.9);
+        pointer-events: auto;
     };
 
     &:hover .arrow_icon {
@@ -179,6 +182,7 @@
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
 };
 
 .nav_link {
@@ -189,7 +193,6 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-
 };
 
 .nav_link_current {
