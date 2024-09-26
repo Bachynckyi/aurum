@@ -8,6 +8,7 @@ const AboutPresentationPage = lazy(() => import('./pages/AboutPresentationPage/A
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
 const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
+const ServicePageOne = lazy(() => import('./pages/ServicesPage/ServicePageOne/ServicePageOne'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -22,6 +23,16 @@ const UserRoutes = () => {
             <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
             <Route path="/news" element={<NewsPage/>}/>
             <Route path="/partners" element={<PartnersPage/>}/>
+            <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePageOne/>}/>
+            <Route path="/services/konsultaciya-psihologa" element={<ServicePageOne/>}/>
+            <Route path="/services/postizometrichna-relaksaciya" element={<ServicePageOne/>}/>
+            <Route path="/services/refleksoterapiya" element={<ServicePageOne/>}/>
+            <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePageOne/>}/>
+            <Route path="/services/ritmichne-vtirannya" element={<ServicePageOne/>}/>
+            <Route path="/services/kinezioterapiya" element={<ServicePageOne/>}/>
+            <Route path="/services/gidrokinezioterapiya" element={<ServicePageOne/>}/>
+            <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePageOne/>}/>
+            <Route path="/services/aparatna-presoterapiya" element={<ServicePageOne/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </Suspense>

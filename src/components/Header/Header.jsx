@@ -5,9 +5,9 @@ import { ReactComponent as HandshakeWhite} from "../../images/handshake_white.sv
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as ArrowHeader } from '../../images/arrow_header.svg'
 import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
 import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const Header = () => {
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
             <li className={scss.nav_item_about}>
               <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/about" onClick={disableNavLink}>Про нас</NavLink>
-              <ArrowHeader className={scss.arrow_icon}/>
+              <IoIosArrowDown className={scss.arrow_icon}/>
               <div className={scss.about_submenu}>
                   <NavLink to="/about/video" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Відео про нас</NavLink>
                   <NavLink to="/about/honors" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>Наші відзнаки</NavLink>
@@ -73,18 +73,18 @@ const Header = () => {
             </li>
             <li className={scss.nav_item_services}>
               <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/services" onClick={disableNavLink}>Реабілітаційна програма</NavLink>
-              <ArrowHeader className={scss.arrow_icon}/>
+              <IoIosArrowDown className={scss.arrow_icon}/>
               <div className={scss.services_submenu}>
-                  <NavLink className={scss.submenu_item}>Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
-                  <NavLink className={scss.submenu_item}>Консультація психолога</NavLink>
-                  <NavLink className={scss.submenu_item}>Постізометрична релаксація</NavLink>
-                  <NavLink className={scss.submenu_item}>Рефлексотерапія</NavLink>
-                  <NavLink className={scss.submenu_item}>Мануальна терапія</NavLink>
-                  <NavLink className={scss.submenu_item}>Ритмічне втирання</NavLink>
-                  <NavLink className={scss.submenu_item}>Кінезіотерапія</NavLink>
-                  <NavLink className={scss.submenu_item}>Гідрокінезіотерапія</NavLink>
-                  <NavLink className={scss.submenu_item}>Масляно-дисперсійні ванни</NavLink>
-                  <NavLink className={scss.submenu_item}>Апаратна пресотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/konsultaciya-psihologa">Консультація психолога</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/postizometrichna-relaksaciya">Постізометрична релаксація</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/refleksoterapiya">Рефлексотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Мануальна терапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/ritmichne-vtirannya">Ритмічне втирання</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/kinezioterapiya">Кінезіотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/gidrokinezioterapiya">Гідрокінезіотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/maslyano-dispersijni-vanni">Масляно-дисперсійні ванни</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/aparatna-presoterapiya">Апаратна пресотерапія</NavLink>
               </div>
             </li>
             <li className={scss.nav_item}>
@@ -149,7 +149,7 @@ const Header = () => {
               <li>
                 <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} onClick={toggleAboutSubmenuMobile} to="/about">
                   <span>Про нас</span>
-                  <ArrowHeader className={aboutSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
+                  <IoIosArrowDown className={aboutSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
                 </NavLink>
                 <div className={aboutSubmenuMobile === true ? (scss.about_mobile_submenu_active) : (scss.about_mobile_submenu)}>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/video" onClick={closeMobileMenu}>Відео про нас</NavLink>
@@ -158,21 +158,21 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <NavLink className={scss.nav} onClick={toggleServicesSubmenuMobile}>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} onClick={toggleServicesSubmenuMobile}>
                   <span>Реабілітаційна програма</span>
-                  <ArrowHeader className={servicesSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
+                  <IoIosArrowDown className={servicesSubmenuMobile === true ? (scss.mobile_arrow_reverse) : (scss.mobile_arrow)}/>
                 </NavLink>
                 <div className={servicesSubmenuMobile === true ? (scss.services_mobile_submenu_active) : (scss.services_mobile_submenu)}>
-                  <NavLink className={scss.submenu_mobile_item}>Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Консультація психолога</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Постізометрична релаксація</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Рефлексотерапія</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Мануальна терапія</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Ритмічне втирання</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Кінезіотерапія</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Гідрокінезіотерапія</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Масляно-дисперсійні ванни</NavLink>
-                  <NavLink className={scss.submenu_mobile_item}>Апаратна пресотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/konsultaciya-psihologa">Консультація психолога</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/postizometrichna-relaksaciya">Постізометрична релаксація</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/refleksoterapiya">Рефлексотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Мануальна терапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/ritmichne-vtirannya">Ритмічне втирання</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/kinezioterapiya">Кінезіотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/gidrokinezioterapiya">Гідрокінезіотерапія</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/maslyano-dispersijni-vanni">Масляно-дисперсійні ванни</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/services/aparatna-presoterapiya">Апаратна пресотерапія</NavLink>
                 </div>
               </li>
               <li>

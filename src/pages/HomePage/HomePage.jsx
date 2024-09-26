@@ -33,7 +33,7 @@ const HomePage = () => {
         <BackgroundRight2 className={scss.background_right2}/>
         <Header/>
         <div className={scss.content_container}>
-        <div className={scss.intro_container_wrapper}>
+            <div className={scss.intro_container_wrapper}>
             <div className={scss.intro_container}>
                 <div className={scss.intro_wrapper}>
                     <div className={scss.logo_container}>
@@ -46,10 +46,21 @@ const HomePage = () => {
                             <div className={scss.supported_logo}>
                                 <ParzivalZentrum className={scss.special_logo}/>
                             </div>
-                            <Link className={scss.supported_link}>Міжнародний проект Parzival Zentrum</Link>
-                            <p className={scss.supported_text}>МЕДИЧНОГО ЦЕНТРУ АУРУМ <UaFlag className={scss.flags}/></p>
-                            <p className={scss.supported_text1}>АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ <UaFlag className={scss.flags}/></p>
-                            <p className={scss.supported_text}>ТА РЕАБІЛІТАЦІЇ PARZIVAL-ZENTRUM <DeFlag className={scss.flags}/></p>
+                            <Link className={scss.supported_link}>Міжнародний проект</Link>
+                            <ul className={scss.supported_list}>
+                                <li>
+                                    <span>PARZIVAL-ZENTRUM</span>
+                                    <DeFlag className={scss.flags}/>
+                                </li>
+                                <li>
+                                    <span>МЕДИЧНОГО ЦЕНТРУ АУРУМ</span>
+                                    <UaFlag className={scss.flags}/>
+                                </li>
+                                <li>
+                                    <span>ВСЕУКРАЇНСЬКОЇ АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</span>
+                                    <UaFlag className={scss.flags}/>
+                                </li>
+                            </ul>
                             <ButtonMore className={scss.button_more}/>
                         </div>
                 </div>
