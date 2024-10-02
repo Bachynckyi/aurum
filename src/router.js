@@ -8,7 +8,16 @@ const AboutPresentationPage = lazy(() => import('./pages/AboutPresentationPage/A
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
 const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
-const ServicePageOne = lazy(() => import('./pages/ServicesPage/ServicePageOne/ServicePageOne'));
+const ServicePage1 = lazy(() => import('./pages/ServicesPage/ServicePage1'));
+const ServicePage2 = lazy(() => import('./pages/ServicesPage/ServicePage2'));
+const ServicePage3 = lazy(() => import('./pages/ServicesPage/ServicePage3'));
+const ServicePage4 = lazy(() => import('./pages/ServicesPage/ServicePage4'));
+const ServicePage5 = lazy(() => import('./pages/ServicesPage/ServicePage5'));
+const ServicePage6 = lazy(() => import('./pages/ServicesPage/ServicePage6'));
+const ServicePage7 = lazy(() => import('./pages/ServicesPage/ServicePage7'));
+const ServicePage8 = lazy(() => import('./pages/ServicesPage/ServicePage8'));
+const ServicePage9 = lazy(() => import('./pages/ServicesPage/ServicePage9'));
+const ServicePage10 = lazy(() => import('./pages/ServicesPage/ServicePage10'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -23,16 +32,16 @@ const UserRoutes = () => {
             <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
             <Route path="/news" element={<NewsPage/>}/>
             <Route path="/partners" element={<PartnersPage/>}/>
-            <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePageOne/>}/>
-            <Route path="/services/konsultaciya-psihologa" element={<ServicePageOne/>}/>
-            <Route path="/services/postizometrichna-relaksaciya" element={<ServicePageOne/>}/>
-            <Route path="/services/refleksoterapiya" element={<ServicePageOne/>}/>
-            <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePageOne/>}/>
-            <Route path="/services/ritmichne-vtirannya" element={<ServicePageOne/>}/>
-            <Route path="/services/kinezioterapiya" element={<ServicePageOne/>}/>
-            <Route path="/services/gidrokinezioterapiya" element={<ServicePageOne/>}/>
-            <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePageOne/>}/>
-            <Route path="/services/aparatna-presoterapiya" element={<ServicePageOne/>}/>
+            <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
+            <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
+            <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
+            <Route path="/services/refleksoterapiya" element={<ServicePage4/>}/>
+            <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePage5/>}/>
+            <Route path="/services/ritmichne-vtirannya" element={<ServicePage6/>}/>
+            <Route path="/services/kinezioterapiya" element={<ServicePage7/>}/>
+            <Route path="/services/gidrokinezioterapiya" element={<ServicePage8/>}/>
+            <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage9/>}/>
+            <Route path="/services/aparatna-presoterapiya" element={<ServicePage10/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </Suspense>
