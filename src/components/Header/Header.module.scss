@@ -295,7 +295,7 @@
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 };
 
 .lang {
@@ -344,7 +344,7 @@
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 };
 
 .lang_menu {
@@ -366,7 +366,7 @@
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 };
 
 .menu_button {
@@ -380,7 +380,7 @@
     background: rgba(255, 255, 255, 0.50);
     outline: none;
     border: none;
-    z-index: 2;
+    z-index: 4;
 
     @media screen and (min-width: 1024px) {
         display: none;

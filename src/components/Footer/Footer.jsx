@@ -43,34 +43,34 @@ const currentYear = todayDate.getFullYear();
                     <p className={scss.services_title}>Реабілітаційна програма</p>
                     <ul className={scss.services_list}>
                         <li>
-                            <Link className={scss.services_item}>Консультація лікаря фізичної та реабілітаційної медицини</Link>
+                            <Link className={scss.services_item} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Консультація лікаря фізичної та реабілітаційної медицини</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Консультація психолога</Link>
+                            <Link className={scss.services_item} to="/services/konsultaciya-psihologa">Консультація психолога</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Постізометрична релаксація</Link>
+                            <Link className={scss.services_item} to="/services/postizometrichna-relaksaciya">Постізометрична релаксація</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Рефлексотерапія</Link>
+                            <Link className={scss.services_item} to="/services/refleksoterapiya">Рефлексотерапія</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Мануальна терапія</Link>
+                            <Link className={scss.services_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Мануальна терапія</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Ритмічне втирання</Link>
+                            <Link className={scss.services_item} to="/services/ritmichne-vtirannya">Ритмічне втирання</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Кінезіотерапія</Link>
+                            <Link className={scss.services_item} to="/services/kinezioterapiya">Кінезіотерапія</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Гідрокінезіотерапія</Link>
+                            <Link className={scss.services_item} to="/services/gidrokinezioterapiya">Гідрокінезіотерапія</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Масляно-дисперсійні ванни</Link>
+                            <Link className={scss.services_item} to="/services/maslyano-dispersijni-vanni">Масляно-дисперсійні ванни</Link>
                         </li>
                         <li>
-                            <Link className={scss.services_item}>Апаратна пресотерапія</Link>
+                            <Link className={scss.services_item} to="/services/aparatna-presoterapiya">Апаратна пресотерапія</Link>
                         </li>
                     </ul>
                 </div>

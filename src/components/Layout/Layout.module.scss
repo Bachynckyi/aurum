@@ -1,0 +1,53 @@
+.container_page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+};
+
+.main_container {
+    position: relative;
+    min-height: 70vh;
+};
+
+.footer_container {
+    margin-top: auto;
+    position: relative;
+};
+
+.background_wrapper1 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    min-height: 100%;
+    height: calc(100vh - 388px);
+    background: linear-gradient(180deg, rgba(169, 194, 237, 1), rgb(252, 254, 247));
+    z-index: 3;
+};
+
+.background_wrapper2 {
+    position: absolute;
+    min-width: 320px;
+    bottom: 0px;
+    width: 100vw;
+    height: 1375px;
+    background: url("../../images/background_3.jpg");
+    background-size: cover;
+    filter: blur(25px);
+    z-index: 2;
+    opacity: 0.6;
+
+    @media screen and (min-width: 390px) {
+        background-size: contain;
+    };
+
+    @media screen and (min-width: 1024px) {
+        background: url("../../images/background_3.1.jpg");
+    };
+
+    @media screen and (min-width: 1440px) {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    };
+};

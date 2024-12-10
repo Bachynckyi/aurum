@@ -1,11 +1,13 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import Layout from 'components/Layout/Layout';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/AboutVideoPage/AboutVideoPage'));
 const AboutHonorsPage = lazy(() => import('./pages/AboutHonorsPage/AboutHonorsPage'));
 const AboutPresentationPage = lazy(() => import('./pages/AboutPresentationPage/AboutPresentationPage'));
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
+const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
 const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 const ServicePage1 = lazy(() => import('./pages/ServicesPage/ServicePage1'));
@@ -27,11 +29,13 @@ const UserRoutes = () => {
       <Suspense fallback={null}>
         <Routes location={location} key={location.pathname}>
             <Route index element={<HomePage/>}></Route>
+            <Route path="/" element={<Layout/>}>
             <Route path="/about/video" element={<AboutVideoPage/>}/>
             <Route path="/about/honors" element={<AboutHonorsPage/>}/>
             <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
             <Route path="/news" element={<NewsPage/>}/>
             <Route path="/partners" element={<PartnersPage/>}/>
+            <Route path="/feedback" element={<ReviewsPage/>}/>
             <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
             <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
             <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
@@ -43,6 +47,7 @@ const UserRoutes = () => {
             <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage9/>}/>
             <Route path="/services/aparatna-presoterapiya" element={<ServicePage10/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
+            </Route>
         </Routes>
       </Suspense>
     </>
