@@ -93,7 +93,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={scss.nav_item}>
-              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/feedback">
+              <NavLink className={({isActive}) => isActive ? scss.nav_link_current : scss.nav_link} to="/reviews">
                 Відгуки
               </NavLink>
             </li>
@@ -122,7 +122,7 @@ const Header = () => {
           <button className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
           <div className={scss.socials}>
             <FacebookIcon className={scss.socials_icon_facebook}/>
-            <TelegramIcon className={scss.socials_icon_telegram}/>
+            <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.socials_icon_telegram}/></Link>
           </div>
         </div>
       </div>
@@ -179,10 +179,10 @@ const Header = () => {
                 <NavLink className={scss.nav} onClick={closeMobileMenu}>Новини</NavLink>
               </li>
               <li>
-                <NavLink className={scss.nav} onClick={closeMobileMenu}>Відгуки</NavLink>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/reviews" onClick={closeMobileMenu}>Відгуки</NavLink>
               </li>
               <li>
-                <NavLink className={scss.nav} to="/partners" onClick={closeMobileMenu}>Наші партнери</NavLink>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/partners" onClick={closeMobileMenu}>Наші партнери</NavLink>
               </li>
             </ul>
           </nav>

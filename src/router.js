@@ -35,7 +35,7 @@ const UserRoutes = () => {
             <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
             <Route path="/news" element={<NewsPage/>}/>
             <Route path="/partners" element={<PartnersPage/>}/>
-            <Route path="/feedback" element={<ReviewsPage/>}/>
+            <Route path="/reviews" element={<ReviewsPage/>}/>
             <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
             <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
             <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>

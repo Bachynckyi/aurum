@@ -36,7 +36,7 @@ const currentYear = todayDate.getFullYear();
                     </div>
                     <div className={scss.contacts_services}>
                         <FacebookIcon className={scss.contacts_icon_facebook}/>
-                        <TelegramIcon className={scss.contacts_icon_telegram}/>
+                        <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.contacts_icon_telegram}/></Link>
                     </div>
                 </div>
                 <div className={scss.services_container}>

@@ -90,7 +90,7 @@ const HomePage = () => {
                 <div className={scss.about_text_wrapper}>
                     <span className={scss.about_title_desktop}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
                     <span className={scss.about_text}>Внаслідок бойових дій на території України потреба в реабілітації серед військових та цивільних проявлена вкрай гостро. З 2014 року проблема посттравматичного синдрому є однією з найбільших. Активна участь у комплексному вирішенні цієї проблематики у командній роботі з фахівцями – є головним завданням центру.</span>
-                    <Link className={scss.about_link}>Дізнатись більше</Link>
+                    <Link className={scss.about_link} to="/about/presentation">Дізнатись більше</Link>
                 </div>
             </div>
             <div className={scss.partners_container}>
@@ -127,18 +127,50 @@ const HomePage = () => {
                     </li>
                     <li className={scss.team_list_item3}>
                         <div className={scss.team_list_names}>
-                            <span className={scss.team_list_name}>Тамара </span>
-                            <span className={scss.team_list_surname}>Блекот</span>
+                            <span className={scss.team_list_name}>Юрій </span>
+                            <span className={scss.team_list_surname}>Коросько</span>
                         </div>
-                        <span className={scss.team_list_job}>Психолог</span>
+                        <span className={scss.team_list_job}>Психолог, Остеопат</span>
                         <div className={scss.team_list_layer}></div>
                     </li>
                     <li className={scss.team_list_item4}>
                         <div className={scss.team_list_names}>
-                            <span className={scss.team_list_name}>Дар’я </span>
-                            <span className={scss.team_list_surname}>Масло</span>
+                            <span className={scss.team_list_name}>Ірина </span>
+                            <span className={scss.team_list_surname}>Сергійчук</span>
                         </div>
-                        <span className={scss.team_list_job}>Фізичний реабілітолог</span>
+                        <span className={scss.team_list_job}>Остеопат</span>
+                        <div className={scss.team_list_layer}></div>
+                    </li>
+                    <li className={scss.team_list_item5}>
+                        <div className={scss.team_list_names}>
+                            <span className={scss.team_list_name}>Наталія </span>
+                            <span className={scss.team_list_surname}>Дмитрієва</span>
+                        </div>
+                        <span className={scss.team_list_job}>Директор центру</span>
+                        <div className={scss.team_list_layer}></div>
+                    </li>
+                    <li className={scss.team_list_item6}>
+                        <div className={scss.team_list_names}>
+                            <span className={scss.team_list_name}>Марина </span>
+                            <span className={scss.team_list_surname}>Сидоренко</span>
+                        </div>
+                        <span className={scss.team_list_job}>Адміністратор центру</span>
+                        <div className={scss.team_list_layer}></div>
+                    </li>
+                    <li className={scss.team_list_item7}>
+                        <div className={scss.team_list_names}>
+                            <span className={scss.team_list_name}>Тест </span>
+                            <span className={scss.team_list_surname}>Тест</span>
+                        </div>
+                        <span className={scss.team_list_job}>Невролог</span>
+                        <div className={scss.team_list_layer}></div>
+                    </li>
+                    <li className={scss.team_list_item8}>
+                        <div className={scss.team_list_names}>
+                            <span className={scss.team_list_name}>Тест </span>
+                            <span className={scss.team_list_surname}>Тест</span>
+                        </div>
+                        <span className={scss.team_list_job}>Реабілітолог</span>
                         <div className={scss.team_list_layer}></div>
                     </li>
                 </ul>
@@ -149,7 +181,7 @@ const HomePage = () => {
                     <span className={scss.container_title2}>новини</span>
                 </div>
                 <NewsSlider/>
-                <Link className={scss.news_button}>Більше новин</Link>
+                <Link className={scss.news_button} to="/news">Більше новин</Link>
             </div>  
             <div className={scss.reviews_container}>
                 <div className={scss.container_title}>
