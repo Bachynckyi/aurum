@@ -119,7 +119,7 @@ const Header = () => {
               <span className={scss.lang}>DE</span>
             </div>
           </div>
-          <button className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
+          <button type="button" className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
           <div className={scss.socials}>
             <FacebookIcon className={scss.socials_icon_facebook}/>
             <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.socials_icon_telegram}/></Link>
@@ -176,7 +176,7 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <NavLink className={scss.nav} onClick={closeMobileMenu}>Новини</NavLink>
+                <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} onClick={closeMobileMenu} to='/news'>Новини</NavLink>
               </li>
               <li>
                 <NavLink className={({isActive}) => isActive ? scss.current : scss.nav} to="/reviews" onClick={closeMobileMenu}>Відгуки</NavLink>
