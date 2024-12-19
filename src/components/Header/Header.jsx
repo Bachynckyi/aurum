@@ -40,10 +40,12 @@ const Header = () => {
   const closeMobileMenu = () => {
     document.body.style.cssText = `overflow-y: auto`;
     setIsActiveMobileMenu(false);
-    setIsActiveMenuLang(false);
-    setIsActiveMenuMobileLang(false);
-    setAboutSubmenuMobile(false);
-    setServicesSubmenuMobile(false);
+    setTimeout(() => {
+      setIsActiveMenuLang(false);
+      setIsActiveMenuMobileLang(false);
+      setAboutSubmenuMobile(false);
+      setServicesSubmenuMobile(false);
+    }, 1000)
   };
 
   const toggleLangMenuMobile = () => {
