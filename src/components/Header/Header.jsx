@@ -140,8 +140,9 @@ const Header = () => {
               <span className={scss.lang}>DE</span>
               </div>
             </div>
-            <button className={scss.close_menu} onClick={closeMobileMenu} onTouch={closeMobileMenu} onTouchStart={closeMobileMenu}>
-              <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon_active) : (scss.close_menu_icon)}/></button>
+            <button className={scss.close_menu} onClick={closeMobileMenu}>
+              <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon_active) : (scss.close_menu_icon)} onClick={closeMobileMenu}/>
+            </button>
           </div>
           <nav>
             <ul className={scss.mobile_nav_list}>
