@@ -25,6 +25,15 @@ const AboutVideoPage = () => {
               className={scss.react_player}
               />
           </div>
+          <div className={scss.video_wrapper}>
+            <ReactPlayer 
+              url='https://youtu.be/mzYagWGKGlw' 
+              controls={true}
+              width="100%"
+              height="100%"
+              className={scss.react_player}
+              />
+          </div>
         </div>
     </div>
         
