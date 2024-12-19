@@ -107,7 +107,7 @@ const Header = () => {
         <div className={scss.header_wrapper}>
           <Link className={scss.header_button}>
             <HandshakeWhite/>
-            <span className={scss.header_button_text}>Підтримати проєкт</span>
+            <span className={scss.header_button_text}>Підтримати проект</span>
           </Link>
           <div className={scss.lang_switcher_container} >
             <button type="button" onClick={toggleLangMenu} className={scss.lang_switcher}>

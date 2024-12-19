@@ -1,5 +1,4 @@
 import scss from './HomePage.module.scss';
-import Header from 'components/Header/Header';
 import { Link } from 'react-router-dom';
 import teamPhoto1 from '../../images/team_photo1.jpg';
 import teamPhoto2 from '../../images/team_photo2.jpg';
@@ -31,7 +30,6 @@ const HomePage = () => {
         <BackgroundLeft2 className={scss.background_left2}/>
         <BackgroundRight1 className={scss.background_right1}/>
         <BackgroundRight2 className={scss.background_right2}/>
-        <Header/>
         <div className={scss.content_container}>
             <div className={scss.intro_container_wrapper}>
             <div className={scss.intro_container}>
@@ -67,7 +65,7 @@ const HomePage = () => {
                 <div className={scss.buttons_container}>
                     <Link className={scss.button_support}>
                         <Handshake className={scss.handshake}/>
-                        <span>Підтримати проєкт</span>
+                        <span>Підтримати проект</span>
                     </Link>
                     <Link className={scss.button_read}>Дізнатись більше</Link>
                 </div>

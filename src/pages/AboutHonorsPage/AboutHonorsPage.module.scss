@@ -11,7 +11,6 @@
 };
 
 .content_wrapper {
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,6 +20,10 @@
     padding: 0px 20px 80px 20px;
     max-width: 1440px;
     z-index: 7;
+
+    @media screen and (min-width: 1024px) {
+        padding: 30px 0px 80px 0px;
+    };
 };
 
 .title {
@@ -32,10 +35,6 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-
-    @media screen and (min-width: 1024px) {
-        font-size: 64px;
-    };
 };
 
 .photo_wrapper {

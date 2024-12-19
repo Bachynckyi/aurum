@@ -1,4 +1,5 @@
 .header{
+    position: absolute;
     width: 100vw;
     min-width: 320px;
     box-sizing: border-box;
@@ -13,7 +14,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
         padding: 0px;
         gap: 0px;
         height: 96px;
@@ -395,7 +395,7 @@
 
 .mobile_menu {
     min-width: 320px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     bottom: 0px;

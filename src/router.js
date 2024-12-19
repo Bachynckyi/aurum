@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Layout from 'components/Layout/Layout';
+import Header from 'components/Header/Header';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/AboutVideoPage/AboutVideoPage'));
@@ -26,27 +27,28 @@ const UserRoutes = () => {
 
   return (
     <>
+      <Header/>
       <Suspense fallback={null}>
         <Routes location={location} key={location.pathname}>
             <Route index element={<HomePage/>}></Route>
             <Route path="/" element={<Layout/>}>
-            <Route path="/about/video" element={<AboutVideoPage/>}/>
-            <Route path="/about/honors" element={<AboutHonorsPage/>}/>
-            <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
-            <Route path="/news" element={<NewsPage/>}/>
-            <Route path="/partners" element={<PartnersPage/>}/>
-            <Route path="/reviews" element={<ReviewsPage/>}/>
-            <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
-            <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
-            <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
-            <Route path="/services/refleksoterapiya" element={<ServicePage4/>}/>
-            <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePage5/>}/>
-            <Route path="/services/ritmichne-vtirannya" element={<ServicePage6/>}/>
-            <Route path="/services/kinezioterapiya" element={<ServicePage7/>}/>
-            <Route path="/services/gidrokinezioterapiya" element={<ServicePage8/>}/>
-            <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage9/>}/>
-            <Route path="/services/aparatna-presoterapiya" element={<ServicePage10/>}/>
-            <Route path="*" element={<NotFoundPage/>}/>
+              <Route path="/about/video" element={<AboutVideoPage/>}/>
+              <Route path="/about/honors" element={<AboutHonorsPage/>}/>
+              <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
+              <Route path="/news" element={<NewsPage/>}/>
+              <Route path="/partners" element={<PartnersPage/>}/>
+              <Route path="/reviews" element={<ReviewsPage/>}/>
+              <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
+              <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
+              <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
+              <Route path="/services/refleksoterapiya" element={<ServicePage4/>}/>
+              <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePage5/>}/>
+              <Route path="/services/ritmichne-vtirannya" element={<ServicePage6/>}/>
+              <Route path="/services/kinezioterapiya" element={<ServicePage7/>}/>
+              <Route path="/services/gidrokinezioterapiya" element={<ServicePage8/>}/>
+              <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage9/>}/>
+              <Route path="/services/aparatna-presoterapiya" element={<ServicePage10/>}/>
+              <Route path="*" element={<NotFoundPage/>}/>
             </Route>
         </Routes>
       </Suspense>
