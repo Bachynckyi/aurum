@@ -45,14 +45,15 @@
     width: 100%;
     position: relative;
     padding-top: 56.25%;
-    margin-top: 50px;
-    
-    @media screen and (min-width: 1024px) {
-        max-width: 1008px;
-        padding-top: 0px;
-        height: 550px;
-    };
+    margin-top: 30px;
 
+    @media screen and (min-width: 1024px) {
+        padding-top: 0px;
+        width: 45vw;
+        height: 60vh;
+        max-width: 1008px;
+        max-height: 550px;
+    };
 };
 
 .react_player {

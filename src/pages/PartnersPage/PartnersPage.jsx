@@ -9,8 +9,7 @@ const PartnersPage = () => {
             <h1 className={scss.title}>Наші партнери</h1>
             <Partners/>
           </div>
-    </div>
-        
+    </div> 
   )
 };
 
