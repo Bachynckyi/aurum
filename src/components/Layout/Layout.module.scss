@@ -60,3 +60,35 @@
         transform: translateX(-50%);
     };
 };
+
+.scroll_button {
+    right: 10px !important;
+    bottom: 20px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 50% !important;
+    width: 54px !important;
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    @media screen and (min-width: 768px) {
+        width: 75px !important;
+        height: 75px !important;
+    };
+};
+
+.arrowUp {
+    color: #00A3FF;
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px;
+
+    @media screen and (min-width: 768px) {
+        width: 75px;
+        height: 75px;
+    };
+};

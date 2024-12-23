@@ -463,7 +463,7 @@
     height: 35px;
     transition-property: transform;
     transform: rotate(0deg);
-    transition-duration: 100ms;
+    transition-duration: 300ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 };
@@ -474,7 +474,7 @@
     height: 35px;
     transition-property: transform;
     transform: rotate(180deg);
-    transition-duration: 100ms;
+    transition-duration: 300ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }; 

@@ -48,12 +48,27 @@ button {
 
 @media screen and (min-width: 768px) {
   .servicesSlider2 .slick-slide div {
+    height: 238px;
     margin: 0px 0px 20px 20px;
   }  
 }
 
+@media screen and (min-width: 1440px) {
+  .servicesSlider2 .slick-slide div {
+    box-sizing: border-box !important;
+    height: 258px !important;
+  }  
+}
+
+.servicesSlider2 .slick-dots {
+  bottom: -94px;
+  left:50%;
+  transform:translate(-50%, 0%);
+  width: 160px;
+  margin-left: 4px;
+}
+
 .servicesSlider2 .slick-dots li button:before {
-  margin-top: 54px;
   background: url('/src/images/services_slider_dot.svg');
   content: "" !important;
   opacity: 1 !important;
@@ -61,7 +76,6 @@ button {
 }
 
 .servicesSlider2 .slick-dots li.slick-active button:before {
-  margin-top: 54px;
   background: url('/src/images/services_slider_dot_active.svg');
   content: "" !important;
   opacity: 1 !important;
@@ -70,7 +84,6 @@ button {
 
 .servicesSlider2 .slick-dots li button:hover, &:focus {
     &:before {
-      margin-top: 54px;
       background: url('/src/images/services_slider_dot_active.svg');
       color: transparent !important;
       background-repeat: no-repeat;
@@ -79,22 +92,29 @@ button {
 
 @media screen and (min-width: 768px) {
   .servicesSlider2 .slick-dots {
-    width: 20px;
-    height: 20px;
-    position: absolute !important;
+    bottom: 0px;
+    transform:translate(0%, 0%);
+    margin-left: 0px;
     display: flex !important;
     flex-direction: column !important;
-    gap: 15px !important;
-    left: calc(100% + 20px);
-    top: 15%;
+    flex-wrap: wrap !important;
+    width: 64px !important;
+    height: 130px;
+    left: 100%;
+    top: 50%;
+    transform:translate(0%, -50%);
+    gap: 4px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .servicesSlider2 .slick-dots {
-    top: 10%;
+    gap: 8px;
+    height: 150px;
   }
 }
+
+
 
 .newsSlider .slick-slide div {
   margin-left: 7.5px;

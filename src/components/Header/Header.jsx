@@ -141,7 +141,7 @@ const Header = () => {
               </div>
             </div>
             <button className={scss.close_menu} onClick={closeMobileMenu}>
-              <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon_active) : (scss.close_menu_icon)} onClick={closeMobileMenu}/>
+              <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon) : (scss.close_menu_icon_active)} onClick={closeMobileMenu}/>
             </button>
           </div>
           <nav>
