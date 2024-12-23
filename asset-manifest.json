@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/aurum/static/css/main.a87746de.css",
-    "main.js": "/aurum/static/js/main.e505eb5d.js",
+    "main.js": "/aurum/static/js/main.bbb58d98.js",
     "static/css/418.07370909.chunk.css": "/aurum/static/css/418.07370909.chunk.css",
-    "static/js/418.43df16bb.chunk.js": "/aurum/static/js/418.43df16bb.chunk.js",
+    "static/js/418.58cfb02c.chunk.js": "/aurum/static/js/418.58cfb02c.chunk.js",
     "static/css/891.6dfcac2e.chunk.css": "/aurum/static/css/891.6dfcac2e.chunk.css",
     "static/js/891.b6d43c1b.chunk.js": "/aurum/static/js/891.b6d43c1b.chunk.js",
     "static/css/818.9d165bdc.chunk.css": "/aurum/static/css/818.9d165bdc.chunk.css",
@@ -56,13 +56,12 @@
     "static/js/299.2d6af467.chunk.js": "/aurum/static/js/299.2d6af467.chunk.js",
     "static/js/909.af5808db.chunk.js": "/aurum/static/js/909.af5808db.chunk.js",
     "static/js/930.04719aff.chunk.js": "/aurum/static/js/930.04719aff.chunk.js",
-    "static/media/team_photo3.jpg": "/aurum/static/media/team_photo3.31f6ba492d3d246074b2.jpg",
-    "static/media/team_photo2.jpg": "/aurum/static/media/team_photo2.fbabd84963ffd210f966.jpg",
     "static/media/team_member_6.jpg": "/aurum/static/media/team_member_6.e139e4abe96db73fa3f5.jpg",
     "static/media/team_member_5.jpg": "/aurum/static/media/team_member_5.c1399abf147d4bfc8086.jpg",
     "static/media/team_member_3.jpg": "/aurum/static/media/team_member_3.835e152bb26852568f12.jpg",
     "static/media/honor9.jpg": "/aurum/static/media/honor9.1a3437e4de3351a68a70.jpg",
     "static/media/service4.jpg": "/aurum/static/media/service4.0ce21be81b732e235396.jpg",
+    "static/media/team_photo3.jpg": "/aurum/static/media/team_photo3.2655501c462579be3ac2.jpg",
     "static/media/honor4.jpg": "/aurum/static/media/honor4.556ace9ae46dd70a1d86.jpg",
     "static/media/honor7.jpg": "/aurum/static/media/honor7.aa7fca547f6bf86e9fe1.jpg",
     "static/media/honor8.jpg": "/aurum/static/media/honor8.0a4f0046706588745e38.jpg",
@@ -72,6 +71,7 @@
     "static/media/honor11.jpg": "/aurum/static/media/honor11.8d6b18030d7bdcf33f61.jpg",
     "static/media/team_member_4.jpg": "/aurum/static/media/team_member_4.7985424d8efced119c59.jpg",
     "static/media/team_photo1.jpg": "/aurum/static/media/team_photo1.b548de26080ccdbbddb3.jpg",
+    "static/media/team_photo2.jpg": "/aurum/static/media/team_photo2.18cbc819ef41270bcf68.jpg",
     "static/media/service5.png": "/aurum/static/media/service5.b9bc7461ff645754885d.png",
     "static/media/Center.png": "/aurum/static/media/Center.ec1b5362c735cdcb13f4.png",
     "static/media/Association.jpg": "/aurum/static/media/Association.773deed5a415117d91ff.jpg",
@@ -141,9 +141,9 @@
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
     "main.a87746de.css.map": "/aurum/static/css/main.a87746de.css.map",
-    "main.e505eb5d.js.map": "/aurum/static/js/main.e505eb5d.js.map",
+    "main.bbb58d98.js.map": "/aurum/static/js/main.bbb58d98.js.map",
     "418.07370909.chunk.css.map": "/aurum/static/css/418.07370909.chunk.css.map",
-    "418.43df16bb.chunk.js.map": "/aurum/static/js/418.43df16bb.chunk.js.map",
+    "418.58cfb02c.chunk.js.map": "/aurum/static/js/418.58cfb02c.chunk.js.map",
     "891.6dfcac2e.chunk.css.map": "/aurum/static/css/891.6dfcac2e.chunk.css.map",
     "891.b6d43c1b.chunk.js.map": "/aurum/static/js/891.b6d43c1b.chunk.js.map",
     "818.9d165bdc.chunk.css.map": "/aurum/static/css/818.9d165bdc.chunk.css.map",
@@ -199,6 +199,6 @@
   },
   "entrypoints": [
     "static/css/main.a87746de.css",
-    "static/js/main.e505eb5d.js"
+    "static/js/main.bbb58d98.js"
   ]
 }
