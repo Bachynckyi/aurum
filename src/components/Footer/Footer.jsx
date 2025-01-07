@@ -5,7 +5,7 @@ import { ReactComponent as EmailIcon } from '../../images/email_icon.svg';
 import { ReactComponent as AurumLogoSmall } from '../../images/Aurum_logo_small.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
 import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
 const todayDate = new Date();
@@ -35,7 +35,7 @@ const currentYear = todayDate.getFullYear();
                         <a className={scss.contacts_text} href="mailto: info@clinic-aurum.com">info@clinic-aurum.com</a>
                     </div>
                     <div className={scss.contacts_services}>
-                        <FacebookIcon className={scss.contacts_icon_facebook}/>
+                        <Link to="https://www.facebook.com/profile.php?id=61571048378069&sk=about" target='_blank'><FacebookIcon className={scss.contacts_icon_facebook}/></Link>
                         <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.contacts_icon_telegram}/></Link>
                     </div>
                 </div>
@@ -43,34 +43,34 @@ const currentYear = todayDate.getFullYear();
                     <p className={scss.services_title}>Реабілітаційна програма</p>
                     <ul className={scss.services_list}>
                         <li>
-                            <Link className={scss.services_item} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Консультація лікаря фізичної та реабілітаційної медицини</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Консультація лікаря фізичної та реабілітаційної медицини</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/konsultaciya-psihologa">Консультація психолога</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/konsultaciya-psihologa">Консультація психолога</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/postizometrichna-relaksaciya">Постізометрична релаксація</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/postizometrichna-relaksaciya">Постізометрична релаксація</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/refleksoterapiya">Рефлексотерапія</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/refleksoterapiya">Рефлексотерапія</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Мануальна терапія</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Мануальна терапія</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/ritmichne-vtirannya">Ритмічне втирання</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/ritmichne-vtirannya">Ритмічне втирання</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/kinezioterapiya">Кінезіотерапія</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/kinezioterapiya">Кінезіотерапія</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/gidrokinezioterapiya">Гідрокінезіотерапія</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/gidrokinezioterapiya">Гідрокінезіотерапія</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/maslyano-dispersijni-vanni">Масляно-дисперсійні ванни</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/maslyano-dispersijni-vanni">Масляно-дисперсійні ванни</NavLink>
                         </li>
                         <li>
-                            <Link className={scss.services_item} to="/services/aparatna-presoterapiya">Апаратна пресотерапія</Link>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/aparatna-presoterapiya">Апаратна пресотерапія</NavLink>
                         </li>
                     </ul>
                 </div>

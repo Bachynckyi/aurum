@@ -157,7 +157,7 @@ const HomePage = () => {
                                 <span className={scss.team_list_name}>Наталія </span>
                                 <span className={scss.team_list_surname}>Дмитрієва</span>
                             </div>
-                            <span className={scss.team_list_job}>Директор центру</span>
+                            <span className={scss.team_list_job}>Директор Центру</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item6}>
@@ -165,7 +165,7 @@ const HomePage = () => {
                                 <span className={scss.team_list_name}>Марина </span>
                                 <span className={scss.team_list_surname}>Сидоренко</span>
                             </div>
-                            <span className={scss.team_list_job}>Адміністратор центру</span>
+                            <span className={scss.team_list_job}>Адміністратор Центру</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                     </ul>

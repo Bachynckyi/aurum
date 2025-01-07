@@ -123,7 +123,7 @@ const Header = () => {
           </div>
           <button type="button" className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
           <div className={scss.socials}>
-            <FacebookIcon className={scss.socials_icon_facebook}/>
+            <Link to="https://www.facebook.com/profile.php?id=61571048378069&sk=about" target='_blank'><FacebookIcon className={scss.socials_icon_facebook}/></Link>
             <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.socials_icon_telegram}/></Link>
           </div>
         </div>

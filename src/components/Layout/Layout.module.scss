@@ -67,28 +67,19 @@
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 50% !important;
-    width: 65px !important;
-    height: 65px !important;
+    width: 75px !important;
+    height: 75px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-
-    @media screen and (min-width: 768px) {
-        width: 75px !important;
-        height: 75px !important;
-    };
+    z-index: 9999 !important;
 };
 
 .arrowUp {
     color: #00A3FF;
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     background-color: transparent;
     border-radius: 50%;
     box-shadow: 0px;
-
-    @media screen and (min-width: 768px) {
-        width: 75px;
-        height: 75px;
-    };
 };

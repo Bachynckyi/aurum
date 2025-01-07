@@ -13,7 +13,7 @@ import service4 from '../../images/services/service4.jpg';
 import service5 from '../../images/services/service5.png';
 import service6 from '../../images/services/service6.jpg';
 import service7 from '../../images/services/service7.jpg';
-import service8 from '../../images/services/service7.jpg';
+import service8 from '../../images/services/service8.jpg';
 import service9 from '../../images/services/service9.jpg';
 import service10 from '../../images/services/service10.jpg';
 

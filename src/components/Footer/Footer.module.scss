@@ -145,6 +145,17 @@
     };
 };
 
+.services_item_active {
+    color: #00A3FF;
+    font-family: "Exo2-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+};
+
 .politics {
     display: flex;
     flex-direction: row;

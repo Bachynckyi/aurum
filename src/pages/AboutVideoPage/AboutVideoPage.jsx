@@ -1,5 +1,5 @@
 import scss from './AboutVideoPage.module.scss';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 const AboutVideoPage = () => {
 

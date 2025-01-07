@@ -17,31 +17,21 @@
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 50% !important;
-    width: 65px !important;
-    height: 65px !important;
+    width: 75px !important;
+    height: 75px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    z-index: 999 !important;
-
-    @media screen and (min-width: 768px) {
-        width: 75px !important;
-        height: 75px !important;
-    };
+    z-index: 9999 !important;
 };
 
 .arrowUp {
     color: #00A3FF;
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     background-color: transparent;
     border-radius: 50%;
     box-shadow: 0px;
-
-    @media screen and (min-width: 768px) {
-        width: 75px;
-        height: 75px;
-    };
 };
 
 .content_container {
@@ -957,9 +947,9 @@
     width: 168px;
     height: 226px;
     border-radius: 24px;
-    background: url("../../images/team/team_member_3.jpg") lightgray 0% 0% / 22.40000069141388px 22.40000069141388px no-repeat;
-    background-size: cover;
-    background-position-x: 50%;
+    background: url("../../images/team/team_member_3.jpg") lightgray no-repeat;
+    background-position: 50% -15%;
+    background-size: 135%;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
@@ -978,9 +968,10 @@
     width: 168px;
     height: 226px;
     border-radius: 24px;
-    background: url("../../images/team/team_member_4.jpg") lightgray -26.094px -5.802px / 131.25% 146.512% no-repeat;
+    background: url("../../images/team/team_member_4.jpg") lightgray no-repeat;
     background-size: cover;
-    background-position-x: 30%;
+    background-position: 40% -20%;
+    background-size: 108%;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
@@ -999,9 +990,10 @@
     width: 168px;
     height: 226px;
     border-radius: 24px;
-    background: url("../../images/team/team_member_5.jpg") lightgray -26.094px -5.802px / 131.25% 146.512% no-repeat;
+    background: url("../../images/team/team_member_5.jpg") lightgray no-repeat;
     background-size: cover;
-    background-position-x: 30%;
+    background-position: -50% -10%;
+    background-size: 110%;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
@@ -1020,51 +1012,10 @@
     width: 168px;
     height: 226px;
     border-radius: 24px;
-    background: url("../../images/team/team_member_6.jpg") lightgray -26.094px -5.802px / 131.25% 146.512% no-repeat;
+    background: url("../../images/team/team_member_6.jpg") lightgray no-repeat;
     background-size: cover;
-    background-position-x: 60%;
-
-    @media screen and (min-width: 1024px) {
-        width: 320px;
-        height: 430px;
-    };
-};
-
-.team_list_item7 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding-bottom: 15px;
-    width: 168px;
-    height: 226px;
-    border-radius: 24px;
-    background: #fff;
-    background-size: cover;
-    background-position-x: 60%;
-
-    @media screen and (min-width: 1024px) {
-        width: 320px;
-        height: 430px;
-    };
-};
-
-.team_list_item8 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding-bottom: 15px;
-    width: 168px;
-    height: 226px;
-    border-radius: 24px;
-    background: #fff;
-    background-size: cover;
-    background-position-x: 60%;
+    background-position: 50% 5%;
+    background-size: 125%;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
