@@ -123,7 +123,7 @@ export const de = {
         "News_title": "Nachricht",
 
         // Footer
-        "Footer_license": "Person. Gesundheitsministerium der Ukraine Nr. 1603 vom 11.09.2023",
+        "Footer_license": "Lizenz Gesundheitsministerium der Ukraine Nr. 1603 vom 11.09.2023",
         "Footer_center_name": "Aurum Medizinisches Zentrum",
         "Footer_contacts_title": "Kontakte",
         "Footer_contacts_address": "M. Kiew, st. Riznyzka, 11",
