@@ -6,17 +6,29 @@ import { useEffect, useState } from 'react';
 
 const AboutPresentationPage = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState("");
+  const [presentation, setPresentation] = useState("");
 
   useEffect(() => {
-    setLang(localStorage.getItem("i18nextLng"));
+    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    if(currentLang.includes("UK" || "UA")) {
+      setPresentation("/assets/Презентація_Аурум_UKR.pdf");
+    }
+    else if(currentLang.includes("RU")) {
+      setPresentation("/assets/Презентація_Аурум_UKR.pdf");
+    }
+    else if(currentLang.includes("DE")) {
+      setPresentation("/assets/Präsentation_Aurum_DE.pdf");
+    }
+    else {
+      setPresentation("/assets/Presentation_Aurum_EN.pdf");
+    }
   }, []);
 
   return (
     <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
-              <Link  to={lang === "uk" ? ("/assets/Презентація_Аурум.pdf") : ("/assets/Presentation_Aurum.pdf")} target="_blank" className={scss.button_download}>
+              <Link  to={presentation} target="_blank" className={scss.button_download}>
                 <MdOutlineScreenSearchDesktop className={scss.icon}/>
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
               </Link>
