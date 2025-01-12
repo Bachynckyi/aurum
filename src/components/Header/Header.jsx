@@ -24,7 +24,7 @@ const Header = () => {
 
   useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
-    if(currentLang.includes("UK")) {
+    if(currentLang.includes("UK" || "UA")) {
       setLangOptions(["UK", "EN", "DE"]);
     }
     if(currentLang.includes("DE")) {
