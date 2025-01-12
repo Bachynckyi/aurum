@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.1d3b8495.css",
-    "main.js": "/aurum/static/js/main.a4551026.js",
+    "main.css": "/aurum/static/css/main.577a64e3.css",
+    "main.js": "/aurum/static/js/main.bf0922cc.js",
     "static/css/698.3a6a4b50.chunk.css": "/aurum/static/css/698.3a6a4b50.chunk.css",
     "static/js/698.46d10274.chunk.js": "/aurum/static/js/698.46d10274.chunk.js",
     "static/css/983.b54ae857.chunk.css": "/aurum/static/css/983.b54ae857.chunk.css",
@@ -142,8 +142,8 @@
     "static/media/polygon.svg": "/aurum/static/media/polygon.dc649bc71f8302544294cb899634e947.svg",
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
-    "main.1d3b8495.css.map": "/aurum/static/css/main.1d3b8495.css.map",
-    "main.a4551026.js.map": "/aurum/static/js/main.a4551026.js.map",
+    "main.577a64e3.css.map": "/aurum/static/css/main.577a64e3.css.map",
+    "main.bf0922cc.js.map": "/aurum/static/js/main.bf0922cc.js.map",
     "698.3a6a4b50.chunk.css.map": "/aurum/static/css/698.3a6a4b50.chunk.css.map",
     "698.46d10274.chunk.js.map": "/aurum/static/js/698.46d10274.chunk.js.map",
     "983.b54ae857.chunk.css.map": "/aurum/static/css/983.b54ae857.chunk.css.map",
@@ -200,7 +200,7 @@
     "208.752c8aff.chunk.js.map": "/aurum/static/js/208.752c8aff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d3b8495.css",
-    "static/js/main.a4551026.js"
+    "static/css/main.577a64e3.css",
+    "static/js/main.bf0922cc.js"
   ]
 }
