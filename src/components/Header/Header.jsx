@@ -20,11 +20,22 @@ const Header = () => {
   const [aboutSubmenuMobile, setAboutSubmenuMobile] = useState(false);
   const [servicesSubmenuMobile, setServicesSubmenuMobile] = useState(false);
   const { t } = useTranslation();
-  const [langOptions, setLangOptions] = useState(["UK","EN","DE"]);
+  const [langOptions, setLangOptions] = useState([]);
 
   useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
-    setLangOptions([currentLang, ...langOptions.filter(el => el !== currentLang)]);
+    if(currentLang.includes("UK")) {
+      setLangOptions(["UK", "EN", "DE"]);
+    }
+    if(currentLang.includes("DE")) {
+      setLangOptions(["DE", "EN", "UK",]);
+    }
+    if(currentLang.includes("RU")) {
+      setLangOptions(["UK", "EN", "DE"]);
+    }
+    else {
+      setLangOptions(["EN", "DE", "UK"]);
+    }
     // eslint-disable-next-line
   }, [])
 
