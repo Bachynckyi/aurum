@@ -1,12 +1,14 @@
 import scss from './AboutVideoPage.module.scss';
 import ReactPlayer from 'react-player';
+import { useTranslation } from 'react-i18next';
 
 const AboutVideoPage = () => {
+  const { t } = useTranslation();
 
   return (
     <div className={scss.container}>
         <div className={scss.content_wrapper}>
-          <h1 className={scss.title}>Відео про нас</h1>
+          <h1 className={scss.title}>{t("Video_title")}</h1>
           <div className={scss.video_wrapper}>
             <ReactPlayer 
               url='https://www.youtube.com/watch?v=wc8NOpoWYcE' 

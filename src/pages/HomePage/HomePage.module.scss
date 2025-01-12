@@ -22,7 +22,7 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    z-index: 9999 !important;
+    z-index: 99999 !important;
 };
 
 .arrowUp {
@@ -303,6 +303,7 @@
 
 .intro_container_wrapper {
     width: 100vw;
+    min-width: 320px;
     z-index: 4;
 
     @media screen and (min-width: 1440px) {
@@ -382,16 +383,25 @@
     margin: 20px 0px 0px 0px;
     color: #005382;
     font-family: "Exo2-Light";
-    font-size: 24px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    @media screen and (min-width: 357px) {
+        font-size: 24px;
+    };
 
     @media screen and (min-width: 768px) {
         margin: 40px 0px 0px 0px;
     };
 
     @media screen and (min-width: 1024px) {
+        font-size: 35px;
+    };
+
+    @media screen and (min-width: 1440px) {
+        white-space: nowrap;
         font-size: 45px;
     };
 };
@@ -407,8 +417,13 @@
     line-height: normal;
 
     @media screen and (min-width: 1024px) {
+        font-size: 35px;
+    };
+
+    @media screen and (min-width: 1440px) {
         font-size: 45px;
     };
+
 };
 
 .supported_container {
@@ -417,7 +432,7 @@
     min-width: 280px;
     max-width: 350px;
     height: 265px;
-    padding: 30px 20px 30px 30px;
+    padding: 30px 10px 30px 30px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -429,7 +444,7 @@
         max-width: 441px;
         width: 441px;
         height: 330px;
-        padding: 30px 30px 35px 30px;
+        padding: 30px 16px 35px 30px;
     };
 };
 
@@ -466,7 +481,11 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    margin: 20px 0px 20px 0px;
+    margin: 12px 0px 12px 0px;
+
+    @media screen and (min-width: 357px) {
+        margin: 20px 0px 20px 0px;
+    };
 
     @media screen and (min-width: 1024px) {
         width: 100%;
@@ -831,6 +850,7 @@
 };
 
 .container_title {
+    text-align: center;
     position: relative;
     z-index: 4 !important;
     margin-bottom: 50px;

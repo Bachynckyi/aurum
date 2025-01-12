@@ -10,13 +10,15 @@ import honor8 from '../../images/honors/honor8.jpg';
 import honor9 from '../../images/honors/honor9.jpg';
 import honor10 from '../../images/honors/honor10.jpg';
 import honor11 from '../../images/honors/honor11.jpg';
+import { useTranslation } from 'react-i18next';
 
 const AboutHonorsPage = () => {
+  const { t } = useTranslation();
 
   return (
     <div className={scss.container}>
           <div className={scss.content_wrapper}>
-            <h1 className={scss.title}>Наші відзнаки та подяки</h1>
+            <h1 className={scss.title}>{t("Honors_title")}</h1>
             <div className={scss.photo_wrapper}>    
                 <img src={honor1} alt="imageHonor" className={scss.photo}/>
                 <img src={honor2} alt="imageHonor" className={scss.photo}/>

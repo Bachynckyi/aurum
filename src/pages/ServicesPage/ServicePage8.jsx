@@ -1,15 +1,17 @@
 import scss from "./ServicePage.module.scss";
 import service8 from '../../images/services/service8.jpg';
+import { useTranslation } from 'react-i18next';
 
 const ServicePage8 = () => {
+  const { t } = useTranslation();
 
   return (
     <div className={scss.container}>
         <div className={scss.main_wrapper}>
-            <h1 className={scss.title}>Гідрокінезіотерапія</h1>
+            <h1 className={scss.title}>{t("Service_title8")}</h1>
             <div className={scss.content_wrapper}>
               <img src={service8} alt='serviceImage' className={scss.image}/>
-              <span className={scss.description}>Засіб фізичної реабілітації, який полягає у виконанні  фізичної терапії (спеціальних фізичних вправ) у водному середовищі (басейні). Особливістю гідрокінезотерапії є поєднання виконання фізичних вправ в умовах антигравітаційного середовища, хімічного та температурного фактору води з лікувальною і профілактичною метою. Заняття проводяться під наглядом лікаря фізичної та реабілітаційної медицини та/або фахівцем з фізичної реабілітації.</span>
+              <span className={scss.description}>{t("Service_text8")}</span>
             </div>
         </div>
     </div>

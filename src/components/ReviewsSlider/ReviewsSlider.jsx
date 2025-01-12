@@ -3,8 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import userIcon from '../../images/user_icon.png'
+import { useTranslation } from 'react-i18next';
 
 const ReviewsSlider = () => {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -53,65 +55,37 @@ const ReviewsSlider = () => {
           <div className={scss.slider_review_card}>
               <div className={scss.slider_review_user}>
                   <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Максим</span>
+                  <span className={scss.slider_review_name}>{t("Reviews_card_name1")}</span>
               </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+              <span className={scss.slider_review_text}>{t("Reviews_card_text1")}</span>
           </div>
           <div className={scss.slider_review_card}>
               <div className={scss.slider_review_user}>
                   <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Антон</span>
+                  <span className={scss.slider_review_name}>{t("Reviews_card_name2")}</span>
               </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+              <span className={scss.slider_review_text}>{t("Reviews_card_text2")}</span>
           </div>
           <div className={scss.slider_review_card}>
               <div className={scss.slider_review_user}>
                   <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Валерій</span>
+                  <span className={scss.slider_review_name}>{t("Reviews_card_name3")}</span>
               </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+              <span className={scss.slider_review_text}>{t("Reviews_card_text3")}</span>
           </div>
           <div className={scss.slider_review_card}>
               <div className={scss.slider_review_user}>
                   <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Василь</span>
+                  <span className={scss.slider_review_name}>{t("Reviews_card_name4")}</span>
               </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+              <span className={scss.slider_review_text}>{t("Reviews_card_text4")}</span>
           </div>
           <div className={scss.slider_review_card}>
               <div className={scss.slider_review_user}>
                   <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Катерина</span>
+                  <span className={scss.slider_review_name}>{t("Reviews_card_name5")}</span>
               </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
-          </div>
-          <div className={scss.slider_review_card}>
-              <div className={scss.slider_review_user}>
-                  <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Ганна</span>
-              </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
-          </div>
-          <div className={scss.slider_review_card}>
-              <div className={scss.slider_review_user}>
-                  <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Сергій</span>
-              </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
-          </div>
-          <div className={scss.slider_review_card}>
-              <div className={scss.slider_review_user}>
-                  <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Петро</span>
-              </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
-          </div>
-          <div className={scss.slider_review_card}>
-              <div className={scss.slider_review_user}>
-                  <img src={userIcon} alt='user'/>
-                  <span className={scss.slider_review_name}>Ігнат</span>
-              </div>
-              <span className={scss.slider_review_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що теж сприяє покращенню стану та видужанню взагалі. Дуже цікава сама філософія реабілітації, для мене особисто це нова ера в реабілітації та лікуванні, і вона дає результат на оздоровленні та впевненість у собі.</span>
+              <span className={scss.slider_review_text}>{t("Reviews_card_text5")}</span>
           </div>
         </Slider>
     </div>

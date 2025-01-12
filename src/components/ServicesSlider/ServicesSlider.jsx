@@ -16,12 +16,14 @@ import service7 from '../../images/services/service7.jpg';
 import service8 from '../../images/services/service8.jpg';
 import service9 from '../../images/services/service9.jpg';
 import service10 from '../../images/services/service10.jpg';
+import { useTranslation } from 'react-i18next';
 
 const ServicesSlider = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
+    const { t } = useTranslation();
 
     useEffect(() => {
         setNav1(sliderRef1);
@@ -93,99 +95,99 @@ const ServicesSlider = () => {
                 <div className={scss.slider_card}>              
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Консультатація лікаря</p>
-                            <p className={scss.slider_title2}>фізичної та реабілітаційної</p>
-                            <p className={scss.slider_title2}>медицини</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text1.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text1.2")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text1.3")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description1")}</span>
+                        <Link className={scss.slider_link} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}> 
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Консультація</p>
-                            <p className={scss.slider_title2}>психолога</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text2.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text2.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/konsultaciya-psihologa">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description2")}</span>
+                        <Link className={scss.slider_link} to="/services/konsultaciya-psihologa">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Постізометрична</p>
-                            <p className={scss.slider_title2}>рекласація</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text3.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text3.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/postizometrichna-relaksaciya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description3")}</span>
+                        <Link className={scss.slider_link} to="/services/postizometrichna-relaksaciya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title2}>Рефлексотерапія</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text4")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/refleksoterapiya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description4")}</span>
+                        <Link className={scss.slider_link} to="/services/refleksoterapiya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Мануальна</p>
-                            <p className={scss.slider_title2}>терапія</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text5.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text1.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/manualna-terapiya-hrebta-ta-suglobiv">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description5")}</span>
+                        <Link className={scss.slider_link} to="/services/manualna-terapiya-hrebta-ta-suglobiv">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Ритмічне</p>
-                            <p className={scss.slider_title2}>втирання</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text6.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text6.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/ritmichne-vtirannya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description6")}</span>
+                        <Link className={scss.slider_link} to="/services/ritmichne-vtirannya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title2}>Кінеозіотерапія</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text7")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/kinezioterapiya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description7")}</span>
+                        <Link className={scss.slider_link} to="/services/kinezioterapiya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title2}>Гідрокінезіотерапія</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text8")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/gidrokinezioterapiya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description8")}</span>
+                        <Link className={scss.slider_link} to="/services/gidrokinezioterapiya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Масляно-дисперсійні</p>
-                            <p className={scss.slider_title2}>ванни</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text9.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text9.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/maslyano-dispersijni-vanni">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description9")}</span>
+                        <Link className={scss.slider_link} to="/services/maslyano-dispersijni-vanni">{t("Home_services_button")}</Link>
                     </div>
                 </div>
                 <div className={scss.slider_card}>
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
-                            <p className={scss.slider_title1}>Апаратна</p>
-                            <p className={scss.slider_title2}>пресотерапія</p>
+                            <p className={scss.slider_title1}>{t("Home_services_text10.1")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text10.2")}</p>
                         </div>
-                        <span className={scss.slider_description}>Оцінка психоемоційного функціонального стану пацієнта на момент початку реабілітації, з урахуванням данних висновку військово-лікарської комісії, анамнезу хвороби та анамнезу життя.</span>
-                        <Link className={scss.slider_link} to="/services/aparatna-presoterapiya">Дізнатися більше</Link>
+                        <span className={scss.slider_description}>{t("Home_services_description10")}</span>
+                        <Link className={scss.slider_link} to="/services/aparatna-presoterapiya">{t("Home_services_button")}</Link>
                     </div>
                 </div>
             </Slider>

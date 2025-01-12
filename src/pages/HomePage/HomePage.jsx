@@ -21,8 +21,10 @@ import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.
 import ScrollToTop from "react-scroll-to-top";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = () => {
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -45,69 +47,70 @@ const HomePage = () => {
             />
             <div className={scss.content_container}>
                 <div className={scss.intro_container_wrapper}>
-                <div className={scss.intro_container}>
-                    <div className={scss.intro_wrapper}>
-                        <div className={scss.logo_container}>
-                            <Logo className={scss.logo}/>
-                            <p className={scss.logo_text1}>Реабілітація та допомога</p>
-                            <p className={scss.logo_text2}>військовим і цивільним</p>
-                        </div>
-                        <div className={scss.supported_container}>
-                                <p className={scss.supported_text}>За підтримкою:</p>
-                                <div className={scss.supported_logo}>
-                                    <ParzivalZentrum className={scss.special_logo}/>
-                                </div>
-                                <Link className={scss.supported_link}>Міжнародний проект</Link>
-                                <ul className={scss.supported_list}>
-                                    <li>
-                                        <span>PARZIVAL-ZENTRUM</span>
-                                        <DeFlag className={scss.flags}/>
-                                    </li>
-                                    <li>
-                                        <span>МЕДИЧНОГО ЦЕНТРУ АУРУМ</span>
-                                        <UaFlag className={scss.flags}/>
-                                    </li>
-                                    <li>
-                                        <span>ВСЕУКРАЇНСЬКОЇ АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</span>
-                                        <UaFlag className={scss.flags}/>
-                                    </li>
-                                </ul>
-                                <ButtonMore className={scss.button_more}/>
+                    <div className={scss.intro_container}>
+                        <div className={scss.intro_wrapper}>
+                            <div className={scss.logo_container}>
+                                <Logo className={scss.logo}/>
+                                <p className={scss.logo_text1}>{t("Home_intro_text1")}</p>
+                                <p className={scss.logo_text2}>{t("Home_intro_text2")}</p>
                             </div>
+                            <div className={scss.supported_container}>
+                                    <p className={scss.supported_text}>{t("Home_intro_text3")}</p>
+                                    <div className={scss.supported_logo}>
+                                        <ParzivalZentrum className={scss.special_logo}/>
+                                    </div>
+                                    <Link className={scss.supported_link}>{t("Home_intro_text4")}</Link>
+                                    <ul className={scss.supported_list}>
+                                        <li>
+                                            <span>PARZIVAL-ZENTRUM</span>
+                                            <DeFlag className={scss.flags}/>
+                                        </li>
+                                        <li>
+                                            <span>{t("Home_intro_text5")}</span>
+                                            <UaFlag className={scss.flags}/>
+                                        </li>
+                                        <li>
+                                            <span>{t("Home_intro_text6.1")}</span>
+                                            <span>{t("Home_intro_text6.2")}</span>
+                                            <UaFlag className={scss.flags}/>
+                                        </li>
+                                    </ul>
+                                    <ButtonMore className={scss.button_more}/>
+                            </div>
+                        </div>
+                        <div className={scss.buttons_container}>
+                            <Link className={scss.button_support}>
+                                <Handshake className={scss.handshake}/>
+                                <span>{t("Home_intro_support")}</span>
+                            </Link>
+                            <Link className={scss.button_read}>{t("Home_intro_link")}</Link>
+                        </div>
                     </div>
-                    <div className={scss.buttons_container}>
-                        <Link className={scss.button_support}>
-                            <Handshake className={scss.handshake}/>
-                            <span>Підтримати проект</span>
-                        </Link>
-                        <Link className={scss.button_read}>Дізнатись більше</Link>
-                    </div>
-                </div>
                 </div>
                 <div className={scss.services_container}>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>Наші </span>
-                        <span className={scss.container_title2}>послуги</span>
+                        <span className={scss.container_title1}>{t("Home_services_title1")}</span>
+                        <span className={scss.container_title2}>{t("Home_services_title2")}</span>
                     </div>
                     <ServicesSlider/>
                 </div>
                 <div className={scss.about_container}>
-                    <span className={scss.about_title}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
+                    <span className={scss.about_title}>{t("Home_about_title")}</span>
                     <div className={scss.about_image_container}>
                         <img src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
                         <img src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
                         <img src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
                     </div>
                     <div className={scss.about_text_wrapper}>
-                        <span className={scss.about_title_desktop}>Aurum — це реабілітаційний центр, заснований на принципах єдності, довіри, інновацій та цілісності</span>
-                        <span className={scss.about_text}>Внаслідок бойових дій на території України потреба в реабілітації серед військових та цивільних проявлена вкрай гостро. З 2014 року проблема посттравматичного синдрому є однією з найбільших. Активна участь у комплексному вирішенні цієї проблематики у командній роботі з фахівцями – є головним завданням центру.</span>
-                        <Link className={scss.about_link} to="/about/presentation">Дізнатись більше</Link>
+                        <span className={scss.about_title_desktop}>{t("Home_about_title")}</span>
+                        <span className={scss.about_text}>{t("Home_about_text")}</span>
+                        <Link className={scss.about_link} to="/about/presentation">{t("Home_about_link")}</Link>
                     </div>
                 </div>
                 <div className={scss.partners_container}>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>Наші </span>
-                        <span className={scss.container_title2}>партнери</span>
+                        <span className={scss.container_title1}>{t("Home_partners_title1")}</span>
+                        <span className={scss.container_title2}>{t("Home_partners_title2")}</span>
                     </div>
                     <Partners/>
                 </div>
@@ -116,72 +119,72 @@ const HomePage = () => {
                     <div className={scss.gradient_wrapper2}></div>
                     <div className={scss.gradient_wrapper3}></div>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>Наша </span>
-                        <span className={scss.container_title2}>команда</span>
+                        <span className={scss.container_title1}>{t("Home_team_title1")} </span>
+                        <span className={scss.container_title2}>{t("Home_team_title2")}</span>
                     </div>
                     <ul className={scss.team_list}>
                         <li className={scss.team_list_item1}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Євген </span>
-                                <span className={scss.team_list_surname}>Волченко</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Терапевт-реабілітолог</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item2}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Сніжана </span>
-                                <span className={scss.team_list_surname}>Щербакова</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name2")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname2")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Лікар</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job2")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item3}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Юрій </span>
-                                <span className={scss.team_list_surname}>Коросько</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name3")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname3")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Психолог, Остеопат</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job3")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item4}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Ірина </span>
-                                <span className={scss.team_list_surname}>Сергійчук</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name4")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname4")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Остеопат</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job4")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item5}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Наталія </span>
-                                <span className={scss.team_list_surname}>Дмитрієва</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name5")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname5")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Директор Центру</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job5")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                         <li className={scss.team_list_item6}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>Марина </span>
-                                <span className={scss.team_list_surname}>Сидоренко</span>
+                                <span className={scss.team_list_name}>{t("Home_team_name6")} </span>
+                                <span className={scss.team_list_surname}>{t("Home_team_surname6")}</span>
                             </div>
-                            <span className={scss.team_list_job}>Адміністратор Центру</span>
+                            <span className={scss.team_list_job}>{t("Home_team_job6")}</span>
                             <div className={scss.team_list_layer}></div>
                         </li>
                     </ul>
                 </div>
                 <div className={scss.news_container}>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>Останні </span>
-                        <span className={scss.container_title2}>новини</span>
+                        <span className={scss.container_title1}>{t("Home_news_title1")} </span>
+                        <span className={scss.container_title2}>{t("Home_news_title2")}</span>
                     </div>
                     <NewsSlider/>
-                    <Link className={scss.news_button} to="/news">Більше новин</Link>
+                    <Link className={scss.news_button} to="/news">{t("Home_news_link")}</Link>
                 </div>  
                 <div className={scss.reviews_container}>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>Відгуки </span>
-                        <span className={scss.container_title2}>пацієнтів</span>
+                        <span className={scss.container_title1}>{t("Home_reviews_title1")} </span>
+                        <span className={scss.container_title2}>{t("Home_reviews_title2")}</span>
                     </div>
                     <ReviewsSlider/>
                 </div>
