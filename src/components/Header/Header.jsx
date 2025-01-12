@@ -27,10 +27,11 @@ const Header = () => {
     if(currentLang.includes("UK" || "UA")) {
       setLangOptions(["UK", "EN", "DE"]);
     }
-    if(currentLang.includes("DE")) {
+    else if(currentLang.includes("DE")) {
+      console.log(true)
       setLangOptions(["DE", "EN", "UK",]);
     }
-    if(currentLang.includes("RU")) {
+    else if(currentLang.includes("RU")) {
       setLangOptions(["UK", "EN", "DE"]);
     }
     else {
