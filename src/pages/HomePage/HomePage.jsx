@@ -15,7 +15,7 @@ import Partners from 'components/Partners/Partners';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
 import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
-import { ReactComponent as Logo} from "../../images/Aurum_logo.svg";
+import { ReactComponent as Logo} from "../../images/Aurum_logo_UA.svg";
 import { ReactComponent as Handshake} from "../../images/handshake.svg";
 import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.svg";
 import ScrollToTop from "react-scroll-to-top";
@@ -125,8 +125,10 @@ const HomePage = () => {
                     <ul className={scss.team_list}>
                         <li className={scss.team_list_item1}>
                             <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
-                                <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
+                                <Link className={scss.team_list_link} to="/team/yevhen-volchenko">
+                                    <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
+                                    <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
+                                </Link>
                             </div>
                             <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
                             <div className={scss.team_list_layer}></div>

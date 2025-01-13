@@ -2,7 +2,7 @@ import scss from './Footer.module.scss';
 import { ReactComponent as MapIcon } from '../../images/map_icon.svg';
 import { ReactComponent as PhoneIcon } from '../../images/phone_icon.svg';
 import { ReactComponent as EmailIcon } from '../../images/email_icon.svg';
-import { ReactComponent as AurumLogoSmall } from '../../images/Aurum_logo_small.svg';
+import { ReactComponent as Logo } from '../../images/Aurum_logo_UA.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
 import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
 import { Link, NavLink } from 'react-router-dom';
@@ -77,7 +77,7 @@ const { t } = useTranslation();
                     </ul>
                 </div>
                 <div className={scss.logo_container}>
-                    <AurumLogoSmall className={scss.logo}/>
+                    <Logo className={scss.logo}/>
                     <div className={scss.politics_license_wrapper_desktop}>
                         <p className={scss.license}>{t("Footer_license")}</p>
                         <p className={scss.license}>© {t("Footer_center_name")} {currentYear}</p>

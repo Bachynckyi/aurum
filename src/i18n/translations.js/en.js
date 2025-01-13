@@ -184,6 +184,22 @@ export const en = {
     "Service_item8": "stress, insomnia;",
     "Service_item9": "feeling tired.",
     
+    // Team member Yevgen Volchenko
+    "TeamMember1_name": "Yevhen Volchenko",
+    "TeamMember1_position": "Rehabilitation therapist",
+    "TeamMember1_achievment1": "Head of the Rehabilitation Department of the Center",
+    "TeamMember1_achievment2": "Candidate of Psychological Sciences",
+    "TeamMember1_achievment3": "Doctor of physical and rehabilitation medicine",
+    "TeamMember1_achievment4": "Associate Professor of the Department of Physical Education, Sports and Human Health, V. Dahl SNU",
+    "TeamMember1_achievment5": "Chairman of the Ukrainian Association of Anthroposophical Doctors and Therapists",
+    "TeamMember1_achievment6": "Head of the All-Ukrainian Association of Hemocorrection and Rehabilitation",
+    "TeamMember1_text1": "Graduated from Donetsk Medical University in 1995 with a degree in pediatrics, primary specialization – pediatric otorhinolaryngology, later – physiotherapy and physical and rehabilitation medicine.",
+    "TeamMember1_text2": "2000 - diploma of the Shchupyk Academy of Postgraduate Education with specialization in “physiotherapist”",
+    "TeamMember1_text3": "2007-2008 studies and practice Eugen-Kolisco Akademie, Stuttgart Germany",
+    "TeamMember1_text4": "2013 - international certificate - doctor of anthroposophic medicine, Dornach, Switzerland",
+    "TeamMember1_text5": "2023 – diploma from Zaporizhia State Medical University with specialization in “Physical and Rehabilitation Medicine Doctor”",
+    "TeamMember1_text6": "Since 1999, a regular participant in medical conferences of doctors in Ukraine, international medical conferences in Switzerland, Germany and Austria (reports, articles)",
+    "TeamMember1_text7": "Medical experience since 1995.",
 
 
 

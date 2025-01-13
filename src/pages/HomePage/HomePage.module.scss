@@ -1048,6 +1048,14 @@
     text-align: center;
 };
 
+.team_list_link {
+    text-decoration: none;
+
+    &:hover span {
+        color: #FFE500;
+    }
+};
+
 .team_list_name {
     color: #00A3FF;
     font-family: "Exo2-Regular";

@@ -184,4 +184,21 @@ export const de = {
         "Service_item8": "Stress, Schlaflosigkeit;",
         "Service_item9": "sich müde fühlen.",
 
+        // Team member Yevgen Volchenko
+        "TeamMember1_name": "Eugen Woltschenko",
+        "TeamMember1_position": "Rehabilitationstherapeut",
+        "TeamMember1_achievment1": "Leiter der Rehabilitationsabteilung des Zentrums",
+        "TeamMember1_achievment2": "Kandidat der psychologischen Wissenschaften",
+        "TeamMember1_achievment3": "Doktor der Physikalischen und Rehabilitativen Medizin",
+        "TeamMember1_achievment4": "Außerordentlicher Professor der Abteilung für Leibeserziehung, Sport und menschliche Gesundheit, SNU, benannt nach V. Dahlie",
+        "TeamMember1_achievment5": "Vorsitzender der Ukrainischen Vereinigung Anthroposophischer Ärzte und Therapeuten",
+        "TeamMember1_achievment6": "Vorsitzender der Allukrainischen Vereinigung für Hämokorrektur und Rehabilitation",
+        "TeamMember1_text1": "1995 schloss er sein Studium der Pädiatrie an der Medizinischen Universität Donezk mit der Hauptspezialisierung Pädiatrische Hals-Nasen-Ohrenheilkunde ab, später Physiotherapie und Physikalische und Rehabilitative Medizin.",
+        "TeamMember1_text2": "2000 - Diplom der Akademie für Postgraduiertenausbildung, benannt nach Physiotherapeut mit Spezialisierung",
+        "TeamMember1_text3": "2007–2008 Ausbildung und Praxis Eugen-Kolisco Akademie, Stuttgart Deutschland",
+        "TeamMember1_text4": "2013 - internationales Zertifikat - Doktor der Anthroposophischen Medizin, Dornach, Schweiz",
+        "TeamMember1_text5": "2023 – Diplom der Staatlichen Medizinischen Universität Saporischschja mit Spezialisierung „Arzt für Physikalische und Rehabilitative Medizin“",
+        "TeamMember1_text6": "Seit 1999 regelmäßige Teilnahme an Ärztekonferenzen in der Ukraine, internationalen Ärztekonferenzen in der Schweiz, Deutschland und Österreich (Berichte, Artikel)",
+        "TeamMember1_text7": "Medizinische Erfahrung seit 1995.",
+
 };
