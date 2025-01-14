@@ -201,4 +201,48 @@ export const de = {
         "TeamMember1_text6": "Seit 1999 regelmäßige Teilnahme an Ärztekonferenzen in der Ukraine, internationalen Ärztekonferenzen in der Schweiz, Deutschland und Österreich (Berichte, Artikel)",
         "TeamMember1_text7": "Medizinische Erfahrung seit 1995.",
 
+        // Team member Snizhana Shcherbakova
+        "TeamMember2_name": "Sneschana Schtscherbakowa",
+        "TeamMember2_position": "Arzt, Facharzt für „Körperorientierte Therapie“",
+        "TeamMember2_achievment1": "Medizinische Universität Kiew, Medizinische Fakultät",
+        "TeamMember2_achievment2": "Goetheanum, Dornach, Schweiz, Lehrgang „Anthroposophischer Arzt“",
+        "TeamMember2_achievment3": "Protos Institut, Schule für klassische Homöopathie",
+        "TeamMember2_achievment4": "Kolisco Akademie, Stuttgart, Deutschland, Spezialisierung Anthroposophische Medizin",
+        "TeamMember2_achievment5": "Goetheanum, Dornach/Schweiz, Therese Beeri, Internationales Forum für Anthroposophische Pflege (IFAN), Spezialisierung in der Wegmann Hauschka Methode",
+        "TeamMember2_achievment6": "James Dyson, Simon Kuttner, Lehrgang der Internationalen Anthroposophischen Schule für Psychotherapie",
+        "TeamMember2_achievment7": "Institut für Biographische Beratung",
+        "TeamMember2_text1": "1993-1999, von 2020 bis heute (2024) Studium im 4. Jahr - Medizinische Universität Kiew, Medizinische Fakultät",
+        "TeamMember2_text2": "2022 (Diplom ausgestellt) Anthroposophisches Doktorat Zertifikat 1325, ausgestellt von der Medizinischen Sektion, Goetheanum, Dornach, Schweiz",
+        "TeamMember2_text3": "2016-2017 Schule für Klassische Homöopathie (Protos Institut)",
+        "TeamMember2_text4": "2017–2019 Kolisco Academy, Stadt. Stuttgart, Deutschland - Anthroposophische Medizin",
+        "TeamMember2_text5": "2019-2021 Spezialisierung in der Wegmann Hauschka Methode, Rhythmische Massage, Rhythmische Einreibung, Internationales Forum für Anthroposophische Pflege (IFAN) Goetheanum, Dornach/Schweiz, Therese Beeri",
+        "TeamMember2_text6": "2020–2023 Spezialisierung in Anthroposophischer Psychologie und Psychotherapie. Online-Kurs, Internationale Anthroposophische Schule für Psychotherapie Jymes Dyson, Simon Kuttner",
+        "TeamMember2_text7": "2022-2023 Kurs zur Arbeit mit Biografien, Institut für Biographische Beratung",
+
+        // Team member Yuriy Korosko
+        "TeamMember3_name": "Juri Korosko",
+        "TeamMember3_position": "Praktische Psychologin, Spezialistin für „Körperorientierte Therapie“",
+        "TeamMember3_achievment1": "Schwerpunkte: Biodynamische Craniosacral-Therapie, Traumafokussierte Therapie, Achtsamkeitstherapie, Manuelle Therapie innerer Organe",
+        "TeamMember3_achievment2": "2022-2024 Freiwilliger Psychologe bei der NGO „Atlant Support Center“, moralische und psychologische Unterstützung für Militärangehörige, Veteranen und ihre Familienangehörigen",
+        "TeamMember3_text1": "2022-2024 Staatliche Mykola-Gogol-Universität Nischyn, Praktische Psychologie, Master of Psychology",
+        "TeamMember3_text2": "02.2023 Ukrainische Höhere Medizinische Fakultät, Trauma-Risikomanagement",
+        "TeamMember3_text3": "2019-2021 Institut für Neuropsychotherapie (Österreich), Traumafokussierte Therapie",
+        "TeamMember3_text4": "2019-2020 Kanifolsky&K Beratungsunternehmen, Achtsamkeitstherapie",
+        "TeamMember3_text5": "2015-2016 Osteuropäische Schule für Osteopathie, Craniosacrale Therapie",
+        "TeamMember3_text6": "2013-2014 Association of Folk Manual Therapy, manuelle Therapie der inneren Organe",
+        "TeamMember3_text7": "1997-2003 Nationale Taras-Schewtschenko-Universität Kiew, Photonik, Master of Physics",
+        "TeamMember3_publication1": "KOROSKO, Ju. ICH. Merkmale der Überwindung von Kampfstress durch Militärangehörige unter Kriegsbedingungen // Bulletin der Studentischen Wissenschaftlichen Gesellschaft. 2023. Nr. 29. S. 231-236",
+        "TeamMebmer3_publication2": "KOROSKO, Ju. ICH.; MYKHAYLOVA, O. ICH. DIE ROLLE SOZIALER UNTERSTÜTZUNG IM PROZESS DER BILDUNG DER STRESSRESILIENZ BEI MILITÄRANGEHÖRIGEN. Redaktion, 2023, 60.",
+
+        // Team member Irina Sergiychuk
+        "TeamMember4_name": "Iryna Serhijtschuk",
+        "TeamMember4_position": "Osteopath, biodynamischer Craniosacral-Therapeut",
+        "TeamMember4_achievment1": "Physiotherapeut/Osteopath seit 2016",
+        "TeamMember4_achievment2": "Praktizierende Yogatrainerin seit 2007",
+        "TeamMember4_text1": "2015 Ausbildung in der Somatischen Bewegungsmethode bei Somatic Education (USA)",
+        "TeamMember4_text2": "2015-2019 Osteopathie-Ausbildung an der Osteuropäischen Schule für Osteopathie",
+        "TeamMember4_text3": "2016 Zertifikat der Osteuropäischen Schule für Osteopathie zum Einsatz der Feldenkrais-Methode in der Rehabilitation und Psychotherapie (Ewa Pashkowska-Demidowska, Polen)",
+
+
+
 };

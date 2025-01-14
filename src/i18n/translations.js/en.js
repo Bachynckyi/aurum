@@ -201,8 +201,46 @@ export const en = {
     "TeamMember1_text6": "Since 1999, a regular participant in medical conferences of doctors in Ukraine, international medical conferences in Switzerland, Germany and Austria (reports, articles)",
     "TeamMember1_text7": "Medical experience since 1995.",
 
+    // Team member Snizhana Shcherbakova
+    "TeamMember2_name": "Snezhana Shcherbakova",
+    "TeamMember2_position": "Doctor, specialist in «Body-Oriented Therapy»",
+    "TeamMember2_achievment1": "Kyiv Medical University, Faculty of Medicine",
+    "TeamMember2_achievment2": "Goetheanum, Dornach, Switzerland, course «Anthroposophical Doctor»",
+    "TeamMember2_achievment3": "Protos Institute, School of Classical Homeopathy",
+    "TeamMember2_achievment4": "Kolisco Academy, Stuttgart, Germany, specializing in anthroposophic medicine",
+    "TeamMember2_achievment5": "Goetheanum, Dornach/Switzerland, Therese Beeri, International Forum for Anthroposophic Nursing (IFAN), specialization in the Wegmann Hauschka method",
+    "TeamMember2_achievment6": "James Dyson, Simon Kuttner, course of the International Anthroposophical School of Psychotherapy",
+    "TeamMember2_achievment7": "Institute of Biographical Consulting",
+    "TeamMember2_text1": "1993-1999, from 2020 to the present (2024) studying in the 4th year - Kyiv Medical University, Faculty of Medicine",
+    "TeamMember2_text2": "2022 (diploma issued) Anthroposophical Doctor Certificate 1325, issued by the Medical Section, Goetheanum, Dornach, Switzerland",
+    "TeamMember2_text3": "2016-2017 School of Classical Homeopathy (Protos Institute)",
+    "TeamMember2_text4": "2017-2019 Kolisco Academy, Stuttgart, Germany - anthroposophic medicine",
+    "TeamMember2_text5": "2019-2021 Specialization in the Wegmann Hauschka method, rhythmic massage, rhythmic rubbing, International Forum for Anthroposophic Nursing (IFAN) Goetheanum, Dornach/Schweiz, Therese Beeri",
+    "TeamMember2_text6": "2020-2023 Specialization Anthroposophical Psychology and Psychotherapy. Online course, International Anthroposophical School of Psychotherapy Jymes Dyson, Simon Kuttner",
+    "TeamMember2_text7": "2022-2023 Course on working with biography, Institute of Biographical Consulting",
 
+    // Team member Yuriy Korosko
+    "TeamMember3_name": "Yuriy Korosko",
+    "TeamMember3_position": "Practical psychologist, specialist in «Body-oriented therapy»",
+    "TeamMember3_achievment1": "Main areas: biodynamic craniosacral therapy, trauma-focused therapy, mindfulness therapy, manual therapy of internal organs",
+    "TeamMember3_achievment2": "2022-2024 Volunteer psychologist at the NGO «Atlant Support Center», moral and psychological support for military personnel, veterans and their family members",
+    "TeamMember3_text1": "2022-2024 Mykola Gogol Nizhyn State University, Practical Psychology, Master of Psychology",
+    "TeamMember3_text2": "02.2023 Ukrainian Higher Medical School, Trauma Risk Management",
+    "TeamMember3_text3": "2019-2021 Institute of Neuropsychotherapy (Austria), trauma focus therapy",
+    "TeamMember3_text4": "2019-2020 Kanifolsky&K consulting company, mindfulness therapy",
+    "TeamMember3_text5": "2015-2016 Eastern European School of Osteopathy, Craniosacral Therapy",
+    "TeamMember3_text6": "2013-2014 Association of Folk Manual Therapy, manual therapy of internal organs",
+    "TeamMember3_text7": "1997-2003 Taras Shevchenko National University of Kyiv, Photonics, Master of Physics",
+    "TeamMember3_publication1": "KOROSKO, Y. I. FEATURES OF OVERCOMING COMBAT STRESS BY MILITARY SERVICEMEN IN WAR CONDITIONS // Bulletin of the Student Scientific Society. 2023. No. 29. P. 231-236",
+    "TeamMebmer3_publication2": "KOROSKO, Y. I.; MYKHAYLOVA, O. I. THE ROLE OF SOCIAL SUPPORT IN THE PROCESS OF FORMING STRESS RESILIENCE OF MILITARY SERVICEMEN. Editorial Board, 2023, 60.",
 
-
+    // Team member Irina Sergiychuk
+    "TeamMember4_name": "Iryna Serhiychuk",
+    "TeamMember4_position": "Osteopath, biodynamic craniosacral therapist",
+    "TeamMember4_achievment1": "Physical therapist/osteopath since 2016",
+    "TeamMember4_achievment2": "Practicing yoga trainer since 2007",
+    "TeamMember4_text1": "2015 training in the somatic movement method at Somatic Education (USA)",
+    "TeamMember4_text2": "2015-2019 osteopathy training at the Eastern European School of Osteopathy",
+    "TeamMember4_text3": "2016 Certificate of the Eastern European School of Osteopathy, how to use the Feldenkrais Method in rehabilitation and psychotherapy (Ewa Pashkowska-Demidowska, Poland)",
 
 };

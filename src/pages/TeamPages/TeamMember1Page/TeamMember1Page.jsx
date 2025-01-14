@@ -1,4 +1,4 @@
-import scss from './TeamMember2Page.module.scss';
+import scss from './TeamMember1Page.module.scss';
 import { useTranslation } from 'react-i18next';
 import photo from '../../../images/team/team_member_1.jpg';
 

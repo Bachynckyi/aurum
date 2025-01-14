@@ -22,6 +22,9 @@ const ServicePage8 = lazy(() => import('./pages/ServicesPage/ServicePage8'));
 const ServicePage9 = lazy(() => import('./pages/ServicesPage/ServicePage9'));
 const ServicePage10 = lazy(() => import('./pages/ServicesPage/ServicePage10'));
 const TeamMember1Page = lazy(() => import('./pages/TeamPages/TeamMember1Page/TeamMember1Page'));
+const TeamMember2Page = lazy(() => import('./pages/TeamPages/TeamMember2Page/TeamMember2Page'));
+const TeamMember3Page = lazy(() => import('./pages/TeamPages/TeamMember3Page/TeamMember3Page'));
+const TeamMember4Page = lazy(() => import('./pages/TeamPages/TeamMember4Page/TeamMember4Page'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -50,6 +53,9 @@ const UserRoutes = () => {
               <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage9/>}/>
               <Route path="/services/aparatna-presoterapiya" element={<ServicePage10/>}/>
               <Route path="/team/yevhen-volchenko" element={<TeamMember1Page/>}/>
+              <Route path="/team/snizhana-shcherbakova" element={<TeamMember2Page/>}/>
+              <Route path="/team/yuriy-korosko" element={<TeamMember3Page/>}/>
+              <Route path="/team/irina-sergiychuk" element={<TeamMember4Page/>}/>
               <Route path="*" element={<NotFoundPage/>}/>
             </Route>
         </Routes>
