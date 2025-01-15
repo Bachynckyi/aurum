@@ -177,7 +177,7 @@
     z-index: 4;
 
     @media screen and (min-width: 350px) {
-        height: 210px;
+        height: 310px;
     };
 
     @media screen and (min-width: 768px) {
@@ -481,16 +481,17 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    margin: 12px 0px 12px 0px;
-
-    @media screen and (min-width: 357px) {
-        margin: 20px 0px 20px 0px;
-    };
+    margin: 7px 0px 7px 0px;
 
     @media screen and (min-width: 1024px) {
         width: 100%;
-        margin: 36px 0px 54px 0px;
+        margin: 30px 0px 30px 0px;
     };
+};
+
+.intro_link {
+    text-decoration: none;
+    color: #181818;
 };
 
 .supported_list {
@@ -929,11 +930,30 @@
     border-radius: 24px;
     background: url("../../images/team/team_member_1.jpg") lightgray 0% 0% / 22.40000069141388px 22.40000069141388px no-repeat;
     background-size: cover;
+    text-decoration: none;
+    transition: 0.2s;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
         height: 430px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+
+        &:hover .team_list_names .team_list_name {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
+
+        &:hover .team_list_names .team_list_surname {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
     };
+
+
 };
 
 .team_list_item2 {
@@ -949,10 +969,27 @@
     border-radius: 24px;
     background: url("../../images/team/team_member_2.jpg") lightgray 0% 0% / 22.40000069141388px 22.40000069141388px no-repeat;
     background-size: cover;
+    text-decoration: none;
+    transition: 0.2s;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
         height: 430px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+
+        &:hover .team_list_names .team_list_name {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
+
+        &:hover .team_list_names .team_list_surname {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
     };
 };
 
@@ -970,10 +1007,27 @@
     background: url("../../images/team/team_member_3.jpg") lightgray no-repeat;
     background-position: 50% -15%;
     background-size: 135%;
+    text-decoration: none;
+    transition: 0.2s;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
         height: 430px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+
+        &:hover .team_list_names .team_list_name {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
+
+        &:hover .team_list_names .team_list_surname {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
     };
 };
 
@@ -992,10 +1046,27 @@
     background-size: cover;
     background-position: 40% -20%;
     background-size: 108%;
+    text-decoration: none;
+    transition: 0.2s;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
         height: 430px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+
+        &:hover .team_list_names .team_list_name {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
+
+        &:hover .team_list_names .team_list_surname {
+            color: #FFC700;
+            transition: color 0.1s linear;
+        }
     };
 };
 
@@ -1046,14 +1117,6 @@
 .team_list_names {
     z-index: 3;
     text-align: center;
-};
-
-.team_list_link {
-    text-decoration: none;
-
-    &:hover span {
-        color: #FFE500;
-    }
 };
 
 .team_list_name {

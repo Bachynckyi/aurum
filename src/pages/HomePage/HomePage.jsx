@@ -14,6 +14,7 @@ import ServicesSlider from 'components/ServicesSlider/ServicesSlider';
 import Partners from 'components/Partners/Partners';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
+import { ReactComponent as NLFlag} from "../../images/netherlands_flag.svg";
 import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
 import { ReactComponent as Logo} from "../../images/Aurum_logo_UA.svg";
 import { ReactComponent as Handshake} from "../../images/handshake.svg";
@@ -74,6 +75,10 @@ const HomePage = () => {
                                             <span>{t("Home_intro_text6.2")}</span>
                                             <UaFlag className={scss.flags}/>
                                         </li>
+                                        <li>
+                                            <Link className={scss.intro_link} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
+                                            <NLFlag className={scss.flags}/>
+                                        </li>
                                     </ul>
                                     <ButtonMore className={scss.button_more}/>
                             </div>
@@ -123,45 +128,45 @@ const HomePage = () => {
                         <span className={scss.container_title2}>{t("Home_team_title2")}</span>
                     </div>
                     <ul className={scss.team_list}>
-                        <li className={scss.team_list_item1}>
-                            <div className={scss.team_list_names}>
-                                <Link className={scss.team_list_link} to="/team/yevhen-volchenko">
-                                    <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
-                                    <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
-                                </Link>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
-                            <div className={scss.team_list_layer}></div>
+                        <li>
+                            <Link className={scss.team_list_item1} to="/team/yevhen-volchenko">
+                                <div className={scss.team_list_names}>
+                                        <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
+                                        <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </Link>
                         </li>
-                        <li className={scss.team_list_item2}>
-                            <div className={scss.team_list_names}>
-                                <Link className={scss.team_list_link} to="/team/snizhana-shcherbakova">
+                        <li>
+                            <Link className={scss.team_list_item2} to="/team/snizhana-shcherbakova">
+                                <div className={scss.team_list_names}>
                                     <span className={scss.team_list_name}>{t("Home_team_name2")} </span>
                                     <span className={scss.team_list_surname}>{t("Home_team_surname2")}</span>
-                                </Link>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job2")}</span>
-                            <div className={scss.team_list_layer}></div>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job2")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </Link>
                         </li>
-                        <li className={scss.team_list_item3}>
-                            <div className={scss.team_list_names}>
-                                <Link className={scss.team_list_link} to="/team/yuriy-korosko">
+                        <li>
+                            <Link className={scss.team_list_item3} to="/team/yuriy-korosko">
+                                <div className={scss.team_list_names}>
                                     <span className={scss.team_list_name}>{t("Home_team_name3")} </span>
                                     <span className={scss.team_list_surname}>{t("Home_team_surname3")}</span>
-                                </Link>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job3")}</span>
-                            <div className={scss.team_list_layer}></div>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job3")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </Link>
                         </li>
-                        <li className={scss.team_list_item4}>
-                            <div className={scss.team_list_names}>
-                                <Link className={scss.team_list_link} to="/team/irina-sergiychuk">
-                                    <span className={scss.team_list_name}>{t("Home_team_name4")} </span>
-                                    <span className={scss.team_list_surname}>{t("Home_team_surname4")}</span>
-                                </Link>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job4")}</span>
-                            <div className={scss.team_list_layer}></div>
+                        <li>
+                            <Link className={scss.team_list_item4} to="/team/irina-sergiychuk">
+                                <div className={scss.team_list_names}>
+                                        <span className={scss.team_list_name}>{t("Home_team_name4")} </span>
+                                        <span className={scss.team_list_surname}>{t("Home_team_surname4")}</span>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job4")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </Link>
                         </li>
                         <li className={scss.team_list_item5}>
                             <div className={scss.team_list_names}>
