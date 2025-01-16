@@ -76,7 +76,7 @@ const HomePage = () => {
                                             <UaFlag className={scss.flags}/>
                                         </li>
                                         <li>
-                                            <Link className={scss.intro_link} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
+                                            <Link className={scss.intro_link_NL} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
                                             <NLFlag className={scss.flags}/>
                                         </li>
                                     </ul>
