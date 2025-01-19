@@ -2,6 +2,7 @@ import scss from './MedicinePage.module.scss';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { MdOutlineScreenSearchDesktop } from "react-icons/md";
+import { MdArrowOutward } from "react-icons/md";
 
 const MedicinePage = () => {
   const { t } = useTranslation();
@@ -28,7 +29,7 @@ const MedicinePage = () => {
                     <span className={scss.button_download_text}>{t("Medicine_presentation4")}</span>
                 </Link>
                 <Link to={"https://iris.who.int/discover?query=anthroposophic+medicine"} target="_blank" className={scss.button_download}>
-                    <MdOutlineScreenSearchDesktop className={scss.icon}/>
+                    <MdArrowOutward className={scss.icon}/>
                     <span className={scss.button_download_text}>{t("Medicine_link")}</span>
                 </Link>
             </div>
