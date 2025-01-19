@@ -146,11 +146,11 @@ const Header = () => {
           </ul>
         </nav>
         <div className={scss.header_wrapper}>
-          <Link className={scss.header_button}>
+          <Link className={scss.header_button} to={"/support-project"}>
             <HandshakeWhite/>
             <span className={scss.header_button_text}>{t("Header_button_support")}</span>
           </Link>
-          <Link className={scss.header_button_full}>
+          <Link className={scss.header_button_full} to={"/support-project"}>
             <HandshakeWhite/>
             <span className={scss.header_button_text}>{t("Header_button_support_full")}</span>
           </Link>
@@ -233,7 +233,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <Link className={scss.button_support}>
+          <Link className={scss.button_support} to={"/support-project"} onClick={closeMobileMenu}>
               <HandshakeWhite/>
               <span>{t("Header_button_support")}</span>
           </Link>

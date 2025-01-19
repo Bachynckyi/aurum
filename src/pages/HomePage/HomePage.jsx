@@ -84,7 +84,7 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className={scss.buttons_container}>
-                            <Link className={scss.button_support}>
+                            <Link className={scss.button_support} to={"/support-project"}>
                                 <Handshake className={scss.handshake}/>
                                 <span>{t("Home_intro_support")}</span>
                             </Link>

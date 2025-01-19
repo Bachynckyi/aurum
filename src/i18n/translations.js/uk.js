@@ -256,5 +256,8 @@ export const uk = {
     "Medicine_presentation2": "Гомеопатія в системі ВООЗ",
     "Medicine_presentation3": "Звіт ВООЗ 2019 року",
     "Medicine_presentation4": "Про Антропософську медицину",
-    "Medicine_link": "Публікації ВООЗ"
+    "Medicine_link": "Публікації ВООЗ",
+
+    // Support
+    "Support_title": "Підтримати проект",
 };

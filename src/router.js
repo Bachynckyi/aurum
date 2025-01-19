@@ -26,6 +26,7 @@ const TeamMember2Page = lazy(() => import('./pages/TeamPages/TeamMember2Page'));
 const TeamMember3Page = lazy(() => import('./pages/TeamPages/TeamMember3Page'));
 const TeamMember4Page = lazy(() => import('./pages/TeamPages/TeamMember4Page'));
 const MedicinePage = lazy(() => import('./pages/MedicinePage/MedicinePage'));
+const SupportPage = lazy(() => import('./pages/SupportPage/SupportPage'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -58,6 +59,7 @@ const UserRoutes = () => {
               <Route path="/team/snizhana-shcherbakova" element={<TeamMember2Page/>}/>
               <Route path="/team/yuriy-korosko" element={<TeamMember3Page/>}/>
               <Route path="/team/irina-sergiychuk" element={<TeamMember4Page/>}/>
+              <Route path="/support-project" element={<SupportPage/>}/>
               <Route path="*" element={<NotFoundPage/>}/>
             </Route>
         </Routes>

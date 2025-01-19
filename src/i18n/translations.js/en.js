@@ -257,5 +257,8 @@ export const en = {
     "Medicine_presentation2": "Homeopathy in the WHO system",
     "Medicine_presentation3": "WHO Report 2019",
     "Medicine_presentation4": "About Anthroposophical Medicine",
-    "Medicine_link": "WHO Publications"
+    "Medicine_link": "WHO Publications",
+
+    // Support
+    "Support_title": "Support project",
 };
