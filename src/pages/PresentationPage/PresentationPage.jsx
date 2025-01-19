@@ -1,19 +1,16 @@
-import scss from './AboutPresentationPage.module.scss';
+import scss from './PresentationPage.module.scss';
 import { Link } from 'react-router-dom';
 import { MdOutlineScreenSearchDesktop } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
-const AboutPresentationPage = () => {
+const PresentationPage = () => {
   const { t } = useTranslation();
   const [presentation, setPresentation] = useState("");
 
   useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
-    if(currentLang.includes("UK" || "UA")) {
-      setPresentation("/assets/Презентація_Аурум_UKR.pdf");
-    }
-    else if(currentLang.includes("RU")) {
+    if(currentLang.includes("UK" || "UA" || "RU")) {
       setPresentation("/assets/Презентація_Аурум_UKR.pdf");
     }
     else if(currentLang.includes("DE")) {
@@ -38,5 +35,5 @@ const AboutPresentationPage = () => {
   )
 };
 
-export default AboutPresentationPage;
+export default PresentationPage;
 

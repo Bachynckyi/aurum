@@ -16,16 +16,34 @@ import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
 import { ReactComponent as NLFlag} from "../../images/netherlands_flag.svg";
 import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
-import { ReactComponent as Logo} from "../../images/Aurum_logo_UA.svg";
+import { ReactComponent as LogoUA } from '../../images/Aurum_logo_UA.svg';
+import { ReactComponent as LogoDE } from '../../images/Aurum_logo_DE.svg';
+import { ReactComponent as LogoEN } from '../../images/Aurum_logo_EN.svg';
 import { ReactComponent as Handshake} from "../../images/handshake.svg";
 import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.svg";
 import ScrollToTop from "react-scroll-to-top";
 import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const [logo, setLogo] = useState("");
+
+  useEffect(() => {
+    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    setLogo(currentLang);
+    if(currentLang.includes("UK" || "UA" || "RU")) {
+        setLogo("UA");
+      }
+      else if(currentLang.includes("DE")) {
+        setLogo("DE");
+      }
+      else {
+        setLogo("EN");
+      }
+  }, []);
 
   return (
     <motion.div
@@ -51,7 +69,9 @@ const HomePage = () => {
                     <div className={scss.intro_container}>
                         <div className={scss.intro_wrapper}>
                             <div className={scss.logo_container}>
-                                <Logo className={scss.logo}/>
+                                {logo === "UA" && (<LogoUA className={scss.logo}/>)}
+                                {logo === "DE" && (<LogoDE className={scss.logo}/>)}
+                                {logo === "EN" && (<LogoEN className={scss.logo}/>)}
                                 <p className={scss.logo_text1}>{t("Home_intro_text1")}</p>
                                 <p className={scss.logo_text2}>{t("Home_intro_text2")}</p>
                             </div>

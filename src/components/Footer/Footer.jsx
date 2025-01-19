@@ -2,16 +2,34 @@ import scss from './Footer.module.scss';
 import { ReactComponent as MapIcon } from '../../images/map_icon.svg';
 import { ReactComponent as PhoneIcon } from '../../images/phone_icon.svg';
 import { ReactComponent as EmailIcon } from '../../images/email_icon.svg';
-import { ReactComponent as Logo } from '../../images/Aurum_logo_UA.svg';
+import { ReactComponent as LogoUA } from '../../images/Aurum_logo_UA.svg';
+import { ReactComponent as LogoDE } from '../../images/Aurum_logo_DE.svg';
+import { ReactComponent as LogoEN } from '../../images/Aurum_logo_EN.svg';
 import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
 import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
 const todayDate = new Date();
 const currentYear = todayDate.getFullYear();
 const { t } = useTranslation();
+const [logo, setLogo] = useState("");
+
+useEffect(() => {
+    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    setLogo(currentLang);
+    if(currentLang.includes("UK" || "UA" || "RU")) {
+        setLogo("UA");
+      }
+      else if(currentLang.includes("DE")) {
+        setLogo("DE");
+      }
+      else {
+        setLogo("EN");
+      }
+  }, []);
 
   return (
     <footer className={scss.footer_container}>
@@ -77,7 +95,9 @@ const { t } = useTranslation();
                     </ul>
                 </div>
                 <div className={scss.logo_container}>
-                    <Logo className={scss.logo}/>
+                    {logo === "UA" && (<LogoUA className={scss.logo}/>)}
+                    {logo === "DE" && (<LogoDE className={scss.logo}/>)}
+                    {logo === "EN" && (<LogoEN className={scss.logo}/>)}
                     <div className={scss.politics_license_wrapper_desktop}>
                         <p className={scss.license}>{t("Footer_license")}</p>
                         <p className={scss.license}>© {t("Footer_center_name")} {currentYear}</p>

@@ -261,4 +261,9 @@ export const en = {
 
     // Support
     "Support_title": "Support project",
+    "Support_name": "Recipient's name",
+    "Support_code": "Recipient code",
+    "Suppport_bank": "Bank name",
+    "Support_IBAN": "Recipient's account in the format",
+    "Support_Privat": "For customers"
 };

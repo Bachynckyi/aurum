@@ -4,9 +4,9 @@ import Layout from 'components/Layout/Layout';
 import Header from 'components/Header/Header';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-const AboutVideoPage = lazy(() => import('./pages/AboutVideoPage/AboutVideoPage'));
-const AboutHonorsPage = lazy(() => import('./pages/AboutHonorsPage/AboutHonorsPage'));
-const AboutPresentationPage = lazy(() => import('./pages/AboutPresentationPage/AboutPresentationPage'));
+const AboutVideoPage = lazy(() => import('./pages/VideoPage/VideoPage'));
+const AboutHonorsPage = lazy(() => import('./pages/HonorsPage/HonorsPage'));
+const AboutPresentationPage = lazy(() => import('./pages/PresentationPage/PresentationPage'));
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
 const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));

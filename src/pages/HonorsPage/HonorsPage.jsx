@@ -1,4 +1,4 @@
-import scss from './AboutHonorsPage.module.scss';
+import scss from './HonorsPage.module.scss';
 import honor1 from '../../images/honors/honor1.jpg';
 import honor2 from '../../images/honors/honor2.jpg';
 import honor3 from '../../images/honors/honor3.jpg';
@@ -12,7 +12,7 @@ import honor10 from '../../images/honors/honor10.jpg';
 import honor11 from '../../images/honors/honor11.jpg';
 import { useTranslation } from 'react-i18next';
 
-const AboutHonorsPage = () => {
+const HonorsPage = () => {
   const { t } = useTranslation();
 
   return (
@@ -38,5 +38,5 @@ const AboutHonorsPage = () => {
   )
 };
 
-export default AboutHonorsPage;
+export default HonorsPage;
 

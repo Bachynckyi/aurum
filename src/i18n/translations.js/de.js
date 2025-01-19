@@ -260,5 +260,10 @@ export const de = {
 
         // Support
         "Support_title": "Unterstütze das Projekt",
+        "Support_name": "Name des Empfängers",
+        "Support_code": "Empfängercode",
+        "Suppport_bank": "Name der Bank",
+        "Support_IBAN": "Empfängerkonto im Format",
+        "Support_Privat": "Für Kunden"
 
 };

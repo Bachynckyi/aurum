@@ -260,4 +260,9 @@ export const uk = {
 
     // Support
     "Support_title": "Підтримати проект",
+    "Support_name": "Найменування одержувача",
+    "Support_code": "Код одержувача",
+    "Suppport_bank": "Назва банку",
+    "Support_IBAN": "Рахунок одержувача у форматі",
+    "Support_Privat": "Для клієнтів"
 };

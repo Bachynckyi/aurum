@@ -1,8 +1,8 @@
-import scss from './AboutVideoPage.module.scss';
+import scss from './VideoPage.module.scss';
 import ReactPlayer from 'react-player';
 import { useTranslation } from 'react-i18next';
 
-const AboutVideoPage = () => {
+const VideoPage = () => {
   const { t } = useTranslation();
 
   return (
@@ -42,5 +42,5 @@ const AboutVideoPage = () => {
   )
 };
 
-export default AboutVideoPage;
+export default VideoPage;
 
