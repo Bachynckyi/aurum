@@ -264,5 +264,6 @@ export const uk = {
     "Support_code": "Код одержувача",
     "Suppport_bank": "Назва банку",
     "Support_IBAN": "Рахунок одержувача у форматі",
-    "Support_Privat": "Для клієнтів"
+    "Support_Privat": "Для клієнтів",
+    "Support_notiflix_clipboard": "Cкопійовано !",
 };

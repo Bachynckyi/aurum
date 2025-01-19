@@ -264,6 +264,7 @@ export const de = {
         "Support_code": "Empfängercode",
         "Suppport_bank": "Name der Bank",
         "Support_IBAN": "Empfängerkonto im Format",
-        "Support_Privat": "Für Kunden"
+        "Support_Privat": "Für Kunden",
+        "Support_notiflix_clipboard": "Kopiert !",
 
 };

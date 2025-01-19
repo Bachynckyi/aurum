@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import QR from "../../images/QR.png";
 import { MdContentCopy } from "react-icons/md";
+import copy from 'copy-to-clipboard';
+import Notiflix from 'notiflix';
 
 const SupportPage = () => {
   const { t } = useTranslation();
@@ -73,19 +75,43 @@ const SupportPage = () => {
                     <ul className={scss.details_list}>
                         <li className={scss.details_item}>
                             <p className={scss.details_name}>{t("Support_name")}:</p>
-                            <p>ГО ВСЕУКРАЇНСЬКА АСОЦІАЦІЯ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ <MdContentCopy/></p>
+                            <p className={scss.details_data}>
+                                <span className={scss.details_text}>ГО ВСЕУКРАЇНСЬКА АСОЦІАЦІЯ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ</span>
+                                <MdContentCopy className={scss.icon_copy} onClick={() => {
+                                    copy("ГО ВСЕУКРАЇНСЬКА АСОЦІАЦІЯ ГЕМОКОРЕКЦІЇ ТА РЕАБІЛІТАЦІЇ"); 
+                                    Notiflix.Notify.success(t("Support_notiflix_clipboard"), {timeout: 5000, position: "center-top", showOnlyTheLastOne: true});
+                                }}/>   
+                            </p>
                         </li>
                         <li className={scss.details_item}>
                             <p className={scss.details_name}>{t("Support_code")}:</p>
-                            <p>44903159</p>
+                            <p className={scss.details_data}>
+                                <span className={scss.details_text}>44903159</span>
+                                <MdContentCopy className={scss.icon_copy} onClick={() => {
+                                    copy("44903159"); 
+                                    Notiflix.Notify.success(t("Support_notiflix_clipboard"), {timeout: 5000, position: "center-top", showOnlyTheLastOne: true});
+                                }}/> 
+                            </p>
                         </li>
                         <li className={scss.details_item}>
                             <p className={scss.details_name}>{t("Suppport_bank")}:</p>
-                            <p>АТ КБ «ПриватБанк»</p>
+                            <p className={scss.details_data}>
+                                <span className={scss.details_text}>АТ КБ «ПриватБанк»</span>
+                                <MdContentCopy className={scss.icon_copy} onClick={() => {
+                                    copy("АТ КБ «ПриватБанк»"); 
+                                    Notiflix.Notify.success(t("Support_notiflix_clipboard"), {timeout: 5000, position: "center-top", showOnlyTheLastOne: true});
+                                }}/> 
+                            </p>
                         </li>
                         <li className={scss.details_item}>
                             <p className={scss.details_name}>{t("Support_IBAN")} IBAN:</p>
-                            <p>UA533052990000026003026235611</p>
+                            <p className={scss.details_data}>
+                                <span className={scss.details_text}>UA533052990000026003026235611</span>
+                                <MdContentCopy className={scss.icon_copy} onClick={() => {
+                                    copy("UA533052990000026003026235611"); 
+                                    Notiflix.Notify.success(t("Support_notiflix_clipboard"), {timeout: 5000, position: "center-top", showOnlyTheLastOne: true});
+                                }}/> 
+                            </p>
                         </li>
                     </ul>
                     <h2 className={scss.subtitle}>{t("Support_Privat")}: АТ КБ «ПриватБанк»</h2>

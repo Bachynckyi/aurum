@@ -265,5 +265,6 @@ export const en = {
     "Support_code": "Recipient code",
     "Suppport_bank": "Bank name",
     "Support_IBAN": "Recipient's account in the format",
-    "Support_Privat": "For customers"
+    "Support_Privat": "For customers",
+    "Support_notiflix_clipboard": "Copied !",
 };
