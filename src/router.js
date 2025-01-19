@@ -25,6 +25,7 @@ const TeamMember1Page = lazy(() => import('./pages/TeamPages/TeamMember1Page'));
 const TeamMember2Page = lazy(() => import('./pages/TeamPages/TeamMember2Page'));
 const TeamMember3Page = lazy(() => import('./pages/TeamPages/TeamMember3Page'));
 const TeamMember4Page = lazy(() => import('./pages/TeamPages/TeamMember4Page'));
+const MedicinePage = lazy(() => import('./pages/MedicinePage/MedicinePage'));
 
 const UserRoutes = () => {
   const location = useLocation();;
@@ -39,6 +40,7 @@ const UserRoutes = () => {
               <Route path="/about/video" element={<AboutVideoPage/>}/>
               <Route path="/about/honors" element={<AboutHonorsPage/>}/>
               <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
+              <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/>
               <Route path="/news" element={<NewsPage/>}/>
               <Route path="/partners" element={<PartnersPage/>}/>
               <Route path="/reviews" element={<ReviewsPage/>}/>

@@ -19,7 +19,9 @@ export const uk = {
     "Header_subnav11": "Гідрокінезіотерапія",
     "Header_subnav12": "Масляно-дисперсійні ванни",
     "Header_subnav13": "Апаратна пресотерапія",
-    "Header_button_support": "Підтримати проект",
+    "Header_subnav14": "Антропософська медицина",
+    "Header_button_support": "Підтримати",
+    "Header_button_support_full": "Підтримати проект",
 
     // Home
     "Home_intro_text1": "Реабілітація та допомога",
@@ -248,4 +250,11 @@ export const uk = {
     "TeamMember4_text2": "2015-2019 навчання  остеопатії в Східно - Европейських школі остеопатії",
     "TeamMember4_text3": "2016 Сертифікат Східно-Европейської школи остеопатії, як використовувати метод Фельденкрайза в реабілітації та психотерапії (Єва Пашковська- Демидовська, Польща)",
 
+    // Anthroposophical Medicine
+    "Medicine_title": "Антропософська медицина",
+    "Medicine_presentation1": "Антропософія у системі ВООЗ",
+    "Medicine_presentation2": "Гомеопатія в системі ВООЗ",
+    "Medicine_presentation3": "Звіт ВООЗ 2019 року",
+    "Medicine_presentation4": "Про Антропософську медицину",
+    "Medicine_link": "Публікації ВООЗ"
 };

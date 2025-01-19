@@ -109,6 +109,7 @@ const Header = () => {
                   <NavLink to="/about/video" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>{t("Header_subnav1")}</NavLink>
                   <NavLink to="/about/honors" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>{t("Header_subnav2")}</NavLink>
                   <NavLink to="/about/presentation" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>{t("Header_subnav3")}</NavLink>
+                  <NavLink to="/about/anthroposophical-medicine" className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item}>{t("Header_subnav14")}</NavLink>
               </div>
             </li>
             <li className={scss.nav_item_services}>
@@ -148,6 +149,10 @@ const Header = () => {
           <Link className={scss.header_button}>
             <HandshakeWhite/>
             <span className={scss.header_button_text}>{t("Header_button_support")}</span>
+          </Link>
+          <Link className={scss.header_button_full}>
+            <HandshakeWhite/>
+            <span className={scss.header_button_text}>{t("Header_button_support_full")}</span>
           </Link>
           <div className={scss.lang_switcher_container} >
             <button type="button" onClick={toggleLangMenu} className={scss.lang_switcher}>
@@ -196,6 +201,7 @@ const Header = () => {
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/video" onClick={closeMobileMenu}>{t("Header_subnav1")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/honors" onClick={closeMobileMenu}>{t("Header_subnav2")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/presentation" onClick={closeMobileMenu}>{t("Header_subnav3")}</NavLink>
+                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} to="/about/anthroposophical-medicine" onClick={closeMobileMenu}>{t("Header_subnav14")}</NavLink>
                 </div>
               </li>
               <li>

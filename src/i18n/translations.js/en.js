@@ -19,7 +19,10 @@ export const en = {
     "Header_subnav11": "Hydrokinesiotherapy",
     "Header_subnav12": "Oil-dispersion baths",
     "Header_subnav13": "Apparatus pressotherapy",
-    "Header_button_support": "Support project",
+    "Header_subnav14": "Anthroposophical medicine",
+    "Header_button_support": "Support",
+    "Header_button_support_full": "Support project",
+
 
     // Home
     "Home_intro_text1": "Rehabilitation and assistance ",
@@ -248,4 +251,11 @@ export const en = {
     "TeamMember4_text2": "2015-2019 osteopathy training at the Eastern European School of Osteopathy",
     "TeamMember4_text3": "2016 Certificate of the Eastern European School of Osteopathy, how to use the Feldenkrais Method in rehabilitation and psychotherapy (Ewa Pashkowska-Demidowska, Poland)",
 
+    // Anthroposophical Medicine
+    "Medicine_title": "Anthroposophical medicine",
+    "Medicine_presentation1": "Anthroposophy in the WHO system",
+    "Medicine_presentation2": "Homeopathy in the WHO system",
+    "Medicine_presentation3": "WHO Report 2019",
+    "Medicine_presentation4": "About Anthroposophical Medicine",
+    "Medicine_link": "WHO Publications"
 };

@@ -19,7 +19,9 @@ export const de = {
         "Header_subnav11": "Hydrokinesiotherapie",
         "Header_subnav12": "Öldispersionsbäder",
         "Header_subnav13": "Apparative pressotherapie",
-        "Header_button_support": "Unterstütze das Projekt",
+        "Header_subnav14": "Anthroposophische Medizin",
+        "Header_button_support": "Unterstützung",
+        "Header_button_support_full": "Unterstütze das Projekt",
 
         // Home
         "Home_intro_text1": "Rehabilitation und Hilfe",
@@ -248,6 +250,12 @@ export const de = {
         "TeamMember4_text2": "2015-2019 Osteopathie-Ausbildung an der Osteuropäischen Schule für Osteopathie",
         "TeamMember4_text3": "2016 Zertifikat der Osteuropäischen Schule für Osteopathie zum Einsatz der Feldenkrais-Methode in der Rehabilitation und Psychotherapie (Ewa Pashkowska-Demidowska, Polen)",
 
-
+        // Anthroposophical Medicine
+        "Medicine_title": "Anthroposophische medizin",
+        "Medicine_presentation1": "Anthroposophie im WHO-System",
+        "Medicine_presentation2": "Homöopathie im WHO-System",
+        "Medicine_presentation3": "WHO-Bericht 2019",
+        "Medicine_presentation4": "Über Anthroposophische Medizin",
+        "Medicine_link": "WHO-Publikationen"
 
 };
