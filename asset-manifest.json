@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.cb802149.css",
-    "main.js": "/aurum/static/js/main.9b576a77.js",
+    "main.css": "/aurum/static/css/main.298dbf0d.css",
+    "main.js": "/aurum/static/js/main.3202b958.js",
     "static/css/199.8499e601.chunk.css": "/aurum/static/css/199.8499e601.chunk.css",
     "static/js/199.a904ad08.chunk.js": "/aurum/static/js/199.a904ad08.chunk.js",
     "static/css/461.7ec94c4f.chunk.css": "/aurum/static/css/461.7ec94c4f.chunk.css",
@@ -48,7 +48,7 @@
     "static/js/271.eef44238.chunk.js": "/aurum/static/js/271.eef44238.chunk.js",
     "static/css/89.5d3ceeb6.chunk.css": "/aurum/static/css/89.5d3ceeb6.chunk.css",
     "static/js/89.6e339c49.chunk.js": "/aurum/static/js/89.6e339c49.chunk.js",
-    "static/css/847.d5ee981f.chunk.css": "/aurum/static/css/847.d5ee981f.chunk.css",
+    "static/css/847.01703a95.chunk.css": "/aurum/static/css/847.01703a95.chunk.css",
     "static/js/847.f4e5e10d.chunk.js": "/aurum/static/js/847.f4e5e10d.chunk.js",
     "reactPlayerYouTube.js": "/aurum/static/js/reactPlayerYouTube.f9324571.chunk.js",
     "reactPlayerSoundCloud.js": "/aurum/static/js/reactPlayerSoundCloud.432bbab3.chunk.js",
@@ -158,8 +158,8 @@
     "static/media/polygon.svg": "/aurum/static/media/polygon.dc649bc71f8302544294cb899634e947.svg",
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
-    "main.cb802149.css.map": "/aurum/static/css/main.cb802149.css.map",
-    "main.9b576a77.js.map": "/aurum/static/js/main.9b576a77.js.map",
+    "main.298dbf0d.css.map": "/aurum/static/css/main.298dbf0d.css.map",
+    "main.3202b958.js.map": "/aurum/static/js/main.3202b958.js.map",
     "199.8499e601.chunk.css.map": "/aurum/static/css/199.8499e601.chunk.css.map",
     "199.a904ad08.chunk.js.map": "/aurum/static/js/199.a904ad08.chunk.js.map",
     "461.7ec94c4f.chunk.css.map": "/aurum/static/css/461.7ec94c4f.chunk.css.map",
@@ -206,7 +206,7 @@
     "271.eef44238.chunk.js.map": "/aurum/static/js/271.eef44238.chunk.js.map",
     "89.5d3ceeb6.chunk.css.map": "/aurum/static/css/89.5d3ceeb6.chunk.css.map",
     "89.6e339c49.chunk.js.map": "/aurum/static/js/89.6e339c49.chunk.js.map",
-    "847.d5ee981f.chunk.css.map": "/aurum/static/css/847.d5ee981f.chunk.css.map",
+    "847.01703a95.chunk.css.map": "/aurum/static/css/847.01703a95.chunk.css.map",
     "847.f4e5e10d.chunk.js.map": "/aurum/static/js/847.f4e5e10d.chunk.js.map",
     "reactPlayerYouTube.f9324571.chunk.js.map": "/aurum/static/js/reactPlayerYouTube.f9324571.chunk.js.map",
     "reactPlayerSoundCloud.432bbab3.chunk.js.map": "/aurum/static/js/reactPlayerSoundCloud.432bbab3.chunk.js.map",
@@ -229,7 +229,7 @@
     "413.920738d5.chunk.js.map": "/aurum/static/js/413.920738d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb802149.css",
-    "static/js/main.9b576a77.js"
+    "static/css/main.298dbf0d.css",
+    "static/js/main.3202b958.js"
   ]
 }
