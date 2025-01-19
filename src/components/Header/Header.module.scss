@@ -352,6 +352,17 @@
     line-height: normal;
 };
 
+.lang_n {
+    color: #181818;
+    text-align: center;
+    font-family: "Exo2-Bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 14px;
+}; 
+
 .polygon {
     margin-top: 2px;
     transition-property: transform;
@@ -374,16 +385,14 @@
     position: absolute;
     top: 59px;
     left: 0px;
-    // padding: 20px;
-    width: 42px;
-    height: 50px;
+    box-sizing: border-box;
+    width: 100%;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // gap: 20px;
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -395,9 +404,8 @@
     position: absolute;
     top: 59px;
     left: 0px;
-    // padding: 20px;
-    width: 42px;
-    height: 50px;
+    box-sizing: border-box;
+    width: 100%;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0);
     opacity: 0;
@@ -405,7 +413,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // gap: 20px;
     transition-duration: 500ms;
     transition-delay: 0ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

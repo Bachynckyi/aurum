@@ -160,8 +160,8 @@ const Header = () => {
               <Polygon className={isActiveMenuLang ? (scss.polygon_reverse) : (scss.polygon)}/>
             </button>
             <div className={isActiveMenuLang ? (scss.lang_menu_active) : (scss.lang_menu)}> 
-              <span className={scss.lang} onClick={() => {changeLanguage(langOptions[1])}}>{langOptions[1]}</span>
-              <span className={scss.lang} onClick={() => {changeLanguage(langOptions[2])}}>{langOptions[2]}</span>
+              <span className={scss.lang_n} onClick={() => {changeLanguage(langOptions[1])}}>{langOptions[1]}</span>
+              <span className={scss.lang_n} onClick={() => {changeLanguage(langOptions[2])}}>{langOptions[2]}</span>
             </div>
           </div>
           <button type="button" className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
