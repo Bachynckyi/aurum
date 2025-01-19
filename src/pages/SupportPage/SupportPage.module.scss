@@ -205,6 +205,12 @@
     height: 20px;
     cursor: pointer;
     rotate: 180deg;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+
+    :hover {
+        background-color: #00A3FF;
+    };
 };
 
 .details_text {
