@@ -264,6 +264,12 @@ export const uk = {
     "Support_code": "Код одержувача",
     "Suppport_bank": "Назва банку",
     "Support_IBAN": "Рахунок одержувача у форматі",
-    "Support_Privat": "Для клієнтів",
+    "Support_Privat": "Для клієнтів: АТ КБ «ПриватБанк»",
     "Support_notiflix_clipboard": "Cкопійовано !",
+    "Support_SWIFT_code": "SWIFT код",
+    "Support_correspondent": "Банк кореспондент",
+    "Support_correspondent_code": "SWIFT код банку-кореспондента",
+    "Support_correspondent_account": "Рахунок у банку-кореспонденті",
+
+    
 };

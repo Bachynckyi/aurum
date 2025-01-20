@@ -264,7 +264,11 @@ export const de = {
         "Support_code": "Empfängercode",
         "Suppport_bank": "Name der Bank",
         "Support_IBAN": "Empfängerkonto im Format",
-        "Support_Privat": "Für Kunden",
+        "Support_Privat": "Für Kunden: JSC CB «PRIVATBANK»",
         "Support_notiflix_clipboard": "Kopiert !",
+        "Support_SWIFT_code": "SWIFT code",
+        "Support_correspondent": "Korrespondenzbank",
+        "Support_correspondent_code": "SWIFT-Code der Korrespondenzbank",
+        "Support_correspondent_account": "Konto bei einer Korrespondenzbank",
 
 };

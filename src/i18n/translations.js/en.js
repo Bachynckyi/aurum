@@ -265,6 +265,10 @@ export const en = {
     "Support_code": "Recipient code",
     "Suppport_bank": "Bank name",
     "Support_IBAN": "Recipient's account in the format",
-    "Support_Privat": "For customers",
+    "Support_Privat": "For customers: JSC CB «PRIVATBANK»",
     "Support_notiflix_clipboard": "Copied !",
+    "Support_SWIFT_code": "SWIFT code",
+    "Support_correspondent": "Correspondent bank",
+    "Support_correspondent_code": "SWIFT code of the correspondent bank",
+    "Support_correspondent_account": "Account in the correspondent bank",
 };
