@@ -83,16 +83,18 @@ const HomePage = () => {
                                     <Link className={scss.supported_link}>{t("Home_intro_text4")}</Link>
                                     <ul className={scss.supported_list}>
                                         <li>
-                                            <span>PARZIVAL-ZENTRUM</span>
-                                            <DeFlag className={scss.flags}/>
-                                        </li>
-                                        <li>
                                             <span>{t("Home_intro_text5")}</span>
                                             <UaFlag className={scss.flags}/>
                                         </li>
                                         <li>
-                                            <span>{t("Home_intro_text6.1")}</span>
-                                            <span>{t("Home_intro_text6.2")}</span>
+                                            <Link className={scss.intro_link} to="https://www.parzival-zentrum.de/">PARZIVAL-ZENTRUM</Link>
+                                            <DeFlag className={scss.flags}/>
+                                        </li>
+                                        <li>
+                                            <Link className={scss.intro_link} to="https://www.facebook.com/nalahaeandr/">
+                                                <span>{t("Home_intro_text6.1")}</span>
+                                                <span>{t("Home_intro_text6.2")}</span>
+                                            </Link>
                                             <UaFlag className={scss.flags}/>
                                         </li>
                                         <li>

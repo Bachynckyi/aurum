@@ -5,8 +5,8 @@ import { ReactComponent as HandshakeWhite} from "../../images/handshake_white.sv
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as FacebookIcon } from '../../images/facebook_icon.svg';
-import { ReactComponent as TelegramIcon } from '../../images/telegram_icon.svg';
+import { ReactComponent as FacebookIcon } from '../../images/facebook_iconH.svg';
+import { ReactComponent as TelegramIcon } from '../../images/telegram_iconH.svg';
 import { IoIosArrowDown } from "react-icons/io";
 import i18next from 'i18next';
 import { LOCALS } from 'i18n/constants';

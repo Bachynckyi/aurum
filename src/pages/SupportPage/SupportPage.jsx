@@ -164,7 +164,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>J P Morgan Chase Bank, Bournemouth, UK</span>
@@ -238,7 +238,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>Commerzbank AG, Frankfurt am Main, Germany</span>
@@ -268,7 +268,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY</span>
@@ -298,7 +298,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>THE BANK OF NEW YORK MELLON, FRANKFURT AM MAIN</span>
@@ -328,7 +328,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>CITIBANK EUROPE PLC</span>
@@ -357,7 +357,7 @@ const SupportPage = () => {
                                     showUserMessage();
                                 }}/> 
                             </p>
-                        </li>    
+                        </li>  
                     </ul>
                 )}
                 {currency === "GBP" && (
@@ -402,7 +402,7 @@ const SupportPage = () => {
                                 }}/> 
                             </p>
                         </li>
-                        <li className={scss.details_item}>
+                        <li className={scss.details_item_correspondent}>
                             <p className={scss.details_name}>{t("Support_correspondent")}:</p>
                             <p className={scss.details_data}>
                                 <span className={scss.details_text}>J P Morgan Chase Bank, Bournemouth, UK</span>
