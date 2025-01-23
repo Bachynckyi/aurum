@@ -94,8 +94,7 @@ const ServicesSlider = () => {
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
                             <p className={scss.slider_title1}>{t("Home_services_text1.1")}</p>
-                            <p className={scss.slider_title2}>{t("Home_services_text1.2")}</p>
-                            <p className={scss.slider_title2}>{t("Home_services_text1.3")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text1.2")} {t("Home_services_text1.3")}</p>
                         </div>
                         <span className={scss.slider_description}>{t("Home_services_description1")}</span>
                         <Link className={scss.slider_link} to="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini">{t("Home_services_button")}</Link>
@@ -134,7 +133,7 @@ const ServicesSlider = () => {
                     <div className={scss.slider_text_container}>
                         <div className={scss.slider_title_container}>
                             <p className={scss.slider_title1}>{t("Home_services_text5.1")}</p>
-                            <p className={scss.slider_title2}>{t("Home_services_text1.2")}</p>
+                            <p className={scss.slider_title2}>{t("Home_services_text5.2")}</p>
                         </div>
                         <span className={scss.slider_description}>{t("Home_services_description5")}</span>
                         <Link className={scss.slider_link} to="/services/manualna-terapiya-hrebta-ta-suglobiv">{t("Home_services_button")}</Link>

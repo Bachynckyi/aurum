@@ -48,15 +48,18 @@ button {
 
 @media screen and (min-width: 768px) {
   .servicesSlider2 .slick-slide div {
-    height: 238px;
+    height: 180px;
     margin: 0px 0px 20px 20px;
+    justify-content: center;
   }  
 }
 
 @media screen and (min-width: 1440px) {
   .servicesSlider2 .slick-slide div {
     box-sizing: border-box !important;
-    height: 258px !important;
+    height: 280px !important;
+    margin: 0px 0px 30px 20px;
+    justify-content: flex-start;
   }  
 }
 
@@ -98,6 +101,7 @@ button {
     display: flex !important;
     flex-direction: column !important;
     flex-wrap: wrap !important;
+    justify-content: center !important;
     width: 64px !important;
     height: 130px;
     left: 100%;

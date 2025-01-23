@@ -14,7 +14,8 @@ const ServicePage2 = () => {
               <span className={scss.description}>{t("Service_text2.1")}<br/>
                   {t("Service_text2.2")}<br/>
                   {t("Service_text2.3")}<br/>
-                  {t("Service_text2.4")}
+                  {t("Service_text2.4")}<br/>
+                  {t("Service_text2.5")}
               </span>
             </div>     
         </div>
