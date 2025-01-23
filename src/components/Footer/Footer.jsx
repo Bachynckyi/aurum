@@ -84,13 +84,10 @@ useEffect(() => {
                             <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/kinezioterapiya">{t("Footer_nav7")}</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/gidrokinezioterapiya">{t("Footer_nav8")}</NavLink>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/maslyano-dispersijni-vanni">{t("Footer_nav8")}</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/maslyano-dispersijni-vanni">{t("Footer_nav9")}</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/aparatna-presoterapiya">{t("Footer_nav10")}</NavLink>
+                            <NavLink className={({isActive}) => isActive ? scss.services_item_active : scss.services_item} to="/services/aparatna-presoterapiya">{t("Footer_nav9")}</NavLink>
                         </li>
                     </ul>
                 </div>

@@ -8,10 +8,15 @@ const ServicePage8 = () => {
   return (
     <div className={scss.container}>
         <div className={scss.main_wrapper}>
-            <h1 className={scss.title}>{t("Service_title8")}</h1>
+            <h1 className={scss.title}>{t("Service_title9")}</h1>
             <div className={scss.content_wrapper}>
               <img src={service8} alt='serviceImage' className={scss.image}/>
-              <span className={scss.description}>{t("Service_text8")}</span>
+              <span className={scss.description}>{t("Service_text9.1")}<br/>
+                  {t("Service_text9.2")}<br/>
+                  {t("Service_text9.3")}<br/>
+                  {t("Service_text9.4")}<br/>
+                  {t("Service_text9.5")}
+              </span>
             </div>
         </div>
     </div>

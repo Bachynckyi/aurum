@@ -8,7 +8,7 @@ export const de = {
         "Header_nav6": "Unsere partner",
         "Header_subnav1": "Video über uns",
         "Header_subnav2": "Unsere Auszeichnungen",
-        "Header_subnav3": "Präsentation",
+        "Header_subnav3": "Projektpräsentation",
         "Header_subnav4": "Konsultation mit einem arzt für physikalische und rehabilitative medizin",
         "Header_subnav5": "Psychologische beratung",
         "Header_subnav6": "Postisometrische entspannung",
@@ -16,7 +16,6 @@ export const de = {
         "Header_subnav8": "Manuelle Therapie",
         "Header_subnav9": "Rhythmisches Reiben",
         "Header_subnav10": "Kinesiotherapie",
-        "Header_subnav11": "Hydrokinesiotherapie",
         "Header_subnav12": "Öldispersionsbäder",
         "Header_subnav13": "Apparative pressotherapie",
         "Header_subnav14": "Anthroposophische Medizin",
@@ -51,7 +50,6 @@ export const de = {
         "Home_services_text6.1": "Rhythmisches",
         "Home_services_text6.2": "Reiben",
         "Home_services_text7": "Kinesiotherapie",
-        "Home_services_text8": "Hydrokinesiotherapie",
         "Home_services_text9.1": "",
         "Home_services_text9.2": "Öldispersionsbäder",
         "Home_services_text10.1": "Apparative",
@@ -101,7 +99,7 @@ export const de = {
         "Honors_title": "Unsere Auszeichnungen und Ehrungen",
 
         // Presentation
-        "Presentation_title": "Unsere Präsentation",
+        "Presentation_title": "Projektpräsentation",
         "Presentation_link": "Präsentation ansehen",
 
         // Partners
@@ -136,9 +134,8 @@ export const de = {
         "Footer_nav5": "Manuelle Therapie",
         "Footer_nav6": "Rhythmisches Reiben",
         "Footer_nav7": "Kinesiotherapie",
-        "Footer_nav8": "Hydrokinesiotherapie",
-        "Footer_nav9": "Öldispersionsbäder",
-        "Footer_nav10": "Apparative pressotherapie",
+        "Footer_nav8": "Öldispersionsbäder",
+        "Footer_nav9": "Apparative pressotherapie",
 
         // PageNotFound
         "PageNotFound_title_error": "Fehler !",
@@ -164,8 +161,6 @@ export const de = {
         "Service_text6.2": "Die Therapie berücksichtigt sowohl die konstitutionellen Merkmale des Patienten, was bei der Auswahl der Wirkung auf das Organsystem entsprechend seiner Konstitution (Herztyp, Nierentyp, Lebertyp, Lungentyp) hilft, als auch den Ort der Symptome der erkannten Störungen. Darauf aufbauend werden geeignete Körperbereiche für die Therapie ausgewählt.",
         "Service_title7": "Kinesiotherapie",
         "Service_text7": "Kinesiotherapie oder Bewegungstherapie ist eine Richtung der physikalischen Therapie, bei der aktive und passive Bewegungen, bestimmte therapeutische Übungen und die Arbeit an Simulatoren durchgeführt werden, um ein bestimmtes therapeutisches Ergebnis zu erzielen.",
-        "Service_title8": "Hydrokinesiotherapie",
-        "Service_text8": "Eine Methode zur körperlichen Rehabilitation, die aus der Durchführung physikalischer Therapie (spezielle körperliche Übungen) in einer Wasserumgebung (Schwimmbad) besteht. Eine Besonderheit der Hydrokinesiotherapie ist die Kombination von körperlichen Übungen in einer Anti-Schwerkraft-Umgebung sowie den chemischen und Temperaturfaktoren des Wassers zu therapeutischen und präventiven Zwecken. Der Unterricht wird unter der Aufsicht eines Arztes für Physikalische Medizin und Rehabilitationsmedizin und/oder eines Spezialisten für physikalische Rehabilitation durchgeführt.",
         "Service_title9": "Öldispersionsbäder",
         "Service_text9.1": "In Deutschland wird diese Therapieform seit 1937 angewandt und ist seit 1971 als „JUNGEBAD“-Therapie patentiert.",
         "Service_text9.2": "Die moderne Physiologie zeigt, dass Wärme für den menschlichen Körper wichtiger ist als die Atmung. Thermische Prozesse stehen in direktem Zusammenhang mit der Blutzirkulation und die Funktion des Organs ist von der Blutversorgung abhängig. Die Körpertemperatur des Menschen ist vom Tag-Nacht-Rhythmus abhängig und ist nachts höher als tagsüber. Dies ist wichtig für eine erholsame Nachtruhe.",

@@ -8,7 +8,7 @@ export const en = {
     "Header_nav6": "Our partners",
     "Header_subnav1": "Video about us",
     "Header_subnav2": "Our awards",
-    "Header_subnav3": "Presentation",
+    "Header_subnav3": "Project presentation",
     "Header_subnav4": "Consultation with a doctor of physical and rehabilitation medicine",
     "Header_subnav5": "Psychologist consultation",
     "Header_subnav6": "Postisometric relaxation",
@@ -16,7 +16,6 @@ export const en = {
     "Header_subnav8": "Manual therapy",
     "Header_subnav9": "Rhythmic rubbing",
     "Header_subnav10": "Kinesiotherapy",
-    "Header_subnav11": "Hydrokinesiotherapy",
     "Header_subnav12": "Oil-dispersion baths",
     "Header_subnav13": "Apparatus pressotherapy",
     "Header_subnav14": "Anthroposophical medicine",
@@ -52,7 +51,6 @@ export const en = {
     "Home_services_text6.1": "Rhythmic",
     "Home_services_text6.2": "rubbing",
     "Home_services_text7": "Kinesiotherapy",
-    "Home_services_text8": "Hydrokinesiotherapy",
     "Home_services_text9.1": "Oil-dispersion",
     "Home_services_text9.2": "baths",
     "Home_services_text10.1": "Apparatus",
@@ -102,7 +100,7 @@ export const en = {
     "Honors_title": "Our awards and honors",
 
     // Presentation
-    "Presentation_title": "Our presentation",
+    "Presentation_title": "Project presentation",
     "Presentation_link": "View presentation",
 
     // Partners
@@ -137,9 +135,8 @@ export const en = {
     "Footer_nav5": "Manual therapy",
     "Footer_nav6": "Rhythmic rubbing",
     "Footer_nav7": "Kinesiotherapy",
-    "Footer_nav8": "Hydrokinesiotherapy",
-    "Footer_nav9": "Oil-dispersion baths",
-    "Footer_nav10": "Apparatus pressotherapy",
+    "Footer_nav8": "Oil-dispersion baths",
+    "Footer_nav9": "Apparatus pressotherapy",
 
     // PageNotFound
     "PageNotFound_title_error": "Error !",
@@ -165,8 +162,6 @@ export const en = {
     "Service_text6.2": "The therapy takes into account both the constitutional features of the patient, which helps in choosing the effect on the organ system according to his constitution (cardiac type, renal type, hepatic type, pulmonary type), and the location of the symptoms of the detected disorders. Based on this, the appropriate areas of the body are selected for therapy.",
     "Service_title7": "Kinesiotherapy",
     "Service_text7": "Kinesitherapy or movement therapy is a direction of physical therapy that involves performing active and passive movements, certain therapeutic exercises, and working on simulators to achieve a specific therapeutic result.",
-    "Service_title8": "Hydrokinesiotherapy",
-    "Service_text8": "A means of physical rehabilitation, which consists in performing physical therapy (special physical exercises) in an aquatic environment (pool). A feature of hydrokinesiotherapy is the combination of performing physical exercises in an anti-gravity environment, chemical and temperature factors of water with a therapeutic and preventive purpose. Classes are conducted under the supervision of a doctor of physical and rehabilitation medicine and/or a specialist in physical rehabilitation.",
     "Service_title9": "Oil dispersion baths",
     "Service_text9.1": "This type of therapy has been used in Germany since 1937, and since 1971 it has been patented as “JUNGEBAD” therapy.",
     "Service_text9.2": "Modern physiology indicates that heat is more important for the human body than breathing. Thermal processes are directly related to blood circulation and the functioning of the organ depends on the blood supply. The temperature of the human body depends on the day-night rhythm, at night it is higher than during the day. This is important for a quality night's sleep.",

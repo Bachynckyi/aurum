@@ -123,7 +123,6 @@ const Header = () => {
                   <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/manualna-terapiya-hrebta-ta-suglobiv">{t("Header_subnav8")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/ritmichne-vtirannya">{t("Header_subnav9")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/kinezioterapiya">{t("Header_subnav10")}</NavLink>
-                  <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/gidrokinezioterapiya">{t("Header_subnav11")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/maslyano-dispersijni-vanni">{t("Header_subnav12")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_item_active : scss.submenu_item} to="/services/aparatna-presoterapiya">{t("Header_subnav13")}</NavLink>
               </div>
@@ -217,7 +216,6 @@ const Header = () => {
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/manualna-terapiya-hrebta-ta-suglobiv">{t("Header_subnav8")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/ritmichne-vtirannya">{t("Header_subnav9")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/kinezioterapiya">{t("Header_subnav10")}</NavLink>
-                  <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/gidrokinezioterapiya">{t("Header_subnav11")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/maslyano-dispersijni-vanni">{t("Header_subnav12")}</NavLink>
                   <NavLink className={({isActive}) => isActive ? scss.submenu_mobile_item_active : scss.submenu_mobile_item} onClick={closeMobileMenu} to="/services/aparatna-presoterapiya">{t("Header_subnav13")}</NavLink>
                 </div>
