@@ -210,8 +210,7 @@ const HomePage = () => {
                 </div>
                 <div className={scss.news_container}>
                     <div className={scss.container_title}>
-                        <span className={scss.container_title1}>{t("Home_news_title1")} </span>
-                        <span className={scss.container_title2}>{t("Home_news_title2")}</span>
+                        <span className={scss.container_title2}>{t("Home_news_title1")}</span>
                     </div>
                     <NewsSlider/>
                     <Link className={scss.news_button} to="/news">{t("Home_news_link")}</Link>

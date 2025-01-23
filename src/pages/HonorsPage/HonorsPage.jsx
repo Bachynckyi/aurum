@@ -10,6 +10,7 @@ import honor8 from '../../images/honors/honor8.jpg';
 import honor9 from '../../images/honors/honor9.jpg';
 import honor10 from '../../images/honors/honor10.jpg';
 import honor11 from '../../images/honors/honor11.jpg';
+import honor12 from '../../images/honors/honor12.jpg';
 import { useTranslation } from 'react-i18next';
 
 const HonorsPage = () => {
@@ -31,6 +32,7 @@ const HonorsPage = () => {
                 <img src={honor9} alt="imageHonor" className={scss.photo}/>
                 <img src={honor10} alt="imageHonor" className={scss.photo}/>
                 <img src={honor11} alt="imageHonor" className={scss.photo}/>
+                <img src={honor12} alt="imageHonor" className={scss.photo}/>
             </div>
         </div>
     </div>

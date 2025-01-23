@@ -20,7 +20,8 @@ import Partner17 from '../../images/partners/Suziria.png';
 import Partner18 from '../../images/partners/Dopomogator.png';
 import Partner19 from '../../images/partners/Vertolet.png';
 import Partner20 from '../../images/partners/KMH.jpg';
-import Partner21 from '../../images/partners/helias.png';
+import Partner21 from '../../images/partners/Helias.png';
+import Partner22 from '../../images/partners/Ukr_ter.jpg';
 
 const Partners = () => {
   return (
@@ -47,6 +48,7 @@ const Partners = () => {
         <li className={scss.partners_list_item}><img src={Partner19} alt="logo" className={scss.partner_logo}/></li>
         <li className={scss.partners_list_item}><img src={Partner20} alt="logo" className={scss.partner_logo}/></li>
         <li className={scss.partners_list_item}><img src={Partner21} alt="logo" className={scss.partner_logo}/></li>
+        <li className={scss.partners_list_item}><img src={Partner22} alt="logo" className={scss.partner_logo}/></li>
     </ul>
   )
 };
