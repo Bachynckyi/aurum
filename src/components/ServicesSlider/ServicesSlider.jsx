@@ -61,7 +61,7 @@ const ServicesSlider = () => {
         centerPadding: '-40px',
         responsive: [
               {
-                breakpoint: 768,
+                breakpoint: 1440,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,

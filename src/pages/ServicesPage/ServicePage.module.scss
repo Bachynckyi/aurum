@@ -42,6 +42,7 @@
 
     @media screen and (min-width: 768px) {
         font-size: 36px;
+        max-width: 800px;
     };
 
 };
@@ -53,7 +54,7 @@
     justify-content: center;
     box-sizing: border-box;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         flex-direction: row;
         gap: 50px;
     };
@@ -80,7 +81,6 @@
 };
 
 .description {
-    text-align: center;
     color: #181818;
     font-family: "Exo2-Regular";
     font-size: 14px;

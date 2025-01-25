@@ -761,7 +761,7 @@
 };
 
 .about_mobile_submenu_active {
-    height: 122px;
+    height: 160px;
     margin: 30px 0px 0px 30px;
     display: flex;
     flex-direction: column;
@@ -769,7 +769,7 @@
     transition: height 300ms 0ms, opacity 500ms 0ms;
 
     @media screen and (min-width: 768px) {
-        height: 142px;
+        height: 210px;
     };
 };
 

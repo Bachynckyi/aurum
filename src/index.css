@@ -48,24 +48,20 @@ button {
 
 @media screen and (min-width: 768px) {
   .servicesSlider2 .slick-slide div {
-    height: 180px;
-    margin: 0px 0px 20px 20px;
-    justify-content: center;
+    margin: 0px 0px 40px 20px;
   }  
 }
 
 @media screen and (min-width: 1440px) {
   .servicesSlider2 .slick-slide div {
-    box-sizing: border-box !important;
-    height: 280px !important;
+    height: 282px !important;
     margin: 0px 0px 30px 20px;
-    justify-content: flex-start;
   }  
 }
 
 .servicesSlider2 .slick-dots {
   bottom: -94px;
-  left:50%;
+  left: 50%;
   transform:translate(-50%, 0%);
   width: 160px;
   margin-left: 4px;
@@ -95,7 +91,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .servicesSlider2 .slick-dots {
-    bottom: 0px;
     transform:translate(0%, 0%);
     margin-left: 0px;
     display: flex !important;
@@ -105,7 +100,7 @@ button {
     width: 64px !important;
     height: 130px;
     left: 100%;
-    top: 50%;
+    top: 40%;
     transform:translate(0%, -50%);
     gap: 4px;
   }
@@ -113,6 +108,7 @@ button {
 
 @media screen and (min-width: 1440px) {
   .servicesSlider2 .slick-dots {
+    top: 45%;
     gap: 8px;
     height: 150px;
   }
