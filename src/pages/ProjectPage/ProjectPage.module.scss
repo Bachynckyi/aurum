@@ -24,6 +24,7 @@
 
     @media screen and (min-width: 1024px) {
         padding: 20px 0px 100px 0px;
+        width: calc(100vw - 40px);
     };
 };
 
@@ -42,6 +43,14 @@
     };
 };
 
+.intro_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
 .text {
     color: #181818;
     font-family: "Exo2-Regular";
@@ -49,9 +58,110 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    max-width: 500px;
 };
 
+.images_wrapper1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 0px 20px 0px;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        height: 640px;
+    };
+};
+
+.images_wrapper2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between !important;
+
+    @media screen and (min-width: 1024px) {
+        height: 640px;
+    };
+};
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 526px;
+    max-height: 789px;
+    border-radius: 24px !important;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+};
+
+.parzival_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+.parzival_wrapper1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 20px;
+        margin: 30px 0px 30px 0px;
+    };
+};
+
+.parzival_wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+
+
+.finish_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 60px;
+        margin: 0px 0px 30px 0px;
+    };
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .list {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -61,4 +171,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin: 0px;
+    padding-left: 20px;
 };
