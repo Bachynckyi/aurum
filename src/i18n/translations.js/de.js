@@ -28,7 +28,7 @@ export const de = {
         "Home_intro_text3": "Durch Unterstützung",
         "Home_intro_text4": "Internationales Projekt",
         "Home_intro_text5": "MEDIZINISCHES ZENTRUM AURUM",
-        "Home_intro_text6.1": "UKRAINISCHER VERBAND FÜR HÄMOKORREKTUR",
+        "Home_intro_text6.1": "UKRAINISCHER VERBAND FÜR HÄMOKORREKTUR ",
         "Home_intro_text6.2": "UND REHABILITATION",
         "Home_intro_support": "Unterstütze das Projekt",
         "Home_intro_link": "Mehr erfahren",

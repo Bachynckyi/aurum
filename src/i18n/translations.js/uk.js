@@ -28,7 +28,7 @@ export const uk = {
     "Home_intro_text3": "За підтримкою:",
     "Home_intro_text4": "Міжнародний проект",
     "Home_intro_text5": "МЕДИЧНОГО ЦЕНТРУ АУРУМ",
-    "Home_intro_text6.1": "ВСЕУКРАЇНСЬКОЇ АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ",
+    "Home_intro_text6.1": "ВСЕУКРАЇНСЬКОЇ АСОЦІАЦІЇ ГЕМОКОРЕКЦІЇ ",
     "Home_intro_text6.2": "ТА РЕАБІЛІТАЦІЇ",
     "Home_intro_support": "Підтримати проект",
     "Home_intro_link": "Дізнатись більше",
