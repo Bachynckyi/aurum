@@ -10,16 +10,14 @@ import image7 from "../../images/project/project7.jpg";
 import image8 from "../../images/project/project8.jpg";
 import image9 from "../../images/project/project9.jpg";
 
-
 const ProjectPage = () => {
   const { t } = useTranslation();
-
   return (
     <div className={scss.container}>
           <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Project_title")}</h1>
             <div className={scss.intro_wrapper}>
-                <p className={scss.text}>{t("Project_text1")}{t("Project_text2")}</p>
+                <p className={scss.text}>{t("Project_text1")} {t("Project_text2")}</p>
                 <div className={scss.images_wrapper1}>
                     <img src={image3} alt="image3" className={scss.image}/>
                     <div className={scss.images_wrapper2}>
@@ -71,8 +69,7 @@ const ProjectPage = () => {
                 <img src={image9} alt="image9" className={scss.image}/>
             </div>
         </div>
-    </div>
-        
+    </div>    
   )
 };
 
