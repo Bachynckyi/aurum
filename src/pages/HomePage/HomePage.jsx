@@ -81,7 +81,7 @@ const HomePage = () => {
                                     <div className={scss.supported_logo}>
                                         <ParzivalZentrum className={scss.special_logo}/>
                                     </div>
-                                    <Link className={scss.supported_link}>{t("Home_intro_text4")}</Link>
+                                    <Link className={scss.supported_link} to="/project">{t("Home_intro_text4")}</Link>
                                     <ul className={scss.supported_list}>
                                         <li>
                                             <span>{t("Home_intro_text5")}</span>
