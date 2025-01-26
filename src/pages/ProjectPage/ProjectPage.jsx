@@ -19,7 +19,7 @@ const ProjectPage = () => {
           <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Project_title")}</h1>
             <div className={scss.intro_wrapper}>
-                <p className={scss.text}>{t("Project_text1")}</p>
+                <p className={scss.text}>{t("Project_text1")}{t("Project_text2")}</p>
                 <div className={scss.images_wrapper1}>
                     <img src={image3} alt="image3" className={scss.image}/>
                     <div className={scss.images_wrapper2}>
@@ -29,11 +29,10 @@ const ProjectPage = () => {
                 </div>
             </div>
             <div className={scss.parzival_wrapper}>
-                <p className={scss.text}>{t("Project_text2")}</p>
                 <div className={scss.parzival_wrapper1}>
                     <img src={image4} alt="image4" className={scss.image}/>
                     <div className={scss.parzival_wrapper2}>
-                        <p className={scss.text}>{t("Project_list1_title")}</p>
+                        <p className={scss.text2}>{t("Project_list1_title")}</p>
                         <ul className={scss.list}>
                             <li>{t("Project_list1_item1")}</li>
                             <li>{t("Project_list1_item2")}</li>
@@ -52,11 +51,11 @@ const ProjectPage = () => {
             </div>
             <div className={scss.finish_wrapper}>
                 <div>
-                    <p className={scss.text}>{t("Project_text3")}</p>
-                    <p className={scss.text}>{t("Project_text4")}</p>
+                    <p className={scss.text2}>{t("Project_text3")}</p>
+                    <p className={scss.text2}>{t("Project_text4")}</p>
                 </div>
                 <div>
-                    <p className={scss.text}>{t("Project_list2_title")}</p>
+                    <p className={scss.text2}>{t("Project_list2_title")}</p>
                     <ul className={scss.list}>
                         <li>{t("Project_list2_item1")}</li>
                         <li>{t("Project_list2_item2")}</li>

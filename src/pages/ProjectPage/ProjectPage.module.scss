@@ -58,7 +58,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    max-width: 500px;
+    max-width: 1072px;
+    text-align: left;
+};
+
+.text2 {
+    color: #181818;
+    font-family: "Exo2-Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 526px;
+    text-align: left;
 };
 
 .images_wrapper1 {
@@ -123,8 +135,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     @media screen and (min-width: 1024px) {
-        max-width: 526px;
-        max-height: 310px;
+        width: calc(100vw - 40px - 526px);
+        height: 310px;
     };
 };
 
@@ -177,23 +189,9 @@
     };
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .list {
     width: 100%;
-    max-width: 500px;
+    max-width: 526px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
