@@ -266,4 +266,23 @@ export const en = {
     "Support_correspondent": "Correspondent bank",
     "Support_correspondent_code": "SWIFT code of the correspondent bank",
     "Support_correspondent_account": "Account in the correspondent bank",
+
+    // Project
+    "Project_title": "International project",
+    "Project_text1": "On June 10, 2023, an Agreement on International Cooperation was concluded between Parzival Zentrum and the Public Organization «ALL-UKRAINIAN ASSOCIATION OF HEMOCORRECTION AND REHABILITATION». By concluding this Agreement, the Parties confirm that joint and coordinated international cooperation on cooperation and development of the AURUM Rehabilitation Center in the direction of helping children and youth affected by the war in Ukraine is in the interests of each of them.",
+    "Project_text2": "Parzival Zentrum in Karlsruhe, Germany has 25 years of successful work with refugees and children from all over the world who have been traumatized by war, violence, and hunger.",
+    "Project_list1_title": "The parties agreed to work in the following areas, namely:",
+    "Project_list1_item1": "studying and sharing experiences on trauma and therapy for children, adolescents and young people traumatized by war, as well as on their psychosocial health;",
+    "Project_list1_item2": "joint development of rehabilitation programs for adolescents and young people affected by the hostilities in Ukraine, involving specialists both in Ukraine and around the world;",
+    "Project_list1_item3": "holding all-Ukrainian and international public and scientific events, including conferences, round tables, lectures, seminars, etc., to discuss issues of rehabilitation of adolescents and young people who suffered as a result of hostilities in Ukraine, presentations of the Rehabilitation Center;",
+    "Project_list1_item4": "organization of all-Ukrainian and international events to collect charitable donations to finance the AURUM rehabilitation center.",
+    "Project_text3": "NGO «ALL-UKRAINIAN ASSOCIATION OF HEMOCORRECTION AND REHABILITATION» is a strategic partner in the establishment in Ukraine and ensuring the activities of the AURUM Rehabilitation Center on the territory of Ukraine.",
+    "Project_list2_title": "In turn, Parzival Zentrum acts as a strategic partner of the AURUM Rehabilitation Center on the following issues:",
+    "Project_list2_item1": "concepts, methodologies and forms of rapid rehabilitation and pedagogical assistance for injuries;",
+    "Project_list2_item2": "creation of emergency and traumatology teaching rooms;",
+    "Project_list2_item3": "advisory assistance for parents and legal guardians regarding responses related to emergencies and traumatization of their children;",
+    "Project_list2_item4": "emergency and traumatic pedagogical advice from educators on trauma-related reactions of children and youth in an institutional context;",
+    "Project_list2_item5": "mental hygiene, resilience, and salutogenesis for teachers and assistants;",
+    "Project_list2_item6": "coverage of the rehabilitation center's activities outside Ukraine.",
+    "Project_text4": "International cooperation with Parzival Zentrum is an opportunity to create new formats of therapeutic medical and pedagogical intervention in the rehabilitation system in accordance with the requirements of life in the modern world. First of all, it is an exchange of experience with the aim of developing the psychophysical rehabilitation system in Ukraine and introducing unique Ukrainian experience in combination with European methods outside Ukraine, in Europe and around the world."
 };

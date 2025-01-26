@@ -15,6 +15,7 @@ import Partners from 'components/Partners/Partners';
 import { ReactComponent as UaFlag} from "../../images/ua_flag.svg";
 import { ReactComponent as DeFlag} from "../../images/germany_flag.svg";
 import { ReactComponent as NLFlag} from "../../images/netherlands_flag.svg";
+import { ReactComponent as USAFlag} from "../../images/usa_flag.svg";
 import { ReactComponent as ButtonMore} from "../../images/button_more.svg";
 import { ReactComponent as LogoUA } from '../../images/Aurum_logo_UA.svg';
 import { ReactComponent as LogoDE } from '../../images/Aurum_logo_DE.svg';
@@ -101,6 +102,10 @@ const HomePage = () => {
                                             <Link className={scss.intro_link} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
                                             <NLFlag className={scss.flags}/>
                                         </li>
+                                        <li>
+                                            <Link className={scss.intro_link} to="https://www.fesflowers.com/">FLOWER ESSENCE SERVICES</Link>
+                                            <USAFlag className={scss.flags}/>
+                                        </li>
                                     </ul>
                                     <ButtonMore className={scss.button_more}/>
                             </div>
@@ -110,7 +115,7 @@ const HomePage = () => {
                                 <Handshake className={scss.handshake}/>
                                 <span>{t("Home_intro_support")}</span>
                             </Link>
-                            <Link className={scss.button_read}>{t("Home_intro_link")}</Link>
+                            <Link className={scss.button_read} to={"/project"}>{t("Home_intro_link")}</Link>
                         </div>
                     </div>
                 </div>
