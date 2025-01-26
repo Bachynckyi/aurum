@@ -42,19 +42,14 @@ const ProjectPage = () => {
                         </ul>
                     </div>     
                 </div>
-                <div>
-                    <div className={scss.images_wrapper1}>
-                        <div className={scss.images_wrapper2}>
-                            <img src={image5} alt="image5" className={scss.image}/>
-                            <img src={image6} alt="image6" className={scss.image}/>
-                        </div>
-                        <img src={image7} alt="image7" className={scss.image}/>
-                </div>
+                <div className={scss.images_wrapper1}>
+                    <div className={scss.images_wrapper3}>
+                        <img src={image5} alt="image5" className={scss.image2}/>
+                        <img src={image6} alt="image6" className={scss.image2}/>
+                    </div>
+                    <img src={image7} alt="image7" className={scss.image}/>
                 </div>
             </div>
-
-
-
             <div className={scss.finish_wrapper}>
                 <div>
                     <p className={scss.text}>{t("Project_text3")}</p>
