@@ -29,7 +29,7 @@
 };
 
 .title {
-    margin: 0px 0px 30px 0px;
+    margin: 0px;
     text-align: center;
     color: #00A3FF;
     font-family: "Exo2-Bold";
@@ -39,6 +39,7 @@
     line-height: normal;
 
     @media screen and (min-width: 433px) {
+        margin: 0px 0px 30px 0px;
         font-size: 36px;
     };
 };
