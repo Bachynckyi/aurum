@@ -22,7 +22,7 @@ import { ReactComponent as LogoEN } from '../../images/Aurum_logo_EN.svg';
 import { ReactComponent as Handshake} from "../../images/handshake.svg";
 import { ReactComponent as ParzivalZentrum} from "../../images/parzival-zentrum.svg";
 import ScrollToTop from "react-scroll-to-top";
-import { IoIosArrowDropup } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -62,7 +62,7 @@ const HomePage = () => {
             <ScrollToTop 
                 smooth
                 className={scss.scroll_button}
-                component={<IoIosArrowDropup className={scss.arrowUp}/>}
+                component={<IoIosArrowUp className={scss.arrowUp}/>}
             />
             <div className={scss.content_container}>
                 <div className={scss.intro_container_wrapper}>

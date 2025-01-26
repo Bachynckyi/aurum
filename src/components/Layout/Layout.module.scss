@@ -63,11 +63,11 @@
 };
 
 .scroll_button {
-    right: 20px !important;
-    bottom: 20px !important;
+    right: 25px !important;
+    bottom: 25px !important;
     box-shadow: none !important;
-    width: 50px !important;
-    height: 50px !important;
+    width: 54px !important;
+    height: 54px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -76,12 +76,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px !important;
     border-radius: 50% !important;
     border: 3.5px solid #FFC700 !important;
+    background-color: transparent !important;
 };
 
 .arrowUp {
     width: 100%;
     height: 100%;
     color: #FFC700;
-    // width: 50px;
-    // height: 50px;
+    margin-bottom: 5px;
 };

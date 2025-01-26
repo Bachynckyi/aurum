@@ -4,9 +4,7 @@ import scss from "./Layout.module.scss";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
-// import { IoIosArrowDropup } from "react-icons/io";
 import { motion } from 'framer-motion';
-// import { BsArrowUpSquare } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
 
 
@@ -38,7 +36,6 @@ const Layout = () => {
                     smooth
                     className={scss.scroll_button}
                     component={<IoIosArrowUp className={scss.arrowUp}/>}
-                    // component={<BsArrowUpSquare className={scss.arrowUp}/>}
                 />
                 <div className={scss.footer_container}>
                     <div className={scss.background_wrapper2}></div>
