@@ -32,10 +32,14 @@
     text-align: center;
     color: #00A3FF;
     font-family: "Exo2-Bold";
-    font-size: 36px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    @media screen and (min-width: 380px) {
+        font-size: 36px;
+    };
 };
 
 .button_download {

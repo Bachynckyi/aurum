@@ -31,10 +31,10 @@ import { useEffect, useState } from 'react';
 const HomePage = () => {
   const { t } = useTranslation();
   const [logo, setLogo] = useState("");
+  const lang = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
-    setLogo(currentLang);
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setLogo("UA");
       }
@@ -44,7 +44,7 @@ const HomePage = () => {
       else {
         setLogo("EN");
       }
-  }, []);
+  }, [lang]);
 
   return (
     <motion.div

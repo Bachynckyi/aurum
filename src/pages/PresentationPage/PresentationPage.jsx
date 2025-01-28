@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 const PresentationPage = () => {
   const { t } = useTranslation();
   const [presentation, setPresentation] = useState("");
+  const lang = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
@@ -19,7 +20,7 @@ const PresentationPage = () => {
     else {
       setPresentation("/assets/Presentation_Aurum_EN.pdf");
     }
-  }, []);
+  }, [lang]);
 
   return (
     <div className={scss.container}>

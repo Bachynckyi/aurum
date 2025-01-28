@@ -16,10 +16,10 @@ const todayDate = new Date();
 const currentYear = todayDate.getFullYear();
 const { t } = useTranslation();
 const [logo, setLogo] = useState("");
+const lang = localStorage.getItem("i18nextLng");
 
 useEffect(() => {
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
-    setLogo(currentLang);
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setLogo("UA");
       }
@@ -29,7 +29,7 @@ useEffect(() => {
       else {
         setLogo("EN");
       }
-  }, []);
+  }, [lang]);
 
   return (
     <footer className={scss.footer_container}>
