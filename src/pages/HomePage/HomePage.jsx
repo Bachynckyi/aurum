@@ -27,13 +27,21 @@ import { IoIosArrowUp } from "react-icons/io";
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import { ThreeDots } from 'react-loader-spinner';
 
 const HomePage = () => {
   const { t } = useTranslation();
   const [logo, setLogo] = useState("");
   const lang = localStorage.getItem("i18nextLng");
+  const [loading, setLoading ] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+    document.body.style.cssText = `overflow-y: hidden`
+    setTimeout(() => {
+      document.body.style.cssText = `overflow-y: auto`
+      setLoading(false);
+    }, 1500);
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setLogo("UA");
@@ -47,190 +55,204 @@ const HomePage = () => {
   }, [lang]);
 
   return (
-    <motion.div
-    transition={{ duration: 1.1}}
-    initial={{opacity: 0.1}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}>
-        <div className={scss.container}>
-            <div className={scss.background_wrapper1}></div>
-            <div className={scss.background_wrapper3}></div>
-            <div className={scss.gradient_wrapper1}></div>
-            <BackgroundLeft1 className={scss.background_left1}/>
-            <BackgroundLeft2 className={scss.background_left2}/>
-            <BackgroundRight1 className={scss.background_right1}/>
-            <BackgroundRight2 className={scss.background_right2}/>
-            <ScrollToTop 
-                smooth
-                className={scss.scroll_button}
-                component={<IoIosArrowUp className={scss.arrowUp}/>}
+    <>
+        {loading === true && (
+            <div className={scss.loader_container}>
+            <ThreeDots
+            height="110" 
+            width="110" 
+            radius="9"
+            color="#FFC700" 
+            ariaLabel="three-dots-loading"
+            visible={true}
             />
-            <div className={scss.content_container}>
-                <div className={scss.intro_container_wrapper}>
-                    <div className={scss.intro_container}>
-                        <div className={scss.intro_wrapper}>
-                            <div className={scss.logo_container}>
-                                {logo === "UA" && (<LogoUA className={scss.logo}/>)}
-                                {logo === "DE" && (<LogoDE className={scss.logo}/>)}
-                                {logo === "EN" && (<LogoEN className={scss.logo}/>)}
-                                <p className={scss.logo_text1}>{t("Home_intro_text1")}</p>
-                                <p className={scss.logo_text2}>{t("Home_intro_text2")}</p>
-                            </div>
-                            <div className={scss.supported_container}>
-                                    <p className={scss.supported_text}>{t("Home_intro_text3")}</p>
-                                    <div className={scss.supported_logo}>
-                                        <ParzivalZentrum className={scss.special_logo}/>
-                                    </div>
-                                    <Link className={scss.supported_link} to="/project">{t("Home_intro_text4")}</Link>
-                                    <ul className={scss.supported_list}>
-                                        <li>
-                                            <span>{t("Home_intro_text5")}</span>
-                                            <UaFlag className={scss.flags}/>
-                                        </li>
-                                        <li>
-                                            <Link className={scss.intro_link} to="https://www.parzival-zentrum.de/">PARZIVAL-ZENTRUM</Link>
-                                            <DeFlag className={scss.flags}/>
-                                        </li>
-                                        <li>
-                                            <Link className={scss.intro_link} to="https://www.facebook.com/nalahaeandr/">
-                                                <span>{t("Home_intro_text6.1")}</span>
-                                                <span>{t("Home_intro_text6.2")}</span>
-                                            </Link>
-                                            <UaFlag className={scss.flags}/>
-                                        </li>
-                                        <li>
-                                            <Link className={scss.intro_link} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
-                                            <NLFlag className={scss.flags}/>
-                                        </li>
-                                        <li>
-                                            <Link className={scss.intro_link} to="https://www.fesflowers.com/">FLOWER ESSENCE SERVICES</Link>
-                                            <USAFlag className={scss.flags}/>
-                                        </li>
-                                    </ul>
-                                    <ButtonMore className={scss.button_more}/>
-                            </div>
-                        </div>
-                        <div className={scss.buttons_container}>
-                            <Link className={scss.button_support} to={"/support-project"}>
-                                <Handshake className={scss.handshake}/>
-                                <span>{t("Home_intro_support")}</span>
-                            </Link>
-                            <Link className={scss.button_read} to={"/project"}>{t("Home_intro_link")}</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className={scss.services_container}>
-                    <div className={scss.container_title}>
-                        <span className={scss.container_title1}>{t("Home_services_title1")}</span>
-                        <span className={scss.container_title2}>{t("Home_services_title2")}</span>
-                    </div>
-                    <ServicesSlider/>
-                </div>
-                <div className={scss.about_container}>
-                    <span className={scss.about_title}>{t("Home_about_title")}</span>
-                    <div className={scss.about_image_container}>
-                        <img src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
-                        <img src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
-                        <img src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
-                    </div>
-                    <div className={scss.about_text_wrapper}>
-                        <span className={scss.about_title_desktop}>{t("Home_about_title")}</span>
-                        <span className={scss.about_text}>{t("Home_about_text")}</span>
-                        <Link className={scss.about_link} to="/about/presentation">{t("Home_about_link")}</Link>
-                    </div>
-                </div>
-                <div className={scss.partners_container}>
-                    <div className={scss.container_title}>
-                        <span className={scss.container_title1}>{t("Home_partners_title1")}</span>
-                        <span className={scss.container_title2}>{t("Home_partners_title2")}</span>
-                    </div>
-                    <Partners/>
-                </div>
-                <div className={scss.team_container}>
-                    <div className={scss.background_wrapper2}></div>
-                    <div className={scss.gradient_wrapper2}></div>
-                    <div className={scss.gradient_wrapper3}></div>
-                    <div className={scss.container_title}>
-                        <span className={scss.container_title1}>{t("Home_team_title1")} </span>
-                        <span className={scss.container_title2}>{t("Home_team_title2")}</span>
-                    </div>
-                    <ul className={scss.team_list}>
-                        <li>
-                            <Link className={scss.team_list_item1} to="/team/yevhen-volchenko">
-                                <div className={scss.team_list_names}>
-                                        <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
-                                        <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
-                                </div>
-                                <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
-                                <div className={scss.team_list_layer}></div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className={scss.team_list_item2} to="/team/snizhana-shcherbakova">
-                                <div className={scss.team_list_names}>
-                                    <span className={scss.team_list_name}>{t("Home_team_name2")} </span>
-                                    <span className={scss.team_list_surname}>{t("Home_team_surname2")}</span>
-                                </div>
-                                <span className={scss.team_list_job}>{t("Home_team_job2")}</span>
-                                <div className={scss.team_list_layer}></div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className={scss.team_list_item3} to="/team/yuriy-korosko">
-                                <div className={scss.team_list_names}>
-                                    <span className={scss.team_list_name}>{t("Home_team_name3")} </span>
-                                    <span className={scss.team_list_surname}>{t("Home_team_surname3")}</span>
-                                </div>
-                                <span className={scss.team_list_job}>{t("Home_team_job3")}</span>
-                                <div className={scss.team_list_layer}></div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className={scss.team_list_item4} to="/team/irina-sergiychuk">
-                                <div className={scss.team_list_names}>
-                                        <span className={scss.team_list_name}>{t("Home_team_name4")} </span>
-                                        <span className={scss.team_list_surname}>{t("Home_team_surname4")}</span>
-                                </div>
-                                <span className={scss.team_list_job}>{t("Home_team_job4")}</span>
-                                <div className={scss.team_list_layer}></div>
-                            </Link>
-                        </li>
-                        <li className={scss.team_list_item5}>
-                            <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>{t("Home_team_name5")} </span>
-                                <span className={scss.team_list_surname}>{t("Home_team_surname5")}</span>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job5")}</span>
-                            <div className={scss.team_list_layer}></div>
-                        </li>
-                        <li className={scss.team_list_item6}>
-                            <div className={scss.team_list_names}>
-                                <span className={scss.team_list_name}>{t("Home_team_name6")} </span>
-                                <span className={scss.team_list_surname}>{t("Home_team_surname6")}</span>
-                            </div>
-                            <span className={scss.team_list_job}>{t("Home_team_job6")}</span>
-                            <div className={scss.team_list_layer}></div>
-                        </li>
-                    </ul>
-                </div>
-                <div className={scss.news_container}>
-                    <div className={scss.container_title}>
-                        <span className={scss.container_title2}>{t("Home_news_title1")}</span>
-                    </div>
-                    <NewsSlider/>
-                    <Link className={scss.news_button} to="/news">{t("Home_news_link")}</Link>
-                </div>  
-                <div className={scss.reviews_container}>
-                    <div className={scss.container_title}>
-                        <span className={scss.container_title1}>{t("Home_reviews_title1")} </span>
-                        <span className={scss.container_title2}>{t("Home_reviews_title2")}</span>
-                    </div>
-                    <ReviewsSlider/>
-                </div>
             </div>
-            <Footer/>
-        </div>
-    </motion.div>    
+        )}
+        <motion.div
+        transition={{ duration: 1.1}}
+        initial={{opacity: 0.1}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
+            <div className={scss.container}>
+                <div className={scss.background_wrapper1}></div>
+                <div className={scss.background_wrapper3}></div>
+                <div className={scss.gradient_wrapper1}></div>
+                <BackgroundLeft1 className={scss.background_left1}/>
+                <BackgroundLeft2 className={scss.background_left2}/>
+                <BackgroundRight1 className={scss.background_right1}/>
+                <BackgroundRight2 className={scss.background_right2}/>
+                <ScrollToTop 
+                    smooth
+                    className={scss.scroll_button}
+                    component={<IoIosArrowUp className={scss.arrowUp}/>}
+                />
+                <div className={scss.content_container}>
+                    <div className={scss.intro_container_wrapper}>
+                        <div className={scss.intro_container}>
+                            <div className={scss.intro_wrapper}>
+                                <div className={scss.logo_container}>
+                                    {logo === "UA" && (<LogoUA className={scss.logo}/>)}
+                                    {logo === "DE" && (<LogoDE className={scss.logo}/>)}
+                                    {logo === "EN" && (<LogoEN className={scss.logo}/>)}
+                                    <p className={scss.logo_text1}>{t("Home_intro_text1")}</p>
+                                    <p className={scss.logo_text2}>{t("Home_intro_text2")}</p>
+                                </div>
+                                <div className={scss.supported_container}>
+                                        <p className={scss.supported_text}>{t("Home_intro_text3")}</p>
+                                        <div className={scss.supported_logo}>
+                                            <ParzivalZentrum className={scss.special_logo}/>
+                                        </div>
+                                        <Link className={scss.supported_link} to="/project">{t("Home_intro_text4")}</Link>
+                                        <ul className={scss.supported_list}>
+                                            <li>
+                                                <span>{t("Home_intro_text5")}</span>
+                                                <UaFlag className={scss.flags}/>
+                                            </li>
+                                            <li>
+                                                <Link className={scss.intro_link} to="https://www.parzival-zentrum.de/">PARZIVAL-ZENTRUM</Link>
+                                                <DeFlag className={scss.flags}/>
+                                            </li>
+                                            <li>
+                                                <Link className={scss.intro_link} to="https://www.facebook.com/nalahaeandr/">
+                                                    <span>{t("Home_intro_text6.1")}</span>
+                                                    <span>{t("Home_intro_text6.2")}</span>
+                                                </Link>
+                                                <UaFlag className={scss.flags}/>
+                                            </li>
+                                            <li>
+                                                <Link className={scss.intro_link} to="https://stichtinghelias.nl/fondsen/oekraine/">STICHTING HELIAS</Link>
+                                                <NLFlag className={scss.flags}/>
+                                            </li>
+                                            <li>
+                                                <Link className={scss.intro_link} to="https://www.fesflowers.com/">FLOWER ESSENCE SERVICES</Link>
+                                                <USAFlag className={scss.flags}/>
+                                            </li>
+                                        </ul>
+                                        <ButtonMore className={scss.button_more}/>
+                                </div>
+                            </div>
+                            <div className={scss.buttons_container}>
+                                <Link className={scss.button_support} to={"/support-project"}>
+                                    <Handshake className={scss.handshake}/>
+                                    <span>{t("Home_intro_support")}</span>
+                                </Link>
+                                <Link className={scss.button_read} to={"/project"}>{t("Home_intro_link")}</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={scss.services_container}>
+                        <div className={scss.container_title}>
+                            <span className={scss.container_title1}>{t("Home_services_title1")}</span>
+                            <span className={scss.container_title2}>{t("Home_services_title2")}</span>
+                        </div>
+                        <ServicesSlider/>
+                    </div>
+                    <div className={scss.about_container}>
+                        <span className={scss.about_title}>{t("Home_about_title")}</span>
+                        <div className={scss.about_image_container}>
+                            <img src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
+                            <img src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
+                            <img src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
+                        </div>
+                        <div className={scss.about_text_wrapper}>
+                            <span className={scss.about_title_desktop}>{t("Home_about_title")}</span>
+                            <span className={scss.about_text}>{t("Home_about_text")}</span>
+                            <Link className={scss.about_link} to="/about/presentation">{t("Home_about_link")}</Link>
+                        </div>
+                    </div>
+                    <div className={scss.partners_container}>
+                        <div className={scss.container_title}>
+                            <span className={scss.container_title1}>{t("Home_partners_title1")}</span>
+                            <span className={scss.container_title2}>{t("Home_partners_title2")}</span>
+                        </div>
+                        <Partners/>
+                    </div>
+                    <div className={scss.team_container}>
+                        <div className={scss.background_wrapper2}></div>
+                        <div className={scss.gradient_wrapper2}></div>
+                        <div className={scss.gradient_wrapper3}></div>
+                        <div className={scss.container_title}>
+                            <span className={scss.container_title1}>{t("Home_team_title1")} </span>
+                            <span className={scss.container_title2}>{t("Home_team_title2")}</span>
+                        </div>
+                        <ul className={scss.team_list}>
+                            <li>
+                                <Link className={scss.team_list_item1} to="/team/yevhen-volchenko">
+                                    <div className={scss.team_list_names}>
+                                            <span className={scss.team_list_name}>{t("Home_team_name1")} </span>
+                                            <span className={scss.team_list_surname}>{t("Home_team_surname1")}</span>
+                                    </div>
+                                    <span className={scss.team_list_job}>{t("Home_team_job1")}</span>
+                                    <div className={scss.team_list_layer}></div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className={scss.team_list_item2} to="/team/snizhana-shcherbakova">
+                                    <div className={scss.team_list_names}>
+                                        <span className={scss.team_list_name}>{t("Home_team_name2")} </span>
+                                        <span className={scss.team_list_surname}>{t("Home_team_surname2")}</span>
+                                    </div>
+                                    <span className={scss.team_list_job}>{t("Home_team_job2")}</span>
+                                    <div className={scss.team_list_layer}></div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className={scss.team_list_item3} to="/team/yuriy-korosko">
+                                    <div className={scss.team_list_names}>
+                                        <span className={scss.team_list_name}>{t("Home_team_name3")} </span>
+                                        <span className={scss.team_list_surname}>{t("Home_team_surname3")}</span>
+                                    </div>
+                                    <span className={scss.team_list_job}>{t("Home_team_job3")}</span>
+                                    <div className={scss.team_list_layer}></div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className={scss.team_list_item4} to="/team/irina-sergiychuk">
+                                    <div className={scss.team_list_names}>
+                                            <span className={scss.team_list_name}>{t("Home_team_name4")} </span>
+                                            <span className={scss.team_list_surname}>{t("Home_team_surname4")}</span>
+                                    </div>
+                                    <span className={scss.team_list_job}>{t("Home_team_job4")}</span>
+                                    <div className={scss.team_list_layer}></div>
+                                </Link>
+                            </li>
+                            <li className={scss.team_list_item5}>
+                                <div className={scss.team_list_names}>
+                                    <span className={scss.team_list_name}>{t("Home_team_name5")} </span>
+                                    <span className={scss.team_list_surname}>{t("Home_team_surname5")}</span>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job5")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </li>
+                            <li className={scss.team_list_item6}>
+                                <div className={scss.team_list_names}>
+                                    <span className={scss.team_list_name}>{t("Home_team_name6")} </span>
+                                    <span className={scss.team_list_surname}>{t("Home_team_surname6")}</span>
+                                </div>
+                                <span className={scss.team_list_job}>{t("Home_team_job6")}</span>
+                                <div className={scss.team_list_layer}></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={scss.news_container}>
+                        <div className={scss.container_title}>
+                            <span className={scss.container_title2}>{t("Home_news_title1")}</span>
+                        </div>
+                        <NewsSlider/>
+                        <Link className={scss.news_button} to="/news">{t("Home_news_link")}</Link>
+                    </div>  
+                    <div className={scss.reviews_container}>
+                        <div className={scss.container_title}>
+                            <span className={scss.container_title1}>{t("Home_reviews_title1")} </span>
+                            <span className={scss.container_title2}>{t("Home_reviews_title2")}</span>
+                        </div>
+                        <ReviewsSlider/>
+                    </div>
+                </div>
+                <Footer/>
+            </div>
+        </motion.div>
+    </>    
   )
 };
 

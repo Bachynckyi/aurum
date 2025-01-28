@@ -83,9 +83,11 @@ const Header = () => {
 
   const changeLanguage = (lang) => {
     setLoading(true);
+    document.body.style.cssText = `overflow-y: hidden`
     setTimeout(() => {
+      document.body.style.cssText = `overflow-y: auto`
       setLoading(false);
-    }, 1000);
+    }, 1500);
     if(lang === "EN"){
       i18next.changeLanguage(LOCALS.EN);
     }
