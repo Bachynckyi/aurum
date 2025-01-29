@@ -12,7 +12,7 @@ import i18next from 'i18next';
 import { LOCALS } from 'i18n/constants';
 import { useTranslation } from 'react-i18next';
 import "../../i18n";
-import { ThreeDots } from 'react-loader-spinner';
+import Loader from 'components/Loader/Loader';
 
 const Header = () => {
   const [isActiveMenuLang, setIsActiveMenuLang] = useState(false);
@@ -87,7 +87,7 @@ const Header = () => {
     setTimeout(() => {
       document.body.style.cssText = `overflow-y: auto`
       setLoading(false);
-    }, 1500);
+    }, 1000);
     if(lang === "EN"){
       i18next.changeLanguage(LOCALS.EN);
     }
@@ -103,18 +103,7 @@ const Header = () => {
 
   return (
     <>    
-      {loading === true && (
-        <div className={scss.loader_container}>
-          <ThreeDots
-          height="110" 
-          width="110" 
-          radius="9"
-          color="#FFC700" 
-          ariaLabel="three-dots-loading"
-          visible={true}
-          />
-        </div>
-      )}
+      {loading === true && (<Loader/>)}
       <header className={scss.header}>
         <div className={scss.menu_container}>
           <nav>

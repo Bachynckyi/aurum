@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import { motion } from 'framer-motion';
 import { IoIosArrowUp } from "react-icons/io";
+import Header from "components/Header/Header";
 
 
 const Layout = () => {
@@ -20,29 +21,32 @@ const Layout = () => {
     }, [pathname]);
     
     return (
-        <motion.div
-        transition={{ duration: 1.1}}
-        initial={{opacity: 0.1}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}>
-            <div className={scss.container_page}>
-                <div className={scss.main_container}>
-                    <div className={scss.background_wrapper1}></div>
-                    <div className={scss.content_wrapper}>
-                        <Outlet/>
+        <>
+        <Header/>
+            <motion.div
+            transition={{ duration: 0.2}}
+            initial={{opacity: 0.5}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0.2}}>
+                <div className={scss.container_page}>
+                    <div className={scss.main_container}>
+                        <div className={scss.background_wrapper1}></div>
+                        <div className={scss.content_wrapper}>
+                            <Outlet/>
+                        </div>
+                    </div>
+                    <ScrollToTop 
+                        smooth
+                        className={scss.scroll_button}
+                        component={<IoIosArrowUp className={scss.arrowUp}/>}
+                    />
+                    <div className={scss.footer_container}>
+                        <div className={scss.background_wrapper2}></div>
+                        <Footer/>
                     </div>
                 </div>
-                <ScrollToTop 
-                    smooth
-                    className={scss.scroll_button}
-                    component={<IoIosArrowUp className={scss.arrowUp}/>}
-                />
-                <div className={scss.footer_container}>
-                    <div className={scss.background_wrapper2}></div>
-                    <Footer/>
-                </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </>
     )
 
 };

@@ -27,21 +27,14 @@ import { IoIosArrowUp } from "react-icons/io";
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { ThreeDots } from 'react-loader-spinner';
+import Header from 'components/Header/Header';
 
 const HomePage = () => {
   const { t } = useTranslation();
   const [logo, setLogo] = useState("");
   const lang = localStorage.getItem("i18nextLng");
-  const [loading, setLoading ] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    document.body.style.cssText = `overflow-y: hidden`
-    setTimeout(() => {
-      document.body.style.cssText = `overflow-y: auto`
-      setLoading(false);
-    }, 1500);
     const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setLogo("UA");
@@ -56,23 +49,12 @@ const HomePage = () => {
 
   return (
     <>
-        {loading === true && (
-            <div className={scss.loader_container}>
-            <ThreeDots
-            height="110" 
-            width="110" 
-            radius="9"
-            color="#FFC700" 
-            ariaLabel="three-dots-loading"
-            visible={true}
-            />
-            </div>
-        )}
+        <Header/>
         <motion.div
-        transition={{ duration: 1.1}}
-        initial={{opacity: 0.1}}
+        transition={{ duration: 0.2}}
+        initial={{opacity: 0.5}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}>
+        exit={{opacity: 0.2}}>
             <div className={scss.container}>
                 <div className={scss.background_wrapper1}></div>
                 <div className={scss.background_wrapper3}></div>
@@ -91,9 +73,11 @@ const HomePage = () => {
                         <div className={scss.intro_container}>
                             <div className={scss.intro_wrapper}>
                                 <div className={scss.logo_container}>
-                                    {logo === "UA" && (<LogoUA className={scss.logo}/>)}
-                                    {logo === "DE" && (<LogoDE className={scss.logo}/>)}
-                                    {logo === "EN" && (<LogoEN className={scss.logo}/>)}
+                                    <div className={scss.logo_wrapper}>
+                                        {logo === "UA" && (<LogoUA className={scss.logo}/>)}
+                                        {logo === "DE" && (<LogoDE className={scss.logo}/>)}
+                                        {logo === "EN" && (<LogoEN className={scss.logo}/>)}
+                                    </div>
                                     <p className={scss.logo_text1}>{t("Home_intro_text1")}</p>
                                     <p className={scss.logo_text2}>{t("Home_intro_text2")}</p>
                                 </div>

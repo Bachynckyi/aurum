@@ -362,6 +362,14 @@
     };
 };
 
+.logo_wrapper {
+    height: 183px;
+
+    @media screen and (min-width: 1024px) {
+        height: 277px;
+    };
+}
+
 .logo {
     width: 226px;
     height: 183px;
@@ -1240,17 +1248,7 @@
     };
 };
 
-.loader_container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    background-color: rgba(0, 0, 0, 0.3);
-    user-select: none;
-};
+
 
 
 
