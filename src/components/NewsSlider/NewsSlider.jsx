@@ -2,10 +2,27 @@ import scss from './NewsSlider.module.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
-import newsImage from '../../images/news_image.jpg';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
+import { useEffect, useState } from 'react';
+import { news } from 'news';
+import { MdArrowOutward } from "react-icons/md";
 
 const NewsSlider = () => {
+  const lang = localStorage.getItem("i18nextLng");
+  const [currentLang, setCurrentLang] = useState("");
+
+  useEffect(() => {
+    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    if(currentLang.includes("UK" || "UA" || "RU")) {
+        setCurrentLang("UA");
+      }
+      else if(currentLang.includes("DE")) {
+        setCurrentLang("DE");
+      }
+      else {
+        setCurrentLang("EN");
+      }
+  }, [lang]);
 
   const settings = {
     dots: false,
@@ -94,39 +111,30 @@ const NewsSlider = () => {
     ]
   };
 
+  const elements = news.map(({ id, ...props }) => {
+    return (
+        <div className={scss.slider_card} key={id}>
+          <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
+          <div className={scss.slider_text_wrapper}>
+              {currentLang === "UA" && (<span className={scss.slider_text}>{props.titleUK}</span>)}
+              {currentLang === "EN" && (<span className={scss.slider_text}>{props.titleEN}</span>)}
+              {currentLang === "DE" && (<span className={scss.slider_text}>{props.titleDE}</span>)}
+              <div className={scss.bottom_wrapper}>
+                <div className={scss.slider_date_wrapper}>
+                  <CalendarIcon/>
+                  <span className={scss.slider_date}><span className={scss.slider_date_decor}>| </span> {props.date}</span>
+                </div>
+                <MdArrowOutward className={scss.icon}/>
+              </div>
+          </div>
+        </div>
+    );
+    });
+
   return (
     <div className={scss.slider}>
         <Slider {...settings}>
-          <div className={scss.slider_card}>
-            <img src={newsImage} alt='newsImage' className={scss.slider_image}/>
-            <div className={scss.slider_text_wrapper}>
-                <span className={scss.slider_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що</span>
-                <div className={scss.slider_date_wrapper}>
-                    <CalendarIcon/>
-                    <span className={scss.slider_date}>12:39 <span className={scss.slider_date_decor}>|</span> 6 березня</span>
-                </div>
-            </div>
-          </div>
-          <div className={scss.slider_card}>
-            <img src={newsImage} alt='newsImage' className={scss.slider_image}/>
-            <div className={scss.slider_text_wrapper}>
-                <span className={scss.slider_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що</span>
-                <div className={scss.slider_date_wrapper}>
-                    <CalendarIcon/>
-                    <span className={scss.slider_date}>12:39 <span className={scss.slider_date_decor}>|</span> 7 березня</span>
-                </div>
-            </div>
-          </div>
-          <div className={scss.slider_card}>
-            <img src={newsImage} alt='newsImage' className={scss.slider_image}/>
-            <div className={scss.slider_text_wrapper}>
-                <span className={scss.slider_text}>Дуже задоволений реабілітаційним центром “Аурум”. Професійний та індивідуальний підхід до кожного пацієнта. Відчувається турбота лікарів та небайдужість до тебе, що</span>
-                <div className={scss.slider_date_wrapper}>
-                    <CalendarIcon/>
-                    <span className={scss.slider_date}>12:39 <span className={scss.slider_date_decor}>|</span> 8 березня</span>
-                </div>
-            </div>
-          </div>
+              {elements}
         </Slider>
     </div>
   )
