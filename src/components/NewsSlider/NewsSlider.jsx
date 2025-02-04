@@ -6,13 +6,15 @@ import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 import { useEffect, useState } from 'react';
 import { news } from 'news';
 import { MdArrowOutward } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NewsSlider = () => {
-  const lang = localStorage.getItem("i18nextLng");
+  const { i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("");
 
   useEffect(() => {
-    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    const currentLang = i18n.language.toUpperCase(); 
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setCurrentLang("UA");
       }
@@ -22,7 +24,7 @@ const NewsSlider = () => {
       else {
         setCurrentLang("EN");
       }
-  }, [lang]);
+  }, [i18n.language]);
 
   const settings = {
     dots: false,
@@ -116,15 +118,13 @@ const NewsSlider = () => {
         <div className={scss.slider_card} key={id}>
           <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
           <div className={scss.slider_text_wrapper}>
-              {currentLang === "UA" && (<span className={scss.slider_text}>{props.titleUK}</span>)}
-              {currentLang === "EN" && (<span className={scss.slider_text}>{props.titleEN}</span>)}
-              {currentLang === "DE" && (<span className={scss.slider_text}>{props.titleDE}</span>)}
+              <span className={scss.slider_text}>{props[`title${currentLang}`]}</span>
               <div className={scss.bottom_wrapper}>
                 <div className={scss.slider_date_wrapper}>
                   <CalendarIcon/>
                   <span className={scss.slider_date}><span className={scss.slider_date_decor}>| </span> {props.date}</span>
                 </div>
-                <MdArrowOutward className={scss.icon}/>
+                <NavLink to={`/news/${id}`}><MdArrowOutward className={scss.icon}/></NavLink>
               </div>
           </div>
         </div>

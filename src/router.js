@@ -2,12 +2,14 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Layout from 'components/Layout/Layout';
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "../src/helpers/scrollToTop";
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/VideoPage/VideoPage'));
 const AboutHonorsPage = lazy(() => import('./pages/HonorsPage/HonorsPage'));
 const AboutPresentationPage = lazy(() => import('./pages/PresentationPage/PresentationPage'));
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
+const NewsOnePage = lazy(() => import('./pages/NewsOnePage/NewsOnePage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
 const PartnersPage = lazy(() => import('./pages/PartnersPage/PartnersPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
@@ -35,6 +37,7 @@ const UserRoutes = () => {
     <>
       <Suspense fallback={null}>
       <AnimatePresence mode='wait'>
+          <ScrollToTop/>
           <Routes location={location} key={location.pathname}>
               <Route index element={<HomePage/>}></Route>
               <Route path="/" element={<Layout/>}>
@@ -43,6 +46,7 @@ const UserRoutes = () => {
                 <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
                 <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/>
                 <Route path="/news" element={<NewsPage/>}/>
+                <Route path="/news/:id" element={<NewsOnePage/>}/>
                 <Route path="/partners" element={<PartnersPage/>}/>
                 <Route path="/reviews" element={<ReviewsPage/>}/>
                 <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>

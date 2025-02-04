@@ -14,12 +14,11 @@ import { useEffect, useState } from 'react';
 const Footer = () => {
 const todayDate = new Date();
 const currentYear = todayDate.getFullYear();
-const { t } = useTranslation();
+const { t, i18n } = useTranslation();
 const [logo, setLogo] = useState("");
-const lang = localStorage.getItem("i18nextLng");
 
 useEffect(() => {
-    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    const currentLang = i18n.language.toUpperCase(); 
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setLogo("UA");
       }
@@ -29,7 +28,7 @@ useEffect(() => {
       else {
         setLogo("EN");
       }
-  }, [lang]);
+  }, [i18n.language]);
 
   return (
     <footer className={scss.footer_container}>

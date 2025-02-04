@@ -20,13 +20,12 @@ const Header = () => {
   const [isActiveMobileMenu, setIsActiveMobileMenu] = useState(false);
   const [aboutSubmenuMobile, setAboutSubmenuMobile] = useState(false);
   const [servicesSubmenuMobile, setServicesSubmenuMobile] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [langOptions, setLangOptions] = useState([]);
-  const lang = localStorage.getItem("i18nextLng");
   const [loading, setLoading ] = useState(false);
 
   useEffect(() => {
-    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    const currentLang = i18n.language.toUpperCase(); 
     if(currentLang.includes("UK" || "UA")) {
       setLangOptions(["UK", "EN", "DE"]);
     }
@@ -39,7 +38,7 @@ const Header = () => {
     else {
       setLangOptions(["EN", "DE", "UK"]);
     }
-  }, [lang])
+  }, [i18n.language])
 
   const toggleAboutSubmenuMobile = (e) => {
     e.preventDefault();

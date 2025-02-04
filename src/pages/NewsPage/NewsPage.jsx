@@ -4,14 +4,14 @@ import { MdArrowOutward } from "react-icons/md";
 import { news } from 'news';
 import { useEffect, useState } from 'react';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
+import { NavLink } from 'react-router-dom';
 
 const NewsPage = () => {
-  const { t } = useTranslation();
-  const lang = localStorage.getItem("i18nextLng");
+  const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("");
 
   useEffect(() => {
-    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    const currentLang = i18n.language.toUpperCase(); 
     if(currentLang.includes("UK" || "UA" || "RU")) {
         setCurrentLang("UA");
       }
@@ -21,16 +21,14 @@ const NewsPage = () => {
       else {
         setCurrentLang("EN");
       }
-  }, [lang]);
+  }, [i18n.language]);
 
   const elements = news.map(({ id, ...props }) => {
     return (
-      <div className={scss.slider_card} key={id}>
+      <NavLink className={scss.slider_card} key={id} to={`/news/${id}`}>
         <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
         <div className={scss.slider_text_wrapper}>
-            {currentLang === "UA" && (<span className={scss.slider_text}>{props.titleUK}</span>)}
-            {currentLang === "EN" && (<span className={scss.slider_text}>{props.titleEN}</span>)}
-            {currentLang === "DE" && (<span className={scss.slider_text}>{props.titleDE}</span>)}
+            <span className={scss.slider_text}>{props[`title${currentLang}`]}</span>
             <div className={scss.bottom_wrapper}>
               <div className={scss.slider_date_wrapper}>
                 <CalendarIcon/>
@@ -39,9 +37,9 @@ const NewsPage = () => {
               <MdArrowOutward className={scss.icon}/>
             </div>
         </div>
-    </div>
+      </NavLink>
     );
-    });
+  });
 
   return (
     <div className={scss.container}>

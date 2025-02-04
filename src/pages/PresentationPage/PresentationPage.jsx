@@ -5,12 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
 const PresentationPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [presentation, setPresentation] = useState("");
-  const lang = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
-    const currentLang = localStorage.getItem("i18nextLng").toUpperCase();
+    const currentLang = i18n.language.toUpperCase(); 
     if(currentLang.includes("UK" || "UA" || "RU")) {
       setPresentation("/assets/Презентація_Аурум_UKR.pdf");
     }
@@ -20,7 +19,7 @@ const PresentationPage = () => {
     else {
       setPresentation("/assets/Presentation_Aurum_EN.pdf");
     }
-  }, [lang]);
+  }, [i18n.language]);
 
   return (
     <div className={scss.container}>
