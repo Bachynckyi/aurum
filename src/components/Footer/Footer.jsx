@@ -91,9 +91,9 @@ useEffect(() => {
                     </ul>
                 </div>
                 <div className={scss.logo_container}>
-                    {logo === "UA" && (<LogoUA className={scss.logo}/>)}
-                    {logo === "DE" && (<LogoDE className={scss.logo}/>)}
-                    {logo === "EN" && (<LogoEN className={scss.logo}/>)}
+                    {logo === "UA" && (<NavLink to="/"><LogoUA className={scss.logo}/></NavLink>)}
+                    {logo === "DE" && (<NavLink to="/"><LogoDE className={scss.logo}/></NavLink>)}
+                    {logo === "EN" && (<NavLink to="/"><LogoEN className={scss.logo}/></NavLink>)}
                     <div className={scss.politics_license_wrapper_desktop}>
                         <p className={scss.license}>{t("Footer_license")}</p>
                         <p className={scss.license}>© {t("Footer_center_name")} {currentYear}</p>
