@@ -36,8 +36,8 @@ const UserRoutes = () => {
   return (
     <>
       <Suspense fallback={null}>
+      <ScrollToTop/>
       <AnimatePresence mode='wait'>
-          <ScrollToTop/>
           <Routes location={location} key={location.pathname}>
               <Route index element={<HomePage/>}></Route>
               <Route path="/" element={<Layout/>}>

@@ -39,7 +39,7 @@
     line-height: normal;
 
     @media screen and (min-width: 433px) {
-        margin: 0px 0px 30px 0px;
+        margin: 0px;
         font-size: 36px;
     };
 };
@@ -54,7 +54,7 @@
 
 .text {
     width: 100%;
-    max-width: 1072px;
+    max-width: 526px;
     color: #181818;
     font-family: "Exo2-Regular";
     font-size: 14px;
@@ -63,6 +63,10 @@
     line-height: 150%;
     text-align: left;
     -webkit-text-size-adjust: 100%;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1072px;
+    };
 };
 
 .text2 {
