@@ -11,19 +11,18 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 };
 
 .content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: calc(100% - 40px);
     margin: 0px auto;
     max-width: 1440px;
     padding: 80px 0px 80px 0px;
     z-index: 7;
+    min-height: 1012px;
 
     @media screen and (min-width: 768px) {
         width: 75vw;
