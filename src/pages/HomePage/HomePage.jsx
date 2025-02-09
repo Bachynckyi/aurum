@@ -52,6 +52,10 @@ const HomePage = () => {
         <Helmet>
             <title>{t("Home_meta_title")}</title>
             <meta name="description" content={t("Home_meta_description")}/>
+            <meta property="og:title" content={t("Home_meta_title")} />
+            <meta property="og:description" content={t("Home_meta_description")}/>
+            <meta property="og:url" content="https://www.clinic-aurum.com/" />
+            <meta property="og:type" content="website"/>
         </Helmet>
         <Header/>
         <motion.div
