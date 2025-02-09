@@ -8,7 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/VideoPage/VideoPage'));
 const AboutHonorsPage = lazy(() => import('./pages/HonorsPage/HonorsPage'));
-const AboutPresentationPage = lazy(() => import('./pages/PresentationPage/PresentationPage'));
+// const AboutPresentationPage = lazy(() => import('./pages/PresentationPage/PresentationPage'));
 const NewsPage = lazy(() => import('./pages/NewsPage/NewsPage'));
 const NewsOnePage = lazy(() => import('./pages/NewsOnePage/NewsOnePage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
@@ -27,7 +27,7 @@ const TeamMember1Page = lazy(() => import('./pages/TeamPages/TeamMember1Page'));
 const TeamMember2Page = lazy(() => import('./pages/TeamPages/TeamMember2Page'));
 const TeamMember3Page = lazy(() => import('./pages/TeamPages/TeamMember3Page'));
 const TeamMember4Page = lazy(() => import('./pages/TeamPages/TeamMember4Page'));
-const MedicinePage = lazy(() => import('./pages/MedicinePage/MedicinePage'));
+// const MedicinePage = lazy(() => import('./pages/MedicinePage/MedicinePage'));
 const SupportPage = lazy(() => import('./pages/SupportPage/SupportPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage/ProjectPage'));
 
@@ -45,8 +45,8 @@ const UserRoutes = () => {
                 <Route path="/" element={<Layout/>}>
                   <Route path="/about/video" element={<AboutVideoPage/>}/>
                   <Route path="/about/honors" element={<AboutHonorsPage/>}/>
-                  <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
-                  <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/>
+                  {/* <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
+                  <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/> */}
                   <Route path="/news" element={<NewsPage/>}/>
                   <Route path="/news/:id" element={<NewsOnePage/>}/>
                   <Route path="/partners" element={<PartnersPage/>}/>
