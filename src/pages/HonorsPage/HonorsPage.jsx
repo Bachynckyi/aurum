@@ -23,10 +23,10 @@ const HonorsPage = () => {
         {/* <title>{t("Honors_meta_title")}</title>
         <meta name="description" content={t("Honors_meta_description")}/>
         <link rel="canonical" href="https://www.clinic-aurum.com/about"></link> */}
-            <title>{t("Home_meta_title")}</title>
-            <meta name="description" content={t("Home_meta_description")}/>
-            <meta property="og:title" content={t("Home_meta_title")} />
-            <meta property="og:description" content={t("Home_meta_description")}/>
+            <title>ТЕСТ 1</title>
+            <meta name="description" content="ТЕСТ1"/>
+            <meta property="og:title" content="ТЕСТ1" />
+            <meta property="og:description" content="ТЕСТ1"/>
             {/* <meta property="og:url" content="https://www.clinic-aurum.com/" />
             <meta property="og:type" content="website"/> */}
             {/* <meta property="og:image" content="https://bachynckyi.github.io/aurum/favicon.png"/>

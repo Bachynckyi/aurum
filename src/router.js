@@ -41,8 +41,8 @@ const UserRoutes = () => {
         <ScrollToTop/>
         <AnimatePresence mode='wait'>
             <Routes location={location} key={location.pathname}>
-                <Route index element={<HomePage/>}></Route>
-                <Route path="/" element={<Layout/>}>
+                <Route path="/" element={<HomePage/>}></Route>
+                <Route element={<Layout/>}>
                   <Route path="/about/video" element={<AboutVideoPage/>}/>
                   <Route path="/about/honors" element={<AboutHonorsPage/>}/>
                   {/* <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
