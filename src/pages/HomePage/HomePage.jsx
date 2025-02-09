@@ -56,7 +56,10 @@ const HomePage = () => {
             <meta property="og:description" content={t("Home_meta_description")}/>
             <meta property="og:url" content="https://www.clinic-aurum.com/" />
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content="https://www.clinic-aurum.com/public/favicon.png"/>
+            <meta property="og:image" content="https://bachynckyi.github.io/aurum/favicon.png"/>
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
         <Header/>
         <motion.div
