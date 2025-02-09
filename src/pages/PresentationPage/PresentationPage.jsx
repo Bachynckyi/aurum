@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdOutlineScreenSearchDesktop } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import { Helmet } from "react-helmet-async";
 
 const PresentationPage = () => {
   const { t, i18n } = useTranslation();
@@ -22,7 +23,13 @@ const PresentationPage = () => {
   }, [i18n.language]);
 
   return (
-    <div className={scss.container}>
+    <>
+      <Helmet>
+        <title>{t("Presentation_meta_title")}</title>
+        <meta name="description" content={t("Presentation_meta_description")}/>
+        <link rel="canonical" href="https://www.clinic-aurum.com/about"></link>
+      </Helmet>
+      <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
               <Link  to={presentation} target="_blank" className={scss.button_download}>
@@ -30,8 +37,8 @@ const PresentationPage = () => {
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
               </Link>
         </div>
-    </div>
-        
+      </div>
+    </> 
   )
 };
 

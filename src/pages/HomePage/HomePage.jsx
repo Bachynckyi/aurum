@@ -28,6 +28,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Header from 'components/Header/Header';
+import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
  const { t, i18n } = useTranslation();
@@ -47,7 +48,11 @@ const HomePage = () => {
   }, [i18n.language]);
 
   return (
-    <>
+    <>  
+        <Helmet>
+            <title>{t("Home_meta_title")}</title>
+            <meta name="description" content={t("Home_meta_description")}/>
+        </Helmet>
         <Header/>
         <motion.div
         transition={{ duration: 0.2}}

@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import Layout from 'components/Layout/Layout';
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "../src/helpers/scrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/VideoPage/VideoPage'));
@@ -35,40 +36,42 @@ const UserRoutes = () => {
 
   return (
     <>
-      <Suspense fallback={null}>
-      <ScrollToTop/>
-      <AnimatePresence mode='wait'>
-          <Routes location={location} key={location.pathname}>
-              <Route index element={<HomePage/>}></Route>
-              <Route path="/" element={<Layout/>}>
-                <Route path="/about/video" element={<AboutVideoPage/>}/>
-                <Route path="/about/honors" element={<AboutHonorsPage/>}/>
-                <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
-                <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/>
-                <Route path="/news" element={<NewsPage/>}/>
-                <Route path="/news/:id" element={<NewsOnePage/>}/>
-                <Route path="/partners" element={<PartnersPage/>}/>
-                <Route path="/reviews" element={<ReviewsPage/>}/>
-                <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
-                <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
-                <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
-                <Route path="/services/refleksoterapiya" element={<ServicePage4/>}/>
-                <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePage5/>}/>
-                <Route path="/services/ritmichne-vtirannya" element={<ServicePage6/>}/>
-                <Route path="/services/kinezioterapiya" element={<ServicePage7/>}/>
-                <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage8/>}/>
-                <Route path="/services/aparatna-presoterapiya" element={<ServicePage9/>}/>
-                <Route path="/team/yevhen-volchenko" element={<TeamMember1Page/>}/>
-                <Route path="/team/snizhana-shcherbakova" element={<TeamMember2Page/>}/>
-                <Route path="/team/yuriy-korosko" element={<TeamMember3Page/>}/>
-                <Route path="/team/irina-sergiychuk" element={<TeamMember4Page/>}/>
-                <Route path="/support-project" element={<SupportPage/>}/>
-                <Route path="/project" element={<ProjectPage/>}/>
-                <Route path="*" element={<NotFoundPage/>}/>
-              </Route>
-          </Routes>
-        </AnimatePresence>
-      </Suspense>
+      <HelmetProvider>
+        <Suspense fallback={null}>
+        <ScrollToTop/>
+        <AnimatePresence mode='wait'>
+            <Routes location={location} key={location.pathname}>
+                <Route index element={<HomePage/>}></Route>
+                <Route path="/" element={<Layout/>}>
+                  <Route path="/about/video" element={<AboutVideoPage/>}/>
+                  <Route path="/about/honors" element={<AboutHonorsPage/>}/>
+                  <Route path="/about/presentation" element={<AboutPresentationPage/>}/>
+                  <Route path="/about/anthroposophical-medicine" element={<MedicinePage/>}/>
+                  <Route path="/news" element={<NewsPage/>}/>
+                  <Route path="/news/:id" element={<NewsOnePage/>}/>
+                  <Route path="/partners" element={<PartnersPage/>}/>
+                  <Route path="/reviews" element={<ReviewsPage/>}/>
+                  <Route path="/services/konsultaciya-likarya-fizichnoyi-ta-reabilitacijnoyi-medicini" element={<ServicePage1/>}/>
+                  <Route path="/services/konsultaciya-psihologa" element={<ServicePage2/>}/>
+                  <Route path="/services/postizometrichna-relaksaciya" element={<ServicePage3/>}/>
+                  <Route path="/services/refleksoterapiya" element={<ServicePage4/>}/>
+                  <Route path="/services/manualna-terapiya-hrebta-ta-suglobiv" element={<ServicePage5/>}/>
+                  <Route path="/services/ritmichne-vtirannya" element={<ServicePage6/>}/>
+                  <Route path="/services/kinezioterapiya" element={<ServicePage7/>}/>
+                  <Route path="/services/maslyano-dispersijni-vanni" element={<ServicePage8/>}/>
+                  <Route path="/services/aparatna-presoterapiya" element={<ServicePage9/>}/>
+                  <Route path="/team/yevhen-volchenko" element={<TeamMember1Page/>}/>
+                  <Route path="/team/snizhana-shcherbakova" element={<TeamMember2Page/>}/>
+                  <Route path="/team/yuriy-korosko" element={<TeamMember3Page/>}/>
+                  <Route path="/team/irina-sergiychuk" element={<TeamMember4Page/>}/>
+                  <Route path="/support-project" element={<SupportPage/>}/>
+                  <Route path="/project" element={<ProjectPage/>}/>
+                  <Route path="*" element={<NotFoundPage/>}/>
+                </Route>
+            </Routes>
+          </AnimatePresence>
+        </Suspense>
+      </HelmetProvider>
     </>
   );
 };

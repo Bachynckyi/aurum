@@ -91,20 +91,30 @@ export const en = {
     "Home_team_job5": "Director of the Center",    
     "Home_team_name6": "Marina",
     "Home_team_surname6": "Sydorenko",
-    "Home_team_job6": "Center Administrator",           
+    "Home_team_job6": "Center Administrator",
+    "Home_meta_title": "Aurum Medical Center - Aurum Rehabilitation Center",
+    "Home_meta_description": "AURUM Rehabilitation Center for Veterans and Civilians ➦ ☎: +38 (098) 419-03-43",
 
     // Video about us
     "Video_title": "Video about us",
+    "Video_meta_title": "Video about AURUM",
+    "Video_meta_description": "Video about the AURUM rehabilitation center for veterans and civilians ➦ ☎: +38 (098) 419-03-43",
 
     // Honors
     "Honors_title": "Our awards and honors",
+    "Honors_meta_title": "Our awards and thanks",
+    "Honors_meta_description": "Awards and thanks to the AURUM rehabilitation center ➦ ☎: +38 (098) 419-03-43",
 
     // Presentation
     "Presentation_title": "Project presentation",
     "Presentation_link": "View presentation",
+    "Presentation_meta_title": "Presentation of the AURUM project",
+    "Presentation_meta_description": "Presentation of the AURUM project ➦ ☎: +38 (098) 419-03-43",
 
     // Partners
     "Partners_title": "Our partners",
+    "Partners_meta_title": "Partners of the AURUM center",
+    "Partners_meta_description": "Partners of the AURUM rehabilitation center",
 
     // Reviews
     "Reviews_title": "Patient Reviews",
@@ -118,9 +128,13 @@ export const en = {
     "Reviews_card_name3": "Andriy",
     "Reviews_card_name4": "Alexander",
     "Reviews_card_name5": "Alexander",
+    "Reviews_meta_title": "Patient reviews",
+    "Reviews_meta_description": "Reviews of patients of the AURUM rehabilitation center",
 
     // News
     "News_title": "News",
+    "News_meta_title": "News",
+    "News_meta_description": "News from the AURUM rehabilitation center",
 
     // Footer
     "Footer_license": "License Ministry of Health of Ukraine No. 1603 dated 11.09.2023",
@@ -140,8 +154,10 @@ export const en = {
 
     // PageNotFound
     "PageNotFound_title_error": "Error !",
-    "PageNotFound_title_text": "Page not found!",
+    "PageNotFound_title_text": "Page not found !",
     "PageNotFound_title_link": "Return to Home",
+    "PageNotFound_meta_title": "Page not found !",
+    "PageNotFound_meta_description": "Sorry, the page was not found. It may have been deleted or moved.",
 
     // Services
     "Service_title1": "Consultation with a doctor of physical and rehabilitation medicine",
@@ -253,6 +269,8 @@ export const en = {
     "Medicine_presentation3": "WHO Report 2019",
     "Medicine_presentation4": "About Anthroposophical Medicine",
     "Medicine_link": "WHO Publications",
+    "Medicine_meta_title": "Anthroposophical medicine",
+    "Medicine_meta_description": "Anthroposophical medicine. AURUM Rehabilitation Center ➦ ☎: +38 (098) 419-03-43",
 
     // Support
     "Support_title": "Support project",
@@ -266,6 +284,8 @@ export const en = {
     "Support_correspondent": "Correspondent bank",
     "Support_correspondent_code": "SWIFT code of the correspondent bank",
     "Support_correspondent_account": "Account in the correspondent bank",
+    "Support_meta_title": "Support the AURUM project",
+    "Support_meta_description": "Support the project - AURUM Rehabilitation Center",
 
     // Project
     "Project_title": "International project",
@@ -284,5 +304,7 @@ export const en = {
     "Project_list2_item4": "emergency and traumatic pedagogical advice from educators on trauma-related reactions of children and youth in an institutional context;",
     "Project_list2_item5": "mental hygiene, resilience, and salutogenesis for teachers and assistants;",
     "Project_list2_item6": "coverage of the rehabilitation center's activities outside Ukraine.",
-    "Project_text4": "International cooperation with Parzival Zentrum is an opportunity to create new formats of therapeutic medical and pedagogical intervention in the rehabilitation system in accordance with the requirements of life in the modern world. First of all, it is an exchange of experience with the aim of developing the psychophysical rehabilitation system in Ukraine and introducing unique Ukrainian experience in combination with European methods outside Ukraine, in Europe and around the world."
+    "Project_text4": "International cooperation with Parzival Zentrum is an opportunity to create new formats of therapeutic medical and pedagogical intervention in the rehabilitation system in accordance with the requirements of life in the modern world. First of all, it is an exchange of experience with the aim of developing the psychophysical rehabilitation system in Ukraine and introducing unique Ukrainian experience in combination with European methods outside Ukraine, in Europe and around the world.",
+    "Project_meta_title": "International project AURUM",
+    "Project_meta_description": "International Project - AURUM Rehabilitation Center ➦ ☎: +38 (098) 419-03-43",
 };

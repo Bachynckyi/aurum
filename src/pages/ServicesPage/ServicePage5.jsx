@@ -1,12 +1,19 @@
 import scss from "./ServicePage.module.scss";
 import service5 from '../../images/services/service5.png';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet-async";
 
 const ServicePage5 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={scss.container}>
+    <>
+      <Helmet>
+        <title>{t("Service_title5")}</title>
+        <meta name="description" content={t("Service_title5")}/>
+        <link rel="canonical" href="https://www.clinic-aurum.com/services"></link>
+      </Helmet>
+      <div className={scss.container}>
         <div className={scss.main_wrapper}>
             <h1 className={scss.title}>{t("Service_title5")}</h1>
             <div className={scss.content_wrapper}>
@@ -14,8 +21,8 @@ const ServicePage5 = () => {
               <span className={scss.description}>{t("Service_text5")}</span>
             </div>
         </div>
-    </div>
-        
+      </div>
+    </>  
   )
 };
 

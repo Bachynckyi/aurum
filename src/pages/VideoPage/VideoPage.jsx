@@ -1,12 +1,19 @@
 import scss from './VideoPage.module.scss';
 import ReactPlayer from 'react-player';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet-async";
 
 const VideoPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={scss.container}>
+    <>      
+      <Helmet>
+        <title>{t("Video_meta_title")}</title>
+        <meta name="description" content={t("Video_meta_description")}/>
+        <link rel="canonical" href="https://www.clinic-aurum.com/about"></link>
+      </Helmet>
+      <div className={scss.container}>
         <div className={scss.content_wrapper}>
           <h1 className={scss.title}>{t("Video_title")}</h1>
           <div className={scss.video_wrapper}>
@@ -37,8 +44,8 @@ const VideoPage = () => {
               />
           </div>
         </div>
-    </div>
-        
+      </div>
+    </> 
   )
 };
 

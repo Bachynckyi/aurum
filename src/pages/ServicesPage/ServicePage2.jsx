@@ -1,26 +1,33 @@
 import scss from "./ServicePage.module.scss";
 import service2 from '../../images/services/service2.jpg';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet-async";
 
 const ServicePage2 = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={scss.container}>
-        <div className={scss.main_wrapper}>
-            <h1 className={scss.title}>{t("Service_title2")}</h1>
-            <div className={scss.content_wrapper}>
-              <img src={service2} alt='serviceImage' className={scss.image}/>
-              <span className={scss.description}>{t("Service_text2.1")}<br/>
-                  {t("Service_text2.2")}<br/>
-                  {t("Service_text2.3")}<br/>
-                  {t("Service_text2.4")}<br/>
-                  {t("Service_text2.5")}
-              </span>
-            </div>     
-        </div>
-    </div>
-        
+    <>
+      <Helmet>
+        <title>{t("Service_title2")}</title>
+        <meta name="description" content={t("Service_title2")}/>
+        <link rel="canonical" href="https://www.clinic-aurum.com/services"></link>
+      </Helmet>
+      <div className={scss.container}>
+          <div className={scss.main_wrapper}>
+              <h1 className={scss.title}>{t("Service_title2")}</h1>
+              <div className={scss.content_wrapper}>
+                <img src={service2} alt='serviceImage' className={scss.image}/>
+                <span className={scss.description}>{t("Service_text2.1")}<br/>
+                    {t("Service_text2.2")}<br/>
+                    {t("Service_text2.3")}<br/>
+                    {t("Service_text2.4")}<br/>
+                    {t("Service_text2.5")}
+                </span>
+              </div>     
+          </div>
+      </div>
+    </>    
   )
 };
 

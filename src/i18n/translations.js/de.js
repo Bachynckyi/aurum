@@ -90,20 +90,30 @@ export const de = {
         "Home_team_job5": "Direktor des Zentrums",    
         "Home_team_name6": "Yachthafen",
         "Home_team_surname6": "Sydorenko",
-        "Home_team_job6": "Center-Administrator",          
+        "Home_team_job6": "Center-Administrator",
+        "Home_meta_title": "Aurum Medical Center - Aurum Rehabilitationszentrum",
+        "Home_meta_description": "AURUM Rehabilitation Center for Veterans and Civilians ➦ ☎: +38 (098) 419-03-43",          
 
         // Video about us
         "Video_title": "Video über uns",
+        "Video_meta_title": "Video über AURUM",
+        "Video_meta_description": "Video über das AURUM Rehabilitationszentrum für Veteranen und Zivilisten ➦ ☎: +38 (098) 419-03-43",
 
         // Honors
-        "Honors_title": "Unsere Auszeichnungen und Ehrungen",
+        "Honors_title": "Unsere Auszeichnungen und Dank",
+        "Honors_meta_title": "Unsere Auszeichnungen und Dank",
+        "Honors_meta_description": "Auszeichnungen und Dank an das Reha-Zentrum AURUM ➦ ☎: +38 (098) 419-03-43",
 
         // Presentation
         "Presentation_title": "Projektpräsentation",
         "Presentation_link": "Präsentation ansehen",
+        "Presentation_meta_title": "Präsentation des AURUM-Projektes",
+        "Presentation_meta_description": "Präsentation des AURUM-Projektes ➦ ☎: +38 (098) 419-03-43",
 
         // Partners
         "Partners_title": "Unsere partner",
+        "Partners_meta_title": "Partner des AURUM-Zentrums",
+        "Partners_meta_description": "Partner des Reha-Zentrums AURUM",
 
         // Reviews
         "Reviews_title": "Patientenbewertungen",
@@ -117,9 +127,13 @@ export const de = {
         "Reviews_card_name3": "Andrij",
         "Reviews_card_name4": "Alexander",
         "Reviews_card_name5": "Alexander",
+        "Reviews_meta_title": "Patientenbewertungen",
+        "Reviews_meta_description": "Bewertungen von Patienten des Rehabilitationszentrums AURUM",
 
         // News
         "News_title": "Nachricht",
+        "News_meta_title": "Nachricht",
+        "News_meta_description": "Neuigkeiten aus dem Reha-Zentrum AURUM",
 
         // Footer
         "Footer_license": "Lizenz Gesundheitsministerium der Ukraine Nr. 1603 vom 11.09.2023",
@@ -139,8 +153,10 @@ export const de = {
 
         // PageNotFound
         "PageNotFound_title_error": "Fehler !",
-        "PageNotFound_title_text": "Seite nicht gefunden!",
+        "PageNotFound_title_text": "Seite nicht gefunden !",
         "PageNotFound_title_link": "Zurück zur Startseite",
+        "PageNotFound_meta_title": "Seite nicht gefunden !",
+        "PageNotFound_meta_description": "Leider konnte die Seite nicht gefunden werden. Es wurde möglicherweise gelöscht oder verschoben.",
 
         // Services
         "Service_title1": "Konsultation mit einem Arzt für Physikalische und Rehabilitative Medizin",
@@ -252,6 +268,8 @@ export const de = {
         "Medicine_presentation3": "WHO-Bericht 2019",
         "Medicine_presentation4": "Über Anthroposophische Medizin",
         "Medicine_link": "WHO-Publikationen",
+        "Medicine_meta_title": "Anthroposophische medizin",
+        "Medicine_meta_description": "Anthroposophische medizin. AURUM Rehabilitationszentrum ➦ ☎: +38 (098) 419-03-43",
 
         // Support
         "Support_title": "Unterstütze das Projekt",
@@ -265,6 +283,8 @@ export const de = {
         "Support_correspondent": "Korrespondenzbank",
         "Support_correspondent_code": "SWIFT-Code der Korrespondenzbank",
         "Support_correspondent_account": "Konto bei einer Korrespondenzbank",
+        "Support_meta_title": "Unterstützen Sie das AURUM-Projekt",
+        "Support_meta_description": "Unterstützen Sie das Projekt - AURUM Rehabilitationszentrum",
 
         // Project
         "Project_title": "Internationales Projekt",
@@ -283,6 +303,7 @@ export const de = {
         "Project_list2_item4": "notfall- und traumapädagogische Beratung durch ErzieherInnen zu Trauma-Reaktionen von Kindern und Jugendlichen im institutionellen Kontext;",
         "Project_list2_item5": "Psychohygiene, Resilienz und Salutogenese für Lehrer und Assistenten;",
         "Project_list2_item6": "Berichterstattung über die Aktivitäten des Rehabilitationszentrums außerhalb der Ukraine.",
-        "Project_text4": "Die internationale Zusammenarbeit mit dem Parzival Zentrum ist eine Chance, neue Formate therapeutischer, medizinischer und pädagogischer Interventionen im Rehabilitationssystem entsprechend den Anforderungen des Lebens in der modernen Welt zu schaffen. In erster Linie handelt es sich um einen Erfahrungsaustausch mit dem Ziel, das System der psychophysischen Rehabilitation in der Ukraine weiterzuentwickeln und einzigartige ukrainische Erfahrungen in Kombination mit europäischen Methoden außerhalb der Ukraine, in Europa und der ganzen Welt einzuführen."
-
+        "Project_text4": "Die internationale Zusammenarbeit mit dem Parzival Zentrum ist eine Chance, neue Formate therapeutischer, medizinischer und pädagogischer Interventionen im Rehabilitationssystem entsprechend den Anforderungen des Lebens in der modernen Welt zu schaffen. In erster Linie handelt es sich um einen Erfahrungsaustausch mit dem Ziel, das System der psychophysischen Rehabilitation in der Ukraine weiterzuentwickeln und einzigartige ukrainische Erfahrungen in Kombination mit europäischen Methoden außerhalb der Ukraine, in Europa und der ganzen Welt einzuführen.",
+        "Project_meta_title": "Internationales Projekt AURUM",
+        "Project_meta_description": "Internationales Projekt - AURUM Rehabilitationszentrum ➦ ☎: +38 (098) 419-03-43",
 };

@@ -5,6 +5,7 @@ import { news } from 'news';
 import { useEffect, useState } from 'react';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 import { NavLink } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const NewsPage = () => {
   const { t, i18n } = useTranslation();
@@ -42,14 +43,21 @@ const NewsPage = () => {
   });
 
   return (
-    <div className={scss.container}>
-          <div className={scss.content_wrapper}>
-            <h1 className={scss.title}>{t("News_title")}</h1>
-            <div className={scss.news_wrapper}>
-                {elements}
+    <>
+      <Helmet>
+        <title>{t("News_meta_title")}</title>
+        <meta name="description" content={t("News_meta_description")}/>
+        <link rel="canonical" href="https://www.clinic-aurum.com/news"></link>
+      </Helmet>
+      <div className={scss.container}>
+            <div className={scss.content_wrapper}>
+              <h1 className={scss.title}>{t("News_title")}</h1>
+              <div className={scss.news_wrapper}>
+                  {elements}
+              </div>
             </div>
-          </div>
-    </div>
+      </div>
+    </>
   )
 };
 
