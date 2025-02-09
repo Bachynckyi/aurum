@@ -36,9 +36,6 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}"
   },
-  "reactSnap": {
-    "inlineCss": true
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
