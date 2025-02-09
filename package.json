@@ -36,6 +36,9 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}"
   },
+  "reactSnap": {
+  "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
