@@ -32,7 +32,7 @@ const PresentationPage = () => {
       <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
-              <Link  to={presentation} target="_blank" className={scss.button_download}>
+              <Link to={presentation} target="_blank" rel="noopener noreferrer" className={scss.button_download}>
                 <MdOutlineScreenSearchDesktop className={scss.icon}/>
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
               </Link>
