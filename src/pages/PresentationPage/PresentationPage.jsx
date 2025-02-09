@@ -1,5 +1,5 @@
 import scss from './PresentationPage.module.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { MdOutlineScreenSearchDesktop } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -32,10 +32,10 @@ const PresentationPage = () => {
       <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
-              <Link to={presentation} target="_blank" className={scss.button_download}>
+              <NavLink to={presentation} target="_blank" className={scss.button_download}>
                 <MdOutlineScreenSearchDesktop className={scss.icon}/>
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
-              </Link>
+              </NavLink>
         </div>
       </div>
     </> 
