@@ -25,7 +25,9 @@ const PresentationPage = () => {
       <Helmet>
         <title>{t("Presentation_meta_title")}</title>
         <meta name="description" content={t("Presentation_meta_description")}/>
-        <link rel="canonical" href="https://www.clinic-aurum.com/about"></link>
+        {/* <link rel="canonical" href="https://www.clinic-aurum.com/about"></link> */}
+        <meta property="og:title" content={t("Presentation_meta_title")}/>
+        <meta property="og:description" content={t("Presentation_meta_description")}/>
       </Helmet>
       <div className={scss.container}>
         <div className={scss.content_wrapper}>

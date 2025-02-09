@@ -11,7 +11,9 @@ const ServicePage5 = () => {
       <Helmet>
         <title>{t("Service_title5")}</title>
         <meta name="description" content={t("Service_title5")}/>
-        <link rel="canonical" href="https://www.clinic-aurum.com/services"></link>
+        {/* <link rel="canonical" href="https://www.clinic-aurum.com/services"></link> */}
+        <meta property="og:title" content={t("Service_title5")} />
+        <meta property="og:description" content={t("Service_title5")}/>
       </Helmet>
       <div className={scss.container}>
         <div className={scss.main_wrapper}>

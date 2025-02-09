@@ -50,16 +50,10 @@ const HomePage = () => {
   return (
     <>  
         <Helmet>
-            <title>TEST</title>
-            <meta name="description" content="TEST"/>
-            <meta property="og:title" content="TEST" />
-            <meta property="og:description" content="TEST"/>
-            {/* <meta property="og:url" content="https://www.clinic-aurum.com/" />
-            <meta property="og:type" content="website"/>
-            <meta property="og:image" content="https://bachynckyi.github.io/aurum/favicon.png"/>
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
-            <meta name="twitter:card" content="summary_large_image" /> */}
+            <title>{t("Home_meta_title")}</title>
+            <meta name="description" content={t("Home_meta_description")}/>
+            <meta property="og:title" content={t("Home_meta_title")}/>
+            <meta property="og:description" content={t("Home_meta_description")}/>
         </Helmet>
         <Header/>
         <motion.div

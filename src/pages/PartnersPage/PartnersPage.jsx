@@ -11,6 +11,8 @@ const PartnersPage = () => {
       <Helmet>
         <title>{t("Partners_meta_title")}</title>
         <meta name="description" content={t("Partners_meta_description")}/>
+        <meta property="og:title" content={t("Partners_meta_title")}/>
+        <meta property="og:description" content={t("Partners_meta_description")}/>
       </Helmet>
       <div className={scss.container}>
             <div className={scss.content_wrapper}>

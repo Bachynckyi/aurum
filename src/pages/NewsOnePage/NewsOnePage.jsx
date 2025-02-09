@@ -41,7 +41,9 @@ const NewsOnePage = () => {
       <Helmet>
         <title>{currentNews[`title${currentLang}`]}</title>
         <meta name="description" content={currentNews[`text1${currentLang}`]}/>
-        <link rel="canonical" href="https://www.clinic-aurum.com/news"></link>
+        {/* <link rel="canonical" href="https://www.clinic-aurum.com/news"></link> */}
+        <meta property="og:title" content={currentNews[`title${currentLang}`]}/>
+        <meta property="og:description" content={currentNews[`text1${currentLang}`]}/>
       </Helmet>
       <div className={scss.container}>
         {currentNews && (

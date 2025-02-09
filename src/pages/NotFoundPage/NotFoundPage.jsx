@@ -11,8 +11,9 @@ const NotFoundPage = () => {
       <Helmet>
         <title>{t("PageNotFound_meta_title")}</title>
         <meta name="description" content={t("PageNotFound_meta_description")}/>
-        <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://mywebsite.com/404" />
+        <meta name="robots" content="noindex, follow"/>
+        <meta property="og:title" content={t("PageNotFound_meta_title")}/>
+        <meta property="og:description" content={t("PageNotFound_meta_description")}/>
       </Helmet>
       <div className={scss.container}>
         <div className={scss.content_wrapper}>
