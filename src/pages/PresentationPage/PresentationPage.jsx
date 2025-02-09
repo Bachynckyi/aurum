@@ -10,14 +10,13 @@ const PresentationPage = () => {
   const [presentation, setPresentation] = useState("");
 
   useEffect(() => {
-    console.log(process.env.PUBLIC_URL)
     const currentLang = i18n.language.toUpperCase(); 
       if (currentLang.includes("UK") || currentLang.includes("UA") || currentLang.includes("RU")) {
-        setPresentation(`${process.env.PUBLIC_URL}/assets/Презентація_Аурум_UKR.pdf`);
+        setPresentation(`/assets/Презентація_Аурум_UKR.pdf`);
       } else if (currentLang.includes("DE")) {
-        setPresentation(`${process.env.PUBLIC_URL}/assets/Präsentation_Aurum_DE.pdf`);
+        setPresentation(`assets/Präsentation_Aurum_DE.pdf`);
       } else {
-        setPresentation(`${process.env.PUBLIC_URL}/assets/Presentation_Aurum_EN.pdf`);
+        setPresentation(`/assets/Presentation_Aurum_EN.pdf`);
       }
   }, [i18n.language]);
 
@@ -27,7 +26,6 @@ const PresentationPage = () => {
         <title>{t("Presentation_meta_title")}</title>
         <meta name="description" content={t("Presentation_meta_description")}/>
         {/* <link rel="canonical" href="https://www.clinic-aurum.com/about"></link> */}
-
         <meta property="og:title" content={t("Presentation_meta_title")}/>
         <meta property="og:description" content={t("Presentation_meta_description")}/>
       </Helmet>
