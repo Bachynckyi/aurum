@@ -38,6 +38,7 @@
   },
   "reactSnap": {
     "skipThirdPartyRequests": true,
+    "excludedRoutes": ["/about/presentation"],
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
