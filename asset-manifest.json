@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/aurum/static/css/main.32338d58.css",
-    "main.js": "/aurum/static/js/main.8bd9326c.js",
+    "main.js": "/aurum/static/js/main.b9e33bc8.js",
     "static/css/146.958c0df3.chunk.css": "/aurum/static/css/146.958c0df3.chunk.css",
-    "static/js/146.048a8041.chunk.js": "/aurum/static/js/146.048a8041.chunk.js",
+    "static/js/146.01f24618.chunk.js": "/aurum/static/js/146.01f24618.chunk.js",
     "static/css/461.23859c1b.chunk.css": "/aurum/static/css/461.23859c1b.chunk.css",
     "static/js/461.cea3a430.chunk.js": "/aurum/static/js/461.cea3a430.chunk.js",
     "static/css/202.7489eac5.chunk.css": "/aurum/static/css/202.7489eac5.chunk.css",
@@ -159,9 +159,9 @@
     "static/media/slick.woff": "/aurum/static/media/slick.295183786cd8a1389865.woff",
     "static/media/telegram_iconH.svg": "/aurum/static/media/telegram_iconH.d13325fcb90d714b92eb100148e4dd45.svg",
     "static/media/telegram_iconF.svg": "/aurum/static/media/telegram_iconF.1c61d5ba0913666b8a3cbf6376ae06eb.svg",
-    "index.html": "/aurum/index.html",
     "static/media/button_more.svg": "/aurum/static/media/button_more.6aa2a80dd8ff3003ae8fc0df8e955a7c.svg",
     "static/media/phone_icon.svg": "/aurum/static/media/phone_icon.ce0952b65265ec18d0cb4dd117c64325.svg",
+    "index.html": "/aurum/index.html",
     "static/media/facebook_iconF.svg": "/aurum/static/media/facebook_iconF.1f4cd702c13f05bd3e2e4453142a2221.svg",
     "static/media/facebook_iconH.svg": "/aurum/static/media/facebook_iconH.4f14a0870c932201d04c43c66696dd72.svg",
     "static/media/services_slider_arrow_right.svg": "/aurum/static/media/services_slider_arrow_right.e5bd609951c3f665bf54f401916bcc6a.svg",
@@ -181,9 +181,9 @@
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
     "main.32338d58.css.map": "/aurum/static/css/main.32338d58.css.map",
-    "main.8bd9326c.js.map": "/aurum/static/js/main.8bd9326c.js.map",
+    "main.b9e33bc8.js.map": "/aurum/static/js/main.b9e33bc8.js.map",
     "146.958c0df3.chunk.css.map": "/aurum/static/css/146.958c0df3.chunk.css.map",
-    "146.048a8041.chunk.js.map": "/aurum/static/js/146.048a8041.chunk.js.map",
+    "146.01f24618.chunk.js.map": "/aurum/static/js/146.01f24618.chunk.js.map",
     "461.23859c1b.chunk.css.map": "/aurum/static/css/461.23859c1b.chunk.css.map",
     "461.cea3a430.chunk.js.map": "/aurum/static/js/461.cea3a430.chunk.js.map",
     "202.7489eac5.chunk.css.map": "/aurum/static/css/202.7489eac5.chunk.css.map",
@@ -251,6 +251,6 @@
   },
   "entrypoints": [
     "static/css/main.32338d58.css",
-    "static/js/main.8bd9326c.js"
+    "static/js/main.b9e33bc8.js"
   ]
 }
