@@ -37,7 +37,8 @@
     "lint:js": "eslint src/**/*.{js,jsx}"
   },
   "reactSnap": {
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "skipThirdPartyRequests": true
   },
   "eslintConfig": {
     "extends": [
