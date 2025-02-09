@@ -20,9 +20,19 @@ const HonorsPage = () => {
   return (
     <>
       <Helmet>
-        <title>{t("Honors_meta_title")}</title>
+        {/* <title>{t("Honors_meta_title")}</title>
         <meta name="description" content={t("Honors_meta_description")}/>
-        <link rel="canonical" href="https://www.clinic-aurum.com/about"></link>
+        <link rel="canonical" href="https://www.clinic-aurum.com/about"></link> */}
+                    <title>{t("Home_meta_title")}</title>
+            <meta name="description" content={t("Home_meta_description")}/>
+            <meta property="og:title" content={t("Home_meta_title")} />
+            <meta property="og:description" content={t("Home_meta_description")}/>
+            <meta property="og:url" content="https://www.clinic-aurum.com/" />
+            <meta property="og:type" content="website"/>
+            <meta property="og:image" content="https://bachynckyi.github.io/aurum/favicon.png"/>
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <div className={scss.container}>
             <div className={scss.content_wrapper}>
