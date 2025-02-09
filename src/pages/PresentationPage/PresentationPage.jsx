@@ -10,13 +10,14 @@ const PresentationPage = () => {
   const [presentation, setPresentation] = useState("");
 
   useEffect(() => {
+    console.log(process.env.PUBLIC_URL)
     const currentLang = i18n.language.toUpperCase(); 
       if (currentLang.includes("UK") || currentLang.includes("UA") || currentLang.includes("RU")) {
-        setPresentation("/assets/Презентація_Аурум_UKR.pdf");
+        setPresentation(`${process.env.PUBLIC_URL}/assets/Презентація_Аурум_UKR.pdf`);
       } else if (currentLang.includes("DE")) {
-        setPresentation("/assets/Präsentation_Aurum_DE.pdf");
+        setPresentation(`${process.env.PUBLIC_URL}/assets/Präsentation_Aurum_DE.pdf`);
       } else {
-        setPresentation("/assets/Presentation_Aurum_EN.pdf");
+        setPresentation(`${process.env.PUBLIC_URL}/assets/Presentation_Aurum_EN.pdf`);
       }
   }, [i18n.language]);
 

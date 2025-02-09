@@ -21,19 +21,19 @@ const MedicinePage = () => {
             <div className={scss.content_wrapper}>
               <h1 className={scss.title}>{t("Medicine_title")}</h1>
               <div className={scss.list_wrapper}>
-                  <Link to={"/assets/Anthroposophy_in_the_WHO_system.pdf"} target="_blank" className={scss.button_download}>
+                  <Link to={`${process.env.PUBLIC_URL}/assets/Anthroposophy_in_the_WHO_system.pdf`} target="_blank" className={scss.button_download}>
                       <MdOutlineScreenSearchDesktop className={scss.icon}/>
                       <span className={scss.button_download_text}>{t("Medicine_presentation1")}</span>
                   </Link>
-                  <Link to={"/assets/Homeopathy_in_the_WHO_system.pdf"} target="_blank" className={scss.button_download}>
+                  <Link to={`${process.env.PUBLIC_URL}/assets/Homeopathy_in_the_WHO_system.pdf`} target="_blank" className={scss.button_download}>
                       <MdOutlineScreenSearchDesktop className={scss.icon}/>
                       <span className={scss.button_download_text}>{t("Medicine_presentation2")}</span>
                   </Link>
-                  <Link to={"/assets/WHO_Report_2019.pdf"} target="_blank" className={scss.button_download}>
+                  <Link to={`${process.env.PUBLIC_URL}/assets/WHO_Report_2019.pdf`} target="_blank" className={scss.button_download}>
                       <MdOutlineScreenSearchDesktop className={scss.icon}/>
                       <span className={scss.button_download_text}>{t("Medicine_presentation3")}</span>
                   </Link>
-                  <Link to={"/assets/About_Anthroposophical_Medicine.pdf"} target="_blank" className={scss.button_download}>
+                  <Link to={`${process.env.PUBLIC_URL}/assets/About_Anthroposophical_Medicine.pdf`} target="_blank" className={scss.button_download}>
                       <MdOutlineScreenSearchDesktop className={scss.icon}/>
                       <span className={scss.button_download_text}>{t("Medicine_presentation4")}</span>
                   </Link>
