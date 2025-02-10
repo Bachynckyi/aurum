@@ -19,10 +19,6 @@ const PresentationPage = () => {
       }
   }, [i18n.language]);
 
-  const onClick = () => {
-    window.open(presentation, "_blank", "noopener,noreferrer");
-  };  
-
   return (
     <>
       <Helmet>
@@ -35,7 +31,7 @@ const PresentationPage = () => {
       <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
-              <button className={scss.button_download} onClick={onClick}>
+              <button className={scss.button_download} onClick={() => window.open(presentation, "_blank", "noopener,noreferrer")}>
                 <MdOutlineScreenSearchDesktop className={scss.icon}/>
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
               </button>
