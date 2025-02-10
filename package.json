@@ -38,7 +38,7 @@
   },
   "reactSnap": {
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "skipThirdPartyRequests": true
+    "skip": ["/presentation", "/assets/Presentation_Aurum_EN.pdf"]
   },
   "eslintConfig": {
     "extends": [

@@ -11,13 +11,17 @@ const PresentationPage = () => {
   useEffect(() => {
     const currentLang = i18n.language.toUpperCase(); 
       if (currentLang.includes("UK") || currentLang.includes("UA") || currentLang.includes("RU")) {
-        setPresentation("/assets/Презентація_Аурум_UKR.pdf");
+        setPresentation("../assets/Презентація_Аурум_UKR.pdf");
       } else if (currentLang.includes("DE")) {
-        setPresentation("assets/Präsentation_Aurum_DE.pdf");
+        setPresentation("../assets/Präsentation_Aurum_DE.pdf");
       } else {
-        setPresentation("/assets/Presentation_Aurum_EN.pdf");
+        setPresentation("../assets/Presentation_Aurum_EN.pdf");
       }
   }, [i18n.language]);
+
+  const onClick = () => {
+    window.open(presentation, "_blank", "noopener,noreferrer");
+  };  
 
   return (
     <>
@@ -31,10 +35,10 @@ const PresentationPage = () => {
       <div className={scss.container}>
         <div className={scss.content_wrapper}>
             <h1 className={scss.title}>{t("Presentation_title")}</h1>
-              <a href={presentation} target="_blank" rel="noopener noreferrer" className={scss.button_download}>
+              <button className={scss.button_download} onClick={onClick}>
                 <MdOutlineScreenSearchDesktop className={scss.icon}/>
                 <span className={scss.button_download_text}>{t("Presentation_link")}</span>
-              </a>
+              </button>
         </div>
       </div>
     </> 
