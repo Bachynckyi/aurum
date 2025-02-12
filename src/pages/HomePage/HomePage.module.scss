@@ -1090,10 +1090,9 @@
     width: 168px;
     height: 226px;
     border-radius: 24px;
-    background: url("../../images/team/team_member_5.jpg") lightgray no-repeat;
+    background: url("../../images/team/team_member_5.jpg");
     background-size: cover;
-    background-position: -50% -10%;
-    background-size: 110%;
+    background-position: 0% 80%;
 
     @media screen and (min-width: 1024px) {
         width: 320px;
