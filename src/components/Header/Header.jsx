@@ -86,18 +86,22 @@ const Header = () => {
     setTimeout(() => {
       document.body.style.cssText = `overflow-y: auto`
       setLoading(false);
-    }, 1000);
-    if(lang === "EN"){
-      i18next.changeLanguage(LOCALS.EN);
-    }
-    else if (lang === "DE"){
-      i18next.changeLanguage(LOCALS.DE);
-    }
-    else if (lang === "UK"){
-      i18next.changeLanguage(LOCALS.UK);
-    }
-    setIsActiveMenuLang(false);
-    setIsActiveMenuMobileLang(false);
+    }, 2000);
+
+    setTimeout(() => {
+      if(lang === "EN"){
+        i18next.changeLanguage(LOCALS.EN);
+      }
+      else if (lang === "DE"){
+        i18next.changeLanguage(LOCALS.DE);
+      }
+      else if (lang === "UK"){
+        i18next.changeLanguage(LOCALS.UK);
+      }
+      setIsActiveMenuLang(false);
+      setIsActiveMenuMobileLang(false);
+    }, 400);
+
   };
 
   return (
