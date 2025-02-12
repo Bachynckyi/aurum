@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/aurum/static/css/main.32338d58.css",
-    "main.js": "/aurum/static/js/main.3232b301.js",
+    "main.css": "/aurum/static/css/main.131af061.css",
+    "main.js": "/aurum/static/js/main.07654796.js",
     "static/css/146.958c0df3.chunk.css": "/aurum/static/css/146.958c0df3.chunk.css",
-    "static/js/146.01f24618.chunk.js": "/aurum/static/js/146.01f24618.chunk.js",
+    "static/js/146.1ef1f63e.chunk.js": "/aurum/static/js/146.1ef1f63e.chunk.js",
     "static/css/461.23859c1b.chunk.css": "/aurum/static/css/461.23859c1b.chunk.css",
-    "static/js/461.b43393c0.chunk.js": "/aurum/static/js/461.b43393c0.chunk.js",
+    "static/js/461.410266d7.chunk.js": "/aurum/static/js/461.410266d7.chunk.js",
     "static/css/202.7489eac5.chunk.css": "/aurum/static/css/202.7489eac5.chunk.css",
     "static/js/202.aa157a19.chunk.js": "/aurum/static/js/202.aa157a19.chunk.js",
     "static/css/210.185ad08b.chunk.css": "/aurum/static/css/210.185ad08b.chunk.css",
@@ -184,12 +184,12 @@
     "static/media/polygon.svg": "/aurum/static/media/polygon.dc649bc71f8302544294cb899634e947.svg",
     "static/media/services_slider_dot.svg": "/aurum/static/media/services_slider_dot.689f83a449c9676c4f54.svg",
     "static/media/services_slider_dot_active.svg": "/aurum/static/media/services_slider_dot_active.f2853a9d6c66fed60504.svg",
-    "main.32338d58.css.map": "/aurum/static/css/main.32338d58.css.map",
-    "main.3232b301.js.map": "/aurum/static/js/main.3232b301.js.map",
+    "main.131af061.css.map": "/aurum/static/css/main.131af061.css.map",
+    "main.07654796.js.map": "/aurum/static/js/main.07654796.js.map",
     "146.958c0df3.chunk.css.map": "/aurum/static/css/146.958c0df3.chunk.css.map",
-    "146.01f24618.chunk.js.map": "/aurum/static/js/146.01f24618.chunk.js.map",
+    "146.1ef1f63e.chunk.js.map": "/aurum/static/js/146.1ef1f63e.chunk.js.map",
     "461.23859c1b.chunk.css.map": "/aurum/static/css/461.23859c1b.chunk.css.map",
-    "461.b43393c0.chunk.js.map": "/aurum/static/js/461.b43393c0.chunk.js.map",
+    "461.410266d7.chunk.js.map": "/aurum/static/js/461.410266d7.chunk.js.map",
     "202.7489eac5.chunk.css.map": "/aurum/static/css/202.7489eac5.chunk.css.map",
     "202.aa157a19.chunk.js.map": "/aurum/static/js/202.aa157a19.chunk.js.map",
     "210.185ad08b.chunk.css.map": "/aurum/static/css/210.185ad08b.chunk.css.map",
@@ -258,7 +258,7 @@
     "921.b463d2a1.chunk.js.map": "/aurum/static/js/921.b463d2a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32338d58.css",
-    "static/js/main.3232b301.js"
+    "static/css/main.131af061.css",
+    "static/js/main.07654796.js"
   ]
 }
