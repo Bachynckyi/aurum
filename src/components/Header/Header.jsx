@@ -86,7 +86,7 @@ const Header = () => {
     setTimeout(() => {
       document.body.style.cssText = `overflow-y: auto`
       setLoading(false);
-    }, 2000);
+    }, 1000);
 
     setTimeout(() => {
       if(lang === "EN"){

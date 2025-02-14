@@ -4,6 +4,9 @@ import Layout from 'components/Layout/Layout';
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "../src/helpers/scrollToTop";
 import { HelmetProvider } from "react-helmet-async";
+import Loader from 'components/Loader/Loader';
+import { motion } from "framer-motion";
+import Header from 'components/Header/Header';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AboutVideoPage = lazy(() => import('./pages/VideoPage/VideoPage'));
@@ -32,14 +35,28 @@ const SupportPage = lazy(() => import('./pages/SupportPage/SupportPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage/ProjectPage'));
 
 const UserRoutes = () => {
-  const location = useLocation();;
+  const location = useLocation();
+
+  const animationOptions = {
+    initial: { opacity: 0, filter: "blur(10px)" },
+    animate: { opacity: 1, filter: "blur(0px)", transition: { duration: 0.5, ease: "easeOut" } },
+    exit: { opacity: 0, filter: "blur(10px)", transition: { duration: 0.4, ease: "easeInOut" } }
+  };
 
   return (
     <>
       <HelmetProvider>
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader/>}>
         <ScrollToTop/>
+        <Header/>
         <AnimatePresence mode='wait'>
+            <motion.div
+              key={location.pathname}
+              variants={animationOptions}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<HomePage/>}></Route>
                 <Route element={<Layout/>}>
@@ -69,6 +86,7 @@ const UserRoutes = () => {
                   <Route path="*" element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
+            </motion.div>
           </AnimatePresence>
         </Suspense>
       </HelmetProvider>
