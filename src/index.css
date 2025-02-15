@@ -5,7 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -18,17 +17,17 @@ button {
 
 @font-face {
   font-family: 'Exo2-Light';
-  src: url(./fonts/Exo2__Light.woff2) format('woff2');
+  src: url(./../public/fonts/Exo2__Light.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Exo2-Regular';
-  src: url(./fonts/Exo2__Regular.woff2) format('woff2');
+  src: url(./../public/fonts/Exo2__Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Exo2-Bold';
-  src: url(./fonts/Exo2__Bold.woff2) format('woff2');
+  src: url(./../public/fonts/Exo2__Bold.woff2) format('woff2');
 }
 
 .center .slick-slide div {
