@@ -6,6 +6,7 @@ import { MdContentCopy } from "react-icons/md";
 import copy from 'copy-to-clipboard';
 import Notiflix from 'notiflix';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const SupportPage = () => {
   const { t } = useTranslation();
@@ -127,7 +128,7 @@ const SupportPage = () => {
                                 </li>
                             </ul>
                             <h2 className={scss.subtitle}>{t("Support_Privat")}</h2>
-                            <img src={QR} alt="QR" className={scss.qr_code}/>
+                            <OptimizedImage src={QR} alt="QR" className={scss.qr_code}/>
                         </>
                     )}
                     {currency === "USD" && (

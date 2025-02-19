@@ -8,6 +8,7 @@ import { news } from 'news';
 import { MdArrowOutward } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const NewsSlider = () => {
   const { i18n } = useTranslation();
@@ -116,7 +117,7 @@ const NewsSlider = () => {
   const elements = news.map(({ id, ...props }) => {
     return (
         <div className={scss.slider_card} key={id}>
-          <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
+          <OptimizedImage  src={props.image1} alt='newsImage' className={scss.slider_image}/>
           <div className={scss.slider_text_wrapper}>
               <span className={scss.slider_text}>{props[`title${currentLang}`]}</span>
               <div className={scss.bottom_wrapper}>

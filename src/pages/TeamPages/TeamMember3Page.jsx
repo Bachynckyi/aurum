@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import photo from '../../images/team/team_member_3.jpg';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const TeamMember3Page = () => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ const TeamMember3Page = () => {
       <div className={scss.container}>
           <div className={scss.content_wrapper}>
             <div className={scss.image_wrapper}>
-              <img src={photo} alt="team_member" className={scss.image}/>
+              <OptimizedImage src={photo} alt="team_member" className={scss.image}/>
               <h1 className={scss.title}>{t("TeamMember3_name")}</h1>
               <h2 className={scss.subtitle}>{t("TeamMember3_position")}</h2>
             </div>

@@ -10,6 +10,7 @@ import image7 from "../../images/project/project7.jpg";
 import image8 from "../../images/project/project8.jpg";
 import image9 from "../../images/project/project9.jpg";
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const ProjectPage = () => {
   const { t } = useTranslation();
@@ -27,16 +28,16 @@ const ProjectPage = () => {
                 <div className={scss.intro_wrapper}>
                     <p className={scss.text}>{t("Project_text1")} {t("Project_text2")}</p>
                     <div className={scss.images_wrapper1}>
-                        <img src={image3} alt="image3" className={scss.image}/>
+                        <OptimizedImage src={image3} alt="image3" className={scss.image}/>
                         <div className={scss.images_wrapper2}>
-                            <img src={image1} alt="image1" className={scss.image}/>
-                            <img src={image2} alt="image2" className={scss.image}/>
+                            <OptimizedImage src={image1} alt="image1" className={scss.image}/>
+                            <OptimizedImage src={image2} alt="image2" className={scss.image}/>
                         </div>
                     </div>
                 </div>
                 <div className={scss.parzival_wrapper}>
                     <div className={scss.parzival_wrapper1}>
-                        <img src={image4} alt="image4" className={scss.image}/>
+                        <OptimizedImage src={image4} alt="image4" className={scss.image}/>
                         <div className={scss.parzival_wrapper2}>
                             <p className={scss.text2}>{t("Project_list1_title")}</p>
                             <ul className={scss.list}>
@@ -49,10 +50,10 @@ const ProjectPage = () => {
                     </div>
                     <div className={scss.images_wrapper1}>
                         <div className={scss.images_wrapper3}>
-                            <img src={image5} alt="image5" className={scss.image2}/>
-                            <img src={image6} alt="image6" className={scss.image2}/>
+                            <OptimizedImage src={image5} alt="image5" className={scss.image2}/>
+                            <OptimizedImage src={image6} alt="image6" className={scss.image2}/>
                         </div>
-                        <img src={image7} alt="image7" className={scss.image}/>
+                        <OptimizedImage src={image7} alt="image7" className={scss.image}/>
                     </div>
                 </div>
                 <div className={scss.finish_wrapper}>
@@ -73,8 +74,8 @@ const ProjectPage = () => {
                     </div>
                 </div>
                 <div className={scss.images_wrapper1}>
-                    <img src={image8} alt="image8" className={scss.image}/>
-                    <img src={image9} alt="image9" className={scss.image}/>
+                    <OptimizedImage src={image8} alt="image8" className={scss.image}/>
+                    <OptimizedImage src={image9} alt="image9" className={scss.image}/>
                 </div>
             </div>
         </div>

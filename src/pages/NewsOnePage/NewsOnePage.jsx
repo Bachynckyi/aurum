@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const NewsOnePage = () => {
   const { i18n } = useTranslation();
@@ -50,14 +51,14 @@ const NewsOnePage = () => {
           <div className={scss.content_wrapper}>
               <div>
                 {currentNews[`text1${currentLang}`] && <p className={scss.text}>{currentNews[`text1${currentLang}`]}</p>}
-                {currentNews.image1 && <img src={currentNews.image1} alt="image1" className={scss.image}/>}
-                {currentNews.image2 && <img src={currentNews.image2} alt="image2" className={scss.image}/>}
+                {currentNews.image1 && <OptimizedImage src={currentNews.image1} alt="image1" className={scss.image}/>}
+                {currentNews.image2 && <OptimizedImage src={currentNews.image2} alt="image2" className={scss.image}/>}
               </div>
               <div className={scss.block_wrapper}>
                 {currentNews[`text2${currentLang}`] && <p className={scss.text}>{currentNews[`text2${currentLang}`]}</p>}
-                {currentNews.image3 && <img src={currentNews.image3} alt="image3" className={scss.image}/>}
-                {currentNews.image4 && <img src={currentNews.image4} alt="image4" className={scss.image}/>}
-                {currentNews.image5 && <img src={currentNews.image5} alt="image5" className={scss.image}/>}
+                {currentNews.image3 && <OptimizedImage src={currentNews.image3} alt="image3" className={scss.image}/>}
+                {currentNews.image4 && <OptimizedImage src={currentNews.image4} alt="image4" className={scss.image}/>}
+                {currentNews.image5 && <OptimizedImage src={currentNews.image5} alt="image5" className={scss.image}/>}
               </div>
           </div>
         )}

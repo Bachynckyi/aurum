@@ -2,6 +2,7 @@ import scss from './TeamMemberPage.module.scss';
 import { useTranslation } from 'react-i18next';
 import photo from '../../images/team/team_member_2.jpg';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const TeamMember2Page = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const TeamMember2Page = () => {
       <div className={scss.container}>
           <div className={scss.content_wrapper}>
               <div className={scss.image_wrapper}>
-                <img src={photo} alt="team_member" className={scss.image}/>
+                <OptimizedImage src={photo} alt="team_member" className={scss.image}/>
                 <h1 className={scss.title}>{t("TeamMember2_name")}</h1>
                 <h2 className={scss.subtitle}>{t("TeamMember2_position")}</h2>
               </div>

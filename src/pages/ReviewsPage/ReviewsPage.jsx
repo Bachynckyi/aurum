@@ -2,6 +2,7 @@ import scss from './ReviewsPage.module.scss';
 import userIcon from '../../images/user_icon.png';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const ReviewsPage = () => {
   const { t } = useTranslation();
@@ -20,35 +21,35 @@ const ReviewsPage = () => {
             <ul className={scss.list}>
                 <li className={scss.review_card}>
                     <div className={scss.review_user}>
-                        <img src={userIcon} alt='user'/>
+                        <OptimizedImage src={userIcon} alt='user'/>
                         <span className={scss.review_name}>{t("Reviews_card_name1")}</span>
                     </div>
                     <span className={scss.review_text}>{t("Reviews_card_text1")}</span>
                 </li>
                 <li className={scss.review_card}>
                     <div className={scss.review_user}>
-                        <img src={userIcon} alt='user'/>
+                        <OptimizedImage src={userIcon} alt='user'/>
                         <span className={scss.review_name}>{t("Reviews_card_name2")}</span>
                     </div>
                     <span className={scss.review_text}>{t("Reviews_card_text2")}</span>
                 </li>
                 <li className={scss.review_card}>
                     <div className={scss.review_user}>
-                        <img src={userIcon} alt='user'/>
+                        <OptimizedImage src={userIcon} alt='user'/>
                         <span className={scss.review_name}>{t("Reviews_card_name3")}</span>
                     </div>
                     <span className={scss.review_text}>{t("Reviews_card_text3")}</span>
                 </li>
                 <li className={scss.review_card}>
                     <div className={scss.review_user}>
-                        <img src={userIcon} alt='user'/>
+                        <OptimizedImage src={userIcon} alt='user'/>
                         <span className={scss.review_name}>{t("Reviews_card_name4")}</span>
                     </div>
                     <span className={scss.review_text}>{t("Reviews_card_text4")}</span>
                 </li>
                 <li className={scss.review_card}>
                     <div className={scss.review_user}>
-                        <img src={userIcon} alt='user'/>
+                        <OptimizedImage src={userIcon} alt='user'/>
                         <span className={scss.review_name}>{t("Reviews_card_name5")}</span>
                     </div>
                     <span className={scss.review_text}>{t("Reviews_card_text5")}</span>

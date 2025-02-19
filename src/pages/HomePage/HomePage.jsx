@@ -27,6 +27,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const HomePage = () => {
  const { t, i18n } = useTranslation();
@@ -132,9 +133,9 @@ const HomePage = () => {
                 <div className={scss.about_container}>
                     <span className={scss.about_title}>{t("Home_about_title")}</span>
                     <div className={scss.about_image_container}>
-                        <img src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
-                        <img src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
-                        <img src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
+                        <OptimizedImage src={teamPhoto1} alt='team_photo' className={scss.about_teamPhoto1}/>
+                        <OptimizedImage src={teamPhoto2} alt='team_photo' className={scss.about_teamPhoto2}/>
+                        <OptimizedImage src={teamPhoto3} alt='team_photo' className={scss.about_teamPhoto3}/>
                     </div>
                     <div className={scss.about_text_wrapper}>
                         <span className={scss.about_title_desktop}>{t("Home_about_title")}</span>

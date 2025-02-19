@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 import { NavLink } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const NewsPage = () => {
   const { t, i18n } = useTranslation();
@@ -27,7 +28,7 @@ const NewsPage = () => {
   const elements = news.map(({ id, ...props }) => {
     return (
       <NavLink className={scss.slider_card} key={id} to={`/news/${id}`}>
-        <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
+        <OptimizedImage src={props.image1} alt='newsImage' className={scss.slider_image}/>
         <div className={scss.slider_text_wrapper}>
             <span className={scss.slider_text}>{props[`title${currentLang}`]}</span>
             <div className={scss.bottom_wrapper}>

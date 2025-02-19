@@ -2,6 +2,7 @@ import scss from "./ServicePage.module.scss";
 import service9 from '../../images/services/service9.jpg';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const ServicePage9 = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const ServicePage9 = () => {
           <div className={scss.main_wrapper}>
               <h1 className={scss.title}>{t("Service_title10")}</h1>
               <div className={scss.content_wrapper}>
-                <img src={service9} alt='serviceImage' className={scss.image}/>
+                <OptimizedImage src={service9} alt='serviceImage' className={scss.image}/>
                 <div className={scss.subcontainer}>
                   <span className={scss.description}>{t("Service_text10")}</span>
                   <ul className={scss.list}>{t("Service_list")}

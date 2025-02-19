@@ -4,10 +4,7 @@ import scss from "./Loader.module.scss";
 const Loader = () => {
 
   return (
-      <motion.div className={scss.dots_container}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-      >
+      <motion.div className={scss.dots_container} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         {[...Array(5)].map((_, index) => (
           <motion.div
             key={index}

@@ -19,6 +19,7 @@ const VideoPage = () => {
         <div className={scss.content_wrapper}>
           <h1 className={scss.title}>{t("Video_title")}</h1>
           <div className={scss.video_wrapper}>
+            
             <ReactPlayer 
               url='https://www.youtube-nocookie.com/watch?v=wc8NOpoWYcE' 
               controls={true}
