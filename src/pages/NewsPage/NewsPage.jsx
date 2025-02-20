@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import { ReactComponent as CalendarIcon} from "../../images/calendar_icon.svg";
 import { NavLink } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
-import OptimizedImage from '../../components/OptimazedImage/OptimazedImage';
 
 const NewsPage = () => {
   const { t, i18n } = useTranslation();
