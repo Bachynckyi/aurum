@@ -166,7 +166,7 @@ const Header = () => {
               <span className={scss.header_button_text}>{t("Header_button_support_full")}</span>
             </Link>
             <div className={scss.lang_switcher_container} >
-              <button type="button" onClick={toggleLangMenu} className={scss.lang_switcher}>
+              <button type="button" onClick={toggleLangMenu} className={scss.lang_switcher} aria-label="change language" >
                 <span className={scss.lang}>{langOptions[0]}</span>
                 <Polygon className={isActiveMenuLang ? (scss.polygon_reverse) : (scss.polygon)}/>
               </button>
@@ -175,7 +175,7 @@ const Header = () => {
                 <span className={scss.lang_n} onClick={() => {changeLanguage(langOptions[2])}}>{langOptions[2]}</span>
               </div>
             </div>
-            <button type="button" className={scss.menu_button} onClick={openMobileMenu}><IoMdMenu className={scss.menu_icon}/></button>
+            <button type="button" className={scss.menu_button} onClick={openMobileMenu} aria-label="menu"><IoMdMenu className={scss.menu_icon}/></button>
             <div className={scss.socials}>
               <Link to="https://www.facebook.com/profile.php?id=61571048378069&sk=about" target='_blank'><FacebookIcon className={scss.socials_icon_facebook}/></Link>
               <Link to="https://t.me/centeraurum" target='_blank'><TelegramIcon className={scss.socials_icon_telegram}/></Link>
@@ -185,7 +185,7 @@ const Header = () => {
         <div className={isActiveMobileMenu ? (scss.mobile_menu_active) : (scss.mobile_menu)}>
             <div className={scss.mobile_menu_buttons}>
               <div className={scss.mobile_lang_container}>
-                <button className={scss.mobile_lang_switcher} onClick={toggleLangMenuMobile}>
+                <button className={scss.mobile_lang_switcher} onClick={toggleLangMenuMobile} type="button" aria-label="change language">
                     <span className={scss.lang}>{langOptions[0]}</span>
                     <Polygon className={isActiveMenuMobileLang ? (scss.polygon_reverse) : (scss.polygon)}/>
                 </button>
@@ -194,7 +194,7 @@ const Header = () => {
                 <span className={scss.lang} onClick={() => {changeLanguage(langOptions[2])}}>{langOptions[2]}</span>
                 </div>
               </div>
-              <button className={scss.close_menu} onClick={closeMobileMenu}>
+              <button className={scss.close_menu} onClick={closeMobileMenu} type="button" aria-label="close menu">
                 <IoMdClose className={isActiveMobileMenu ? (scss.close_menu_icon) : (scss.close_menu_icon_active)} onClick={closeMobileMenu}/>
               </button>
             </div>

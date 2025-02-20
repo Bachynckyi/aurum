@@ -28,7 +28,7 @@ const NewsPage = () => {
   const elements = news.map(({ id, ...props }) => {
     return (
       <NavLink className={scss.slider_card} key={id} to={`/news/${id}`}>
-        <OptimizedImage src={props.image1} alt='newsImage' className={scss.slider_image}/>
+        <img src={props.image1} alt='newsImage' className={scss.slider_image}/>
         <div className={scss.slider_text_wrapper}>
             <span className={scss.slider_text}>{props[`title${currentLang}`]}</span>
             <div className={scss.bottom_wrapper}>
